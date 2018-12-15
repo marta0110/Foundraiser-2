@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+SC|Raleway" rel="stylesheet">
+	<title>Document</title>
+</head>
+
+<body class="donation_system">
+	<div class="step_1">
+		<div class="container">
+			<img src="images/logo_white.png" alt="logo">
+			<h3> Make a contribution </h3>
+			<p>When you make a contribution, you support the vulnerable part of Copenhagen. They need our protection and help.</p>
+			<button type="button" class="button_one_payment">Give a one-off payment</button>
+			<button type="button" class="button_login_payment"> Login </button>
+			<button type="button"> Sign up</button>
+		</div>
+		<div onclick="GoBack()" ; class="donation_img">
+			<img src="images/login_bg_img.png" class="stretch" alt="lakes" />
+		</div>
+		<div class="pollution">
+			<h3> Pollution should never be the price of prosperity</h3>
+		</div>
+	</div>
+	<div class="container_one_payment" style="display: none">
+	<div onclick="GoBack()" class="arrow">
+		<img onclick="GoBack()" class="arrow"src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'"  alt="arrow_navigation">
+	</div>
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p> Give a one-off payment now</p>
+		</div>
+		<h3> I want to donate</h3>
+		<h4> Step 1. Choose the amount</h4>
+		<div class="donation_amount">
+			<label><input type="radio" name="month_type" value="donation_type_month"> Fixed monthly membership fee</label>
+
+			<label><input type="radio" name="single_type" value="donation_type_single"> It's a single contribution</label>
+			<div class="enter_amount">
+				<img src="images/donate.png" alt="donate">
+				<input type="text" name="amount" placeholder="enter emount" required>
+				<p> dkk</p>
+
+			</div>
+		</div>
+		<h4> Step 2. Choose the payment method</h4>
+		<div class="card_details">
+			<label><input type="radio" name="sub_type" value="Credit Card"> Credit Card</label>
+			<div class="card_visa">
+				<img src="images/maestro.png">
+				<img src="images/mastercard.png">
+				<img src="images/visa.png">
+				<img src="images/visa2.png">
+			</div>
+		</div>
+		<div class="card_details">
+			<label><input type="radio" name="sub_type" value="Credit Card"> Mobile Pay</label>
+			<div class="card">
+				<img src="images/mobile_pay.png">
+			</div>
+		</div>
+		<button type="button"> Donate</button>
+	</div>
+	<div class="login_system" style="display: none">
+	
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="sign_up_button"> Sign up</p>
+			<p class="login_button"> Log in</p>
+
+		</div>
+		<h4> Hello,</h4>
+		<div class="sentence">
+			<h4> Good to see you</h4>
+			<h4 class="again"> again</h4>
+		</div>
+		<form class="login-form">
+			<div class="username_login_form">
+
+				<img src="images/login_icon.png" alt="login">
+				<input id="user_name" type="text" name='username' placeholder="user name" required minlength="3" maxlength="10">
+				<span class="required"></span>
+			</div>
+			<div class="username_password">
+				<img src="images/password_icon.png" alt="login">
+				<input id="user_pw" type="password" name='password' placeholder="password" required minlength="3" maxlength="10">
+				<span class="required"></span>
+			</div>
+			<div class="forgot_password">
+				<h5> Forgot password?</h5>
+			</div>
+			<div class="wrong_data"></div>
+			<button id='loginbutton'> Login </button>
+			<h5 class="log_in_some"> or log in using</h5>
+			<div class="some">
+				<img src="images/fb_icon.png" alt="fb">
+				<img src="images/google.png" alt="google">
+			</div>
+		</form>
+
+
+	</div>
+
+	<ul id="statuslist" style="display: none"></ul>
+
+	<ul id="userlist" style="display: none"></ul>
+
+	<template id="userinfo" style="display: none">
+        <li data-id="userid">
+            <span data-username="name">NAME</span>
+            <span data-password="password">password</span>
+
+        </li>
+    </template>
+
+	<p style="display: none"> lalalala</p>
+
+	<!--<script src="script.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="login.js"></script>
+	<script src="Userlist.js"></script>
+	<!--<script src="registration.js"></script> -->
+	<script src="donation_login.js"></script>
+
+</body>
+</html
