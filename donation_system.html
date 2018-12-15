@@ -16,7 +16,7 @@
 			<p>When you make a contribution, you support the vulnerable part of Copenhagen. They need our protection and help.</p>
 			<button type="button" class="button_one_payment">Give a one-off payment</button>
 			<button type="button" class="button_login_payment"> Login </button>
-			<button type="button"> Sign up</button>
+			<button class="button_signup" type="button"> Sign up</button>
 		</div>
 		<div onclick="GoBack()" ; class="donation_img">
 			<img src="images/login_bg_img.png" class="stretch" alt="lakes" />
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 	<div class="container_one_payment" style="display: none">
-	<div onclick="GoBack()" class="arrow">
-		<img onclick="GoBack()" class="arrow"src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'"  alt="arrow_navigation">
-	</div>
+		<div onclick="GoBack()" class="arrow">
+			<img onclick="GoBack()" class="arrow" src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'" alt="arrow_navigation">
+		</div>
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
 			<p> Give a one-off payment now</p>
@@ -65,7 +65,7 @@
 		<button type="button"> Donate</button>
 	</div>
 	<div class="login_system" style="display: none">
-	
+
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
 			<p class="sign_up_button"> Sign up</p>
@@ -101,7 +101,66 @@
 			</div>
 		</form>
 
+	</div>
 
+	<div class="signup_system" style="display: none">
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="login_button"> Log in</p>
+			<p class="sign_up_button"> Sign up</p>
+
+
+		</div>
+		<form class="register-form">
+			<div class="personal_info">
+				<img src="images/username.png" alt="fb">
+				<h5> PERSONAL INFO</h5>
+			</div>
+			<div class="firstname">
+				
+			
+			<input id="firstname" name="FName" value="" type="text" placeholder="first name" required minlength="3" maxlength="10">
+			 <span class="required"></span>
+                <span class="correct"></span>
+                </div>
+			<div class="lastname">
+			<input id="lastname" name="LName" value="" type="text" placeholder="last name" required minlength="3" maxlength="15">
+			<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+				<div class="username">
+			<input id="username" name="username" value="" type="text" placeholder="username" required minlength="3" maxlength="10">
+			<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			
+			<div class="username_email">
+				<img src="images/mail.png" alt="login">
+				<input type="text" name="email" value="" placeholder="email id" required minlength="6" maxlength="20">
+				<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			<div class="username_password">
+				<img src="images/password_icon.png" alt="password">
+				<input id="pw" name="password" value="" type="password" placeholder="password" required minlength="3" maxlength="14">
+				<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			<div class="img_upload">
+<img src="images/image.png" alt="image">
+				<input type="file" name="pic" accept="image/*">
+			</div>
+
+			<div class="wrong_username"></div>
+
+			<button id='registerbutton' onClick="addNewUser()"> Create </button>
+
+			<h5 class="log_in_some"> or register using</h5>
+			<div class="some">
+				<img src="images/fb_icon.png" alt="fb">
+				<img src="images/google.png" alt="google">
+			</div>
+		</form>
 	</div>
 
 	<ul id="statuslist" style="display: none"></ul>
@@ -122,7 +181,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="login.js"></script>
 	<script src="Userlist.js"></script>
-	<!--<script src="registration.js"></script> -->
+	<script src="registration.js"></script>
 	<script src="donation_login.js"></script>
 
 </body>

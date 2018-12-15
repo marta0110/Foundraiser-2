@@ -1,27 +1,29 @@
 /* MOBILE VERSION LOG IN -SIGN UP - DONATE FORMS*/
 
-
 /* UNIVERSAL ARROW NAVIGATION*/
+
 .container_one_payment .arrow,
-.login_system .arrow{
+.login_system .arrow {
 	width: 80%;
 	cursor: pointer;
 	padding-left: 2vw;
 }
+
 .container_one_payment .arrow img,
-.login_system .arrow img{
+.login_system .arrow img {
 	width: 15px;
 	height: auto;
 }
 
 .container_one_payment .arrow:hover,
-.login_system .arrow:hover{
+.login_system .arrow:hover {
 	padding-left: 1vw;
 	transition: 0.5s;
 }
 
 /* POLLUTION TEXT*/
-.pollution{
+
+.pollution {
 	display: none;
 }
 
@@ -39,9 +41,12 @@
 	height: 100%;
 }
 
+/* STYLING SAME FOR EACH ELEMENTS IN THE CONTAINERS */
+
 .container,
 .container_one_payment,
-.login_system {
+.login_system,
+.signup_system {
 	width: 80vw;
 	height: auto;
 	background-color: #262626;
@@ -55,14 +60,15 @@
 
 .container img,
 .container_one_payment img,
-.login_system img {
+.login_system img,
+.signup_system img {
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
 }
 
 .container h3,
-.container_one_payment h3{
+.container_one_payment h3 {
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 400;
@@ -75,7 +81,8 @@
 
 .container p,
 .container_one_payment p,
-.login_system p{
+.login_system p,
+.signup_system p{
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.5vw;
@@ -88,7 +95,8 @@
 
 .container button,
 .container_one_payment button,
-.login_system button  {
+.login_system button,
+.signup_system button {
 	border: 5px solid #CE9596;
 	background-color: #262626;
 	width: 80%;
@@ -104,7 +112,8 @@
 
 .container button:hover,
 .container_one_payment button:hover,
-.login_system button:hover{
+.login_system button:hover,
+.signup_system button:hover {
 	background-color: #CE9596;
 	width: 80%;
 	font-family: "Raleway", "sans-serif";
@@ -123,71 +132,103 @@
 	grid-template-columns: 20% 80%;
 }
 
-.login_system .nav {
+.login_system .nav,
+.signup_system .nav {
 	display: grid;
 	grid-template-columns: 60% 20% 20%;
 }
 
-.login_system .nav p{
+.login_system .nav p,
+.signup_system .nav p {
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
 	cursor: pointer;
 }
 
-.login_system .nav .sign_up_button{
+.login_system .nav .sign_up_button {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.login_system .nav .sign_up_button:hover{
-		color: #CE9596;
+.signup_system .nav .sign_up_button {
+	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
 	cursor: pointer;
 }
 
-.login_system .nav .sign_up_button:hover + .login_button{
+.signup_system .nav .login_button {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.signup_system .nav .login_button:hover {
+	color: #CE9596;
+	text-decoration: underline;
+	padding-top: 3vh;
+	cursor: pointer;
+}
+
+.login_system .nav .sign_up_button:hover {
+	color: #CE9596;
+	text-decoration: underline;
+	padding-top: 3vh;
+	cursor: pointer;
+}
+
+.signup_system .nav .login_button:hover + .sign_up_button {
+	color: white;
+	text-decoration: none;
+
+}
+
+.login_system .nav .sign_up_button:hover + .login_button {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .container_one_payment p {
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
 }
 
-.login_system h4{
+.login_system h4 {
 	color: white;
 	padding-top: 2vh;
 	font-family: "Raleway", "sans-serif";
 	font-size: 4vw;
 	font-weight: 100;
-	text-align:left;
+	text-align: left;
 	width: 80%;
 	margin: 0 auto;
 }
-.login_system .sentence{
+
+.login_system .sentence {
 	display: grid;
 	grid-template-columns: 52% 47%;
 	margin: 0;
-	
+
 }
 
-.login_system .sentence h4{
-		text-align: right;
+.login_system .sentence h4 {
+	text-align: right;
 	justify-self: end;
 	align-self: end;
 }
-.login_system .sentence .again{
-		color: #CE9596;
+
+.login_system .sentence .again {
+	color: #CE9596;
 	text-align: left;
 	justify-self: start;
 	align-self: start;
 	margin-left: -6%;
 }
+
 .container_one_payment h4 {
 	color: #CE9596;
 	text-decoration: underline;
@@ -243,7 +284,7 @@
 
 }
 
-.login_system .login-form{
+.signup_system .register-form {
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 80%;
@@ -253,7 +294,19 @@
 	align-items: center;
 }
 
-.login_system .login-form .log_in_some{
+.login_system .login-form {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 80%;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	margin: 0 auto;
+	align-items: center;
+}
+
+
+.login_system .login-form .log_in_some,
+.signup_system .register-form .log_in_some {
 	color: white;
 	font-family: "Raleway", "sans-serif";
 	font-size: 3vw;
@@ -261,29 +314,34 @@
 	width: 80%;
 	text-align: center;
 	margin-bottom: 0;
-	
+
 }
-.login_system .login-form .some{
+
+.login_system .login-form .some,
+.signup_system .register-form .some {
 	width: 55%;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	cursor: pointer;
-	
+
 }
 
-.login_system .login-form .some img{
+.login_system .login-form .some img,
+.signup_system .register-form .some img {
 	width: 7vw;
 	height: auto;
-	
+
 }
-.login_system .login-form img{
+
+.login_system .login-form img,
+.signup_system .register-form img {
 	width: 5vw;
 	height: auto;
 }
 
-.login_system .login-form input{
+.login_system .login-form input {
 	background-color: #262626;
 	border: 0;
 	border-bottom: 2px solid white;
@@ -296,31 +354,32 @@
 	font-family: "Raleway", "sans-serif";
 	font-size: 3vw;
 	font-weight: 100;
-	
+
 }
 
-.login_system .login-form .forgot_password h5{
+.login_system .login-form .forgot_password h5 {
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 2.2vw;
-margin-top: 2px;
+	margin-top: 2px;
 	cursor: pointer;
 }
 
-.login_system .login-form .forgot_password h5:hover{
+.login_system .login-form .forgot_password h5:hover {
 	color: #CE9596;
 }
-.login_system .login-form .forgot_password{
-		justify-self: center;
+
+.login_system .login-form .forgot_password {
+	justify-self: center;
 }
 
-.login_system .login-form span .required:after{
-	 content: "*";
-    color: white;
-	
+.login_system .login-form span .required:after {
+	content: "*";
+	color: white;
+
 }
 
-.login_system .login-form .wrong_data{
+.login_system .login-form .wrong_data {
 	font-family: "Raleway", "sans-serif";
 	font-size: 3vw;
 	font-weight: 100;
@@ -332,11 +391,16 @@ margin-top: 2px;
 	margin: 0 auto;
 }
 
-.login_system .login-form button{
+.login_system .login-form button,
+	{
 	margin-left: 0;
 }
 
-.container_one_payment .donation_amount .enter_amount input{
+.signup_system .register-form button {
+	margin-left: 20px;
+}
+
+.container_one_payment .donation_amount .enter_amount input {
 	background-color: #262626;
 	border: 0;
 	border-bottom: 2px solid white;
@@ -349,7 +413,7 @@ margin-top: 2px;
 }
 
 .container_one_payment .donation_amount .enter_amount input:focus,
-.login_system .login-form input:focus{
+.login_system .login-form input:focus {
 	border-bottom: 2px solid #CE9596;
 	color: #CE9596;
 
@@ -428,10 +492,96 @@ margin-top: 2px;
 	height: auto;
 }
 
+
+/* SIGN UP DIFFRENT STYLING */
+
+.signup_system .register-form .personal_info {
+	display: grid;
+	grid-template-columns: 15% 85%;
+	width: 80%;
+	height: 10vh;
+}
+
+.signup_system .register-form .personal_info h5 {
+	font-family: "Raleway", sans-serif;
+	font-size: 3.5vw;
+	color: white;
+	font-weight: 200;
+	justify-self: start;
+}
+
+.signup_system .register-form input {
+	background-color: #262626;
+	border: 0;
+	border-bottom: 2px solid white;
+	padding: 0.2em;
+	text-align: center;
+	margin-left: 10%;
+	transition: border-bottom .35s ease-in-out;
+	color: white;
+	width: 70%;
+	font-family: "Raleway", "sans-serif";
+	font-size: 3vw;
+	font-weight: 100;
+
+}
+
+.signup_system .register-form .img_upload {
+	padding-bottom: 5vh;
+}
+
+.signup_system .register-form .username_email img,
+.signup_system .register-form .username_password img,
+.signup_system .register-form .img_upload img {
+	padding-top: 1vw;
+}
+
+.signup_system .register-form .username_email input,
+.signup_system .register-form .username_password input,
+.signup_system .register-form .img_upload input {
+	margin-left: 0;
+	width: 70%;
+
+}
+
+
+/* register form correct data */
+.required:after {
+	content: "*";
+	color: white;
+
+}
+
+:required {
+	border: 1px solid black;
+}
+
+input:valid {
+	border: 1px solid black;
+}
+
+div input:valid:not(:placeholder-shown) ~ .correct::after {
+
+	content: "👌";
+
+}
+
+div input:invalid:not(:placeholder-shown) ~ .correct::after {
+
+	content: "Ups! It's incorrect 😞 ";
+	color: #CE9596;
+	font-family: "Raleway", "sans-serif";
+	font-size: 2.5vw;
+	font-weight: 100;
+
+}
+
+
+
 @media screen and (min-width: 650px) {
 
-	
-	.container p{
+
+	.container p {
 		font-size: 2vw;
 	}
 
@@ -440,412 +590,498 @@ margin-top: 2px;
 		margin-bottom: 6vh;
 
 	}
-	
-		.container_one_payment{
-			width: 36%;
-			height: auto;
-			margin-top: -10px;
-			margin-left: -10px;
-			padding-bottom: 10px;
-		}
-}
 
-	
-	/* TABLET VERSION */
-
-	@media screen and (min-width: 720px) {
-
-
-
-		/* TABLET VERSION FOR SIGN UP LOGIN DONATE FORMS*/
-		.step_1 {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-
-		}
-
-		.donation_img {
-			width: 66%;
-			height: 100%;
-			position: fixed;
-			right: 0px;
-			top: 0px;
-			z-index: -1;
-		}
-
-		.stretch {
-			width: 100%;
-			height: 100%;
-		}
-
-		.container {
-			width: 36%;
-			height: 101%;
-			margin-top: -10px;
-			margin-left: -10px;
-			padding-bottom: 0;
-			
-		}
-
-		.login_system {
-			width: 36%;
-			height: auto;
-			margin-top: -10px;
-			margin-left: -10px;
-			padding-bottom: 15px;
-		}
-
-
-		.container img,
-		.container_one_payment .nav img,
-		.login_system .nav img{
-			width: 10vw;
-			height: auto;
-			padding-top: 3vw;
-		}
-
-		.container img,
-		.container_one_payment .nav p,
-		.login_system .nav p{
-			font-size: 1.5vw;
-		}
-		.container h3,
-		.container_one_payment h3,
-		.login_system h3{
-			font-size: 2.5vw;
-			text-align: center;
-			height: 4vh;
-		}
-
-		.container p,
-		.container_one_payment p,{
-			font-size: 2vw;
-			width: 80%;
-			margin: 0 auto;
-			margin-bottom: 7vh;
-		}
-
-		.container button,
-		.container_one_payment button,
-		.login_system button{
-			font-size: 2vw;
-			padding: 0.5vw;
-		}
-
-
-		.container button:hover,
-		.container_one_payment button:hover,
-		.login_system button:hover{
-			font-size: 2vw;
-		}
-
-
-		.container_one_payment h4,
-		.login_system h4{
-			font-size: 2.5vw;
-
-		}
-		
-		.container_one_payment label {
-
-			font-size: 1.5vw;
-			padding: 6px;
-			text-align: center;
-			margin-right: 0;
-
-		}
-
-		.container_one_payment label input {
-			margin-bottom: 5vh;
-		}
-
-		.container_one_payment .donation_amount .enter_amount {
-			height: 10vh;
-			margin-top: -5vh;
-		}
-
-		.container_one_payment .donation_amount .enter_amount img {
-			width: 5vw;
-
-
-		}
-
-		.container_one_payment .donation_amount .enter_amount p {
-
-			font-size: 2.5vw;
-		}
-
-		.container_one_payment .card_details {
-			background: rgba(255, 255, 255, 0.3);
-			border-radius: 20px;
-			display: grid;
-			grid-template-columns: 45% 55%;
-			cursor: pointer;
-			width: 80%;
-			align-items: center;
-			margin: 0 auto;
-			margin-bottom: 3vh;
-
-		}
-
-		.container_one_payment .card_details label {
-			font-size: 1.5vw;
-
-		}
-
-
-
-		.container_one_payment .card_details .card_visa img {
-			padding-top: 0;
-			width: 20px;
-			height: auto;
-			padding-right: 2px;
-			align-items: end;
-			place-self: center;
-			justify-self: end;
-
-		}
-
-
-		.container_one_payment .card_details .card img {
-			width: 20px;
-			height: auto;
-			padding-right: 15px;
-			padding-top: 0;
-		}
-	
-
-
-		/* LOG IN SYSTEM DIFFRENT DATA STYLING */
-		
-		.login_system .nav{
-			margin-bottom: 5vh;
-		}
-		
-		.login_system .sentence {
-			grid-template-columns: 70% 30%;
-		}
-		
-		.login_system .sentence .again{
-			margin-left: -1vw;
-		}
-		
-		.login_system .login-form img{
-			width: 3vw;
-			height: auto;
-		}
-
-		.login_system .login-form input{
-			font-size: 2vw;
-			width: 70%;
-		}
-		
-		.login_system .login-form .wrong_data{
-			font-size: 2vw;
-			width: 80%;
-		}
-		
-		.login_system .login-form button{
-			margin-left: 15px;
-		}
-		
-		.login_system .login-form .forgot_password h5{
-	font-size: 1.5vw;
-margin-top: 3px;
-
+	.container_one_payment {
+		width: 36%;
+		height: auto;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding-bottom: 10px;
+	}
 }
 
 
-.login_system .login-form .forgot_password{
+/* TABLET VERSION */
+
+@media screen and (min-width: 720px) {
+
+
+
+	/* TABLET VERSION FOR SIGN UP LOGIN DONATE FORMS*/
+	.step_1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+	.donation_img {
+		width: 66%;
+		height: 100%;
+		position: fixed;
+		right: 0px;
+		top: 0px;
+		z-index: -1;
+	}
+
+	.stretch {
+		width: 100%;
+		height: 100%;
+	}
+
+	.container {
+		width: 36%;
+		height: 101%;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding-bottom: 0;
+
+	}
+
+	.login_system,
+	.signup_system {
+		width: 36%;
+		height: auto;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding-bottom: 15px;
+	}
+
+
+	.container img,
+	.container_one_payment .nav img,
+	.login_system .nav img,
+	.signup_system .nav img{
+		width: 10vw;
+		height: auto;
+		padding-top: 3vw;
+	}
+
+	.container img,
+	.container_one_payment .nav p,
+	.login_system .nav p,
+	.signup_system .nav p {
+		font-size: 1.5vw;
+	}
+	.container h3,
+	.container_one_payment h3,
+	.login_system h3 {
+		font-size: 2.5vw;
+		text-align: center;
+		height: 4vh;
+	}
+
+	.container p,
+	.container_one_payment p,
+		{
+		font-size: 2vw;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 7vh;
+	}
+
+	.container button,
+	.container_one_payment button,
+	.login_system button,
+	.signup_system button{
+		font-size: 2vw;
+		padding: 0.5vw;
+	}
+
+
+	.container button:hover,
+	.container_one_payment button:hover,
+	.login_system button:hover,
+	.signup_system button:hover {
+		font-size: 2vw;
+	}
+
+
+	.container_one_payment h4,
+	.login_system h4 {
+		font-size: 2.5vw;
+
+	}
+
+	.container_one_payment label {
+
+		font-size: 1.5vw;
+		padding: 6px;
+		text-align: center;
+		margin-right: 0;
+
+	}
+
+	.container_one_payment label input {
+		margin-bottom: 5vh;
+	}
+
+	.container_one_payment .donation_amount .enter_amount {
+		height: 10vh;
+		margin-top: -5vh;
+	}
+
+	.container_one_payment .donation_amount .enter_amount img {
+		width: 5vw;
+
+
+	}
+
+	.container_one_payment .donation_amount .enter_amount p {
+
+		font-size: 2.5vw;
+	}
+
+	.container_one_payment .card_details {
+		background: rgba(255, 255, 255, 0.3);
+		border-radius: 20px;
+		display: grid;
+		grid-template-columns: 45% 55%;
+		cursor: pointer;
+		width: 80%;
+		align-items: center;
+		margin: 0 auto;
+		margin-bottom: 3vh;
+
+	}
+
+	.container_one_payment .card_details label {
+		font-size: 1.5vw;
+
+	}
+
+
+
+	.container_one_payment .card_details .card_visa img {
+		padding-top: 0;
+		width: 20px;
+		height: auto;
+		padding-right: 2px;
+		align-items: end;
+		place-self: center;
 		justify-self: end;
 
-}
-		
-.login_system .login-form .log_in_some{
-	font-size: 2vw;
+	}
+
+
+	.container_one_payment .card_details .card img {
+		width: 20px;
+		height: auto;
+		padding-right: 15px;
+		padding-top: 0;
+	}
+
+
+
+	/* LOG IN /SIGN UP SYSTEM DIFFRENT DATA STYLING */
+	.login_system .nav {
+		margin-bottom: 5vh;
+	}
+
+	.login_system .sentence {
+		grid-template-columns: 70% 30%;
+	}
+
+	.login_system .sentence .again {
+		margin-left: -1vw;
+	}
+
+	.login_system .login-form img,
+	.signup_system .register-form img{
+		width: 3vw;
+		height: auto;
+	}
+
+	.login_system .login-form input,
+	.signup_system .register-form input{
+		font-size: 2vw;
+		width: 70%;
+	}
+
+	.login_system .login-form .wrong_data {
+		font-size: 2vw;
+		width: 80%;
+	}
+
+	.login_system .login-form button {
+		margin-left: 15px;
+	}
+
+	.login_system .login-form .forgot_password h5 {
+		font-size: 1.5vw;
+		margin-top: 3px;
+
+	}
+
+
+	.login_system .login-form .forgot_password {
+		justify-self: end;
+
+	}
+
+	/* LOG IN /SIGNUP SYSTEM FB GOOGLE STYLING */
+	.login_system .login-form .log_in_some,
+	.signup_system .register-form .log_in_some {
+		font-size: 2vw;
+		width: 80%;
+		align-self: center;
+		margin-left: 5px;
+
+	}
+
+	.login_system .login-form .some img,
+	.signup_system .register-form .some img {
+		width: 5vw;
+		height: auto;
+
+	}
+	/* SIGNUP SYSTEM DIFFRENT STYLING */
+
+	
+.signup_system .register-form .personal_info {
+	display: grid;
+	grid-template-columns: 20% 80%;
 	width: 80%;
-	align-self: center;
-	margin-left: 5px;
+	height: 13vh;
+	align-items: end;
 
 }
-		
-		.login_system .login-form .log_in_some h5{
-			
-		}
 
-.login_system .login-form .some img{
-	width: 5vw;
-	height: auto;
+	.signup_system .register-form .personal_info img{
+		margin-bottom: 5vh;
+	}
+.signup_system .register-form .personal_info h5 {
+	font-family: "Raleway", sans-serif;
+	font-size: 2vw;
+	color: white;
+	font-weight: 200;
+	justify-self: start;
+		align-self: end;
 	
-		}
-		
-		/* POLLUTION TEXT */
-		
-			.pollution {
-			position: absolute;
-			right: 0;
-			top: 13vh;
-			background: rgba(0, 0, 0, 0.5);
-			font-family: "Montserrat", "sans-serif";
-			color: white;
-			font-weight: 400;
-			font-size: 2vw;
-			text-align: center;
-			display: block;
-			width: 35vw;
-			z-index: 10;
-		}
+}
 
+.signup_system .register-form input {
+	font-size: 1.9vw;
+	
+}
+
+
+div input:invalid:not(:placeholder-shown) ~ .correct::after {
+
+	font-size: 1.8vw;
+	
+
+}
+
+	
+	
+
+	/* POLLUTION TEXT */
+	.pollution {
+		position: absolute;
+		right: 0;
+		top: 13vh;
+		background: rgba(0, 0, 0, 0.5);
+		font-family: "Montserrat", "sans-serif";
+		color: white;
+		font-weight: 400;
+		font-size: 2vw;
+		text-align: center;
+		display: block;
+		width: 35vw;
+		z-index: 10;
+	}
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+	/* Donation system step 1*/
+	.pollution {
+		font-size: 1.7vw;
+	}
+
+	.container img,
+	.container_one_payment img,
+	.login_system img,
+	.signup_system img,
+	{
+		width: 8vw;
+	}
+
+	.container h3,
+	.container_one_payment h3 {
+		font-size: 2vw;
+	}
+
+	.container_one_payment h4 {
+		font-size: 1vw;
+	}
+
+	.container p,
+	.container_one_payment p,
+	.login_system p,
+	.signup_system p{
+		font-size: 1.3vw;
+	}
+
+	.container button,
+	.container_one_payment button,
+	.login_system button,
+	.signup_system button{
+		font-size: 1.5vw;
+	}
+
+	.container button:hover,
+	.container_one_payment button:hover,
+	.login_system button:hover,
+	.signup_system button:hover{
+		font-size: 1.5vw;
 	}
 
 
-	@media screen and (min-width: 992px) {
+	.container_one_payment .donation_amount .enter_amount {
+		margin-top: -8vh;
+	}
 
+	.container_one_payment h4 {
+		font-size: 1.8vw;
+		margin-bottom: 3vh;
 
-		/* Donation system step 1*/
-		.pollution {
-			font-size: 1.7vw;
-		}
+	}
 
-		.container img,
-		.container_one_payment img,
-		.login_system img{
-			width: 8vw;
-		}
+	.container_one_payment label {
+		font-size: 1.4vw;
 
-		.container h3,
-		.container_one_payment h3{
-			font-size: 2vw;
-		}
+	}
 
-		.container_one_payment h4{
-			font-size: 1vw;
-		}
-
-		.container p,
-		.container_one_payment p,
-		.login_system p{
-			font-size: 1.3vw;
-		}
-
-		.container button,
-		.container_one_payment button,
-		.login_system button{
-			font-size: 1.5vw;
-		}
-
-		.container button:hover,
-		.container_one_payment button:hover,
-		.login_system button:hover{
-			font-size: 1.5vw;
-		}
-
-
-		.container_one_payment .donation_amount .enter_amount {
-			margin-top: -8vh;
-		}
-
-		.container_one_payment h4 {
-			font-size: 1.8vw;
-			margin-bottom: 3vh;
-
-		}
-
-		.container_one_payment label {
-			font-size: 1.4vw;
-
-		}
-
-		.container_one_payment .donation_amount .enter_amount img {
-			width: 3.5vw;
-			justify-self: center;
+	.container_one_payment .donation_amount .enter_amount img {
+		width: 3.5vw;
+		justify-self: center;
 
 
 
-		}
+	}
 
-		.container_one_payment .donation_amount .enter_amount p {
+	.container_one_payment .donation_amount .enter_amount p {
 
-			font-size: 2vw;
-			justify-self: center;
-		}
+		font-size: 2vw;
+		justify-self: center;
+	}
 
 
-		.container_one_payment .card_details label {
-			font-size: 1.2vw;
-			align-self: center;
-			padding: 10px;
-		}
-		
-		.container_one_payment .card_details label input {
-			align-self: center;
-			margin-bottom: 0;
-		}
-		
-		
-			/* LOG IN SYSTEM DIFFRENT DATA STYLING */
-		.login_system .sentence{
-			grid-template-columns: 60% 40%;
-		}
-	
-		.login_system .sentence h4 {
-			    text-align: left;
-			padding-left: 2vw;
-		
-		}
-		
-		.login_system h4{
-			font-size: 2vw;
-		}
-		
-		.login_system .sentence .again{
-			margin-left: -4.5vw;
-		}
-		
-		.login_system .login-form img{
-			width: 2vw;
-			height: auto;
-			padding-top: 3vh;
-		}
+	.container_one_payment .card_details label {
+		font-size: 1.2vw;
+		align-self: center;
+		padding: 10px;
+	}
 
-		.login_system .login-form input{
-			font-size: 1.5vw;
-			width: 70%;
-		}
-		
-		.login_system .login-form .wrong_data{
-			font-size: 1vw;
-	
-		}
-		
-			.login_system .login-form .forgot_password h5{
-	font-size: 1vw;
-margin-top: 3px;
-				
-				
+	.container_one_payment .card_details label input {
+		align-self: center;
+		margin-bottom: 0;
+	}
 
-}
-		.login_system .login-form .forgot_password{
+
+	/* LOG IN SYSTEM DIFFRENT DATA STYLING */
+	.login_system .sentence {
+		grid-template-columns: 60% 40%;
+	}
+
+	.login_system .sentence h4 {
+		text-align: left;
+		padding-left: 2vw;
+
+	}
+
+	.login_system h4 {
+		font-size: 2vw;
+	}
+
+	.login_system .sentence .again {
+		margin-left: -4.5vw;
+	}
+
+	.login_system .login-form img,
+	.signup_system .register-form img
+	{
+		width: 2vw;
+		height: auto;
+		padding-top: 3vh;
+	}
+
+	.login_system .login-form input {
+		font-size: 1.2vw;
+		width: 70%;
+	}
+
+	.login_system .login-form .wrong_data {
+		font-size: 1vw;
+
+	}
+
+	.login_system .login-form .forgot_password h5 {
+		font-size: 1vw;
+		margin-top: 3px;
+
+
+
+	}
+	.login_system .login-form .forgot_password {
 		justify-self: end;
-			
-			
-
-}
-		
-	.login_system .login-form .log_in_some{
-	font-size: 1vw;
-}
-	
-
-.login_system .login-form .some img{
-	width: 3vw;
-	height: auto;
-	
-		}
 
 
-	
-		
+
 	}
 
+	.login_system .login-form .log_in_some,
+	.signup_system .register-form .log_in_some{
+		font-size: 1vw;
+	}
+
+
+	.login_system .login-form .some img,
+	.signup_system .register-form .some img{
+		width: 3vw;
+		height: auto;
+
+	}
+
+	.signup_system .register-form .some img{
+		padding-top: 3vh;
+	}
 	
+		/* SIGNUP SYSTEM DIFFRENT STYLING */
+
+	
+.signup_system .register-form .personal_info {
+	height: 14vh;
+	
+
+}
+	.signup_system .register-form .personal_info img{
+		margin-bottom: 5vh;
+	}
+.signup_system .register-form .personal_info h5 {
+	font-size: 1.5vw;
+	
+	
+}
+
+.signup_system .register-form input {
+	font-size: 1.3vw;
+	
+}
+
+
+div input:invalid:not(:placeholder-shown) ~ .correct::after {
+
+	font-size: 1.2vw;
+	
+
+}
+
+
+
+
+}
