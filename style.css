@@ -1,3 +1,80 @@
+/* MOBILE VERSION LOGGED IN - DONATE*/
+body{
+	margin:0 auto; 
+	
+}
+.lines_bg{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	position: fixed;
+ 
+}
+
+.lines_bg div{
+	display: inline-block;
+}
+
+.lines_bg .line1{
+	margin-left: 2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	width:2.5vw;
+
+}
+
+.lines_bg .line2{
+	margin-left: 4vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	
+
+}
+
+.lines_bg .line3{
+	margin-left: 27vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line4{
+	margin-left: 50vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	
+}
+
+.lines_bg .line5{
+	margin-left: 73vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line6{
+	margin-left: 96vw;
+	width:2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line7{
+	margin-left: 98vw;
+	width:2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
 /* MOBILE VERSION LOG IN -SIGN UP - DONATE FORMS*/
 
 /* UNIVERSAL ARROW NAVIGATION*/
