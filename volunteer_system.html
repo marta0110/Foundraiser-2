@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+SC|Raleway" rel="stylesheet">
+	<title>Document</title>
+</head>
+
+<body class="donation_system">
+	<div class="step_1">
+		<div class="container">
+			<img src="images/logo_white.png" alt="logo">
+			<h3> We need your help </h3>
+			<p>By volunteering in our community, you help animals who are forced to live in polluted conditions. Because of us - humans.</p>
+			<button type="button" class="button_login_payment"> Login </button>
+			<button class="button_signup" type="button"> Sign up</button>
+		</div>
+		<div onclick="GoBack()" ; class="donation_img">
+			<img src="images/login_bg_img.png" class="stretch" alt="lakes" />
+		</div>
+		<div class="pollution">
+			<h3> Pollution should never be the price of prosperity</h3>
+		</div>
+	</div>
+
+	<div class="login_system" style="display: none">
+
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="sign_up_button"> Sign up</p>
+			<p class="login_button"> Log in</p>
+
+		</div>
+		<h4> Hello,</h4>
+		<div class="sentence">
+			<h4> Good to see you</h4>
+			<h4 class="again"> again</h4>
+		</div>
+		<form class="login-form">
+			<div class="username_login_form">
+
+				<img src="images/login_icon.png" alt="login">
+				<input id="user_name" type="text" name='username' placeholder="user name" required minlength="3" maxlength="10">
+				<span class="required"></span>
+			</div>
+			<div class="username_password">
+				<img src="images/password_icon.png" alt="login">
+				<input id="user_pw" type="password" name='password' placeholder="password" required minlength="3" maxlength="10">
+				<span class="required"></span>
+			</div>
+			<div class="forgot_password">
+				<h5> Forgot password?</h5>
+			</div>
+			<div class="wrong_data"></div>
+			<button id='loginbutton'> Login </button>
+			<h5 class="log_in_some"> or log in using</h5>
+			<div class="some">
+				<img src="images/fb_icon.png" alt="fb">
+				<img src="images/google.png" alt="google">
+			</div>
+		</form>
+
+	</div>
+	
+	<div class="signup_system_step1">
+			<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="login_button"> Log in</p>
+			<p class="sign_up_button"> Sign up</p>
+		</div>
+			<h4> Hello,</h4>
+		<div class="sentence">
+			<h4>Welcome in our volunteer community</h4>
+			
+		</div>
+		
+		<form class="registration_step1" style="display: none">
+			
+			<div class="languages">
+			
+			<input id="languages" name="languages" value="" type="text" placeholder="Which languages do you speak?" required>
+			<span class="required"></span>
+			</div>
+			<div class="hear_about_us">
+				<input id="hear_about_us" name="hear_about_us" value="" type="text" placeholder="How did you hear about us?" required>
+			<span class="required"></span>
+			</div>
+			<div class="tshirt">
+			<p> What's your t-shirt size</p>
+			<select>
+				<option value='xs'> XS</option>
+				<option value='s'> S</option>
+				<option value='m'> M </option>
+				<option value='m'> L </option>
+				<option value='m'> XL </option>
+				<option value='m'> XXL </option>
+			</select>
+			</div>
+			
+			<p>As a member of KBH Lakes you have the possible to sign up for exciting events, courses and social member events. Also sign up the newsletter, and the event catalogue, and you will each month receive an email with news from us. 
+			</p>
+		
+			
+			
+			<button id='confirm'> Confirm </button>
+		</form>
+		
+		
+	</div>
+
+	<div class="signup_system" style="display: none">
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="login_button"> Log in</p>
+			<p class="sign_up_button"> Sign up</p>
+
+
+		</div>
+		<form class="register-form">
+			<div class="personal_info">
+				<img src="images/username.png" alt="fb">
+				<h5> PERSONAL INFO</h5>
+			</div>
+			<div class="firstname">
+				
+			
+			<input id="firstname" name="FName" value="" type="text" placeholder="first name" required minlength="3" maxlength="10">
+			 <span class="required"></span>
+                <span class="correct"></span>
+                </div>
+			<div class="lastname">
+			<input id="lastname" name="LName" value="" type="text" placeholder="last name" required minlength="3" maxlength="15">
+			<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+				<div class="username">
+			<input id="username" name="username" value="" type="text" placeholder="username" required minlength="3" maxlength="10">
+			<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			
+			<div class="username_email">
+				<img src="images/mail.png" alt="login">
+				<input type="text" name="email" value="" placeholder="email id" required minlength="6" maxlength="20">
+				<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			<div class="username_password">
+				<img src="images/password_icon.png" alt="password">
+				<input id="pw" name="password" value="" type="password" placeholder="password" required minlength="3" maxlength="14">
+				<span class="required"></span>
+                <span class="correct"></span>
+			</div>
+			<div class="img_upload">
+<img src="images/image.png" alt="image">
+				<input type="file" name="pic" accept="image/*">
+			</div>
+
+			<div class="wrong_username"></div>
+
+			<button id='registerbutton' onClick="addNewUser()"> Create </button>
+
+			<h5 class="log_in_some"> or register using</h5>
+			<div class="some">
+				<img src="images/fb_icon.png" alt="fb">
+				<img src="images/google.png" alt="google">
+			</div>
+		</form>
+	</div>
+	
+	
+	<div class="registration_complete" style="display: none">
+	
+		<div class="nav">
+			<img src="images/logo_white.png" alt="logo">
+			<p class="login_button"> Log in</p>
+			<p class="main_page"> Main page</p>
+		</div>
+	
+	<h3> Thank you <span class="name"> Jonas</span></h3>
+	<img class="bird" src="images/bird.png" alt="bird">
+	
+	<p class="confirmation">
+		You’re now a member of our list of awesome people. We messaged you
+		on <span class="mail"> account@gmail.com</span> to activate your account
+	</p>
+		
+		<div class='resend_mail'>
+		
+		<hr>
+		<p>If you didn't get any email.<span class="resend"> Resend e-mail.</span></p>
+		</div>
+		
+	</div>
+
+	<ul id="statuslist" style="display: none"></ul>
+
+	<ul id="userlist" style="display: none"></ul>
+
+	<template id="userinfo" style="display: none">
+        <li data-id="userid">
+            <span data-username="name">NAME</span>
+            <span data-password="password">password</span>
+
+        </li>
+    </template>
+
+	<p style="display: none"> lalalala</p>
+
+	<!--<script src="script.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="login.js"></script>
+	<script src="Userlist.js"></script>
+	<script src="registration.js"></script>
+	<script src="donation_login.js"></script>
+
+</body>
+</html

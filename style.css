@@ -47,9 +47,21 @@
 .container_one_payment,
 .login_system,
 .signup_system,
-.registration_complete{
+.signup_system_step1{
 	width: 80vw;
 	height: auto;
+	background-color: #262626;
+	border-radius: 2px;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	position: absolute;
+	z-index: 2;
+	padding-bottom: 3vw;
+}
+
+.registration_complete{
+		width: 80vw;
+	height: 100vh;
 	background-color: #262626;
 	border-radius: 2px;
 	margin-top: 10vh;
@@ -63,7 +75,8 @@
 .container_one_payment img,
 .login_system img,
 .signup_system img,
-.registration_complete .nav img{
+.registration_complete .nav img,
+.signup_system_step1 .nav img{
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
@@ -86,7 +99,8 @@
 .container_one_payment p,
 .login_system p,
 .signup_system p,
-.registration_complete p{
+.registration_complete p,
+.signup_system_step1 p{
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.5vw;
@@ -100,7 +114,8 @@
 .container button,
 .container_one_payment button,
 .login_system button,
-.signup_system button {
+.signup_system button,
+.signup_system_step1 button{
 	border: 5px solid #CE9596;
 	background-color: #262626;
 	width: 80%;
@@ -117,7 +132,8 @@
 .container button:hover,
 .container_one_payment button:hover,
 .login_system button:hover,
-.signup_system button:hover {
+.signup_system button:hover,
+.signup_system_step1 button:hover{
 	background-color: #CE9596;
 	width: 80%;
 	font-family: "Raleway", "sans-serif";
@@ -137,7 +153,8 @@
 }
 
 .login_system .nav,
-.signup_system .nav{
+.signup_system .nav,
+.signup_system_step1 .nav{
 	display: grid;
 	grid-template-columns: 60% 20% 20%;
 }
@@ -148,7 +165,8 @@
 }
 
 .login_system .nav p,
-.signup_system .nav p{
+.signup_system .nav p,
+.signup_system_step1 .p{
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -168,20 +186,24 @@
 	cursor: pointer;
 }
 
-.signup_system .nav .sign_up_button {
+.signup_system .nav .sign_up_button,
+.signup_system_step1 .nav .sign_up_button{
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
 	cursor: pointer;
 }
 
-.signup_system .nav .login_button {
+.signup_system .nav .login_button,
+.signup_system_step1 .nav .login_button{
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
+	padding-top: 3vh;
 }
 
 .signup_system .nav .login_button:hover,
+.signup_system_step1 .nav .login_button:hover,
 .registration_complete .nav .main_page:hover,
 .registration_complete .nav .login_button:hover{
 	color: #CE9596;
@@ -197,7 +219,8 @@
 	cursor: pointer;
 }
 
-.signup_system .nav .login_button:hover + .sign_up_button {
+.signup_system .nav .login_button:hover + .sign_up_button,
+.signup_system_step1 .nav .login_button:hover + .sign_up_button{
 	color: white;
 	text-decoration: none;
 
@@ -215,7 +238,8 @@
 	padding-top: 3vh;
 }
 
-.login_system h4 {
+.login_system h4,
+.signup_system_step1 h4{
 	color: white;
 	padding-top: 2vh;
 	font-family: "Raleway", "sans-serif";
@@ -226,7 +250,7 @@
 	margin: 0 auto;
 }
 
-.login_system .sentence {
+.login_system .sentence{
 	display: grid;
 	grid-template-columns: 52% 47%;
 	margin: 0;
@@ -302,7 +326,8 @@
 
 }
 
-.signup_system .register-form {
+.signup_system .register-form,
+signup_system_step1 registration_step1{
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 80%;
@@ -431,7 +456,8 @@
 }
 
 .container_one_payment .donation_amount .enter_amount input:focus,
-.login_system .login-form input:focus {
+.login_system .login-form input:focus,
+.signup_system_step1 .registration_step1 input:focus{
 	border-bottom: 2px solid #CE9596;
 	color: #CE9596;
 
@@ -528,7 +554,8 @@
 	justify-self: start;
 }
 
-.signup_system .register-form input {
+.signup_system .register-form input,
+.signup_system_step1 .registration_step1 input{
 	background-color: #262626;
 	border: 0;
 	border-bottom: 2px solid white;
@@ -617,9 +644,47 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	cursor: pointer;
 }
 
-.registration_complete .confirmation{
-	margin-bottom: 10vh;
+
+.registration_complete .resend_mail{
+	cursor: pointer;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+		
 }
+
+
+/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
+
+.signup_system_step1 .registration_step1{
+	padding-top: 5vh;
+}
+
+.signup_system_step1 .registration_step1 .tshirt{
+	display: grid;
+	grid-template-columns: 80% 20%;
+	width: 80%;
+	padding-top: 2vh;
+}
+
+.signup_system_step1 .registration_step1 .tshirt select{
+
+    color: #CE9596;
+    font-family: "Raleway", "sans-serif";
+    font-weight: 100;
+    font-size: 3vw;
+    border: 0;
+    border-bottom: 2px solid #CE9596;
+    background-color: #262626;
+    width: 50px;
+    justify-self: center;
+    margin: 0 auto;
+	align-self: start;
+	justify-self: start;
+}
+
+
 
 @media screen and (min-width: 650px) {
 
@@ -671,8 +736,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 100%;
 	}
 
-	.container,
-	.registration_complete{
+	.container{
 		width: 36%;
 		height: 101%;
 		margin-top: -10px;
@@ -681,9 +745,18 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	}
 	
+	.registration_complete{
+			width: 36%;
+		height: 110%;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding-bottom: 0;
+	}
+	
 
 	.login_system,
-	.signup_system {
+	.signup_system,
+	.signup_system_step1{
 		width: 36%;
 		height: auto;
 		margin-top: -10px;
@@ -696,7 +769,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment .nav img,
 	.login_system .nav img,
 	.signup_system .nav img,
-	.registration_complete .nav img{
+	.registration_complete .nav img,
+	.signup_system_step1 .nav img{
 		width: 10vw;
 		height: auto;
 		padding-top: 3vw;
@@ -706,7 +780,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment .nav p,
 	.login_system .nav p,
 	.signup_system .nav p,
-	.registration_complete .nav p{
+	.registration_complete .nav p,
+	.signup_system_step1 .nav p{
 		font-size: 1.5vw;
 	}
 	.container h3,
@@ -720,7 +795,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	.container p,
 	.container_one_payment p,
-	.registration_complete p{
+	.registration_complete p,
+	.signup_system_step1 p{
 		font-size: 2vw;
 		width: 80%;
 		margin: 0 auto;
@@ -730,7 +806,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container button,
 	.container_one_payment button,
 	.login_system button,
-	.signup_system button{
+	.signup_system button,
+	.signup_system_step1 button{
 		font-size: 2vw;
 		padding: 0.5vw;
 	}
@@ -739,13 +816,15 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container button:hover,
 	.container_one_payment button:hover,
 	.login_system button:hover,
-	.signup_system button:hover {
+	.signup_system button:hover,
+	.signup_system_step1 button:hover{
 		font-size: 2vw;
 	}
 
 
 	.container_one_payment h4,
-	.login_system h4 {
+	.login_system h4,
+	.signup_system_step1 h4{
 		font-size: 2.5vw;
 
 	}
@@ -840,7 +919,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 	.login_system .login-form input,
-	.signup_system .register-form input{
+	.signup_system .register-form input,
+	.signup_system_step1 .registration_step1 input{
 		font-size: 2vw;
 		width: 70%;
 	}
@@ -961,6 +1041,26 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		z-index: 10;
 	}
 
+	
+
+/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
+
+
+.signup_system_step1 .registration_step1 .tshirt{
+	display: grid;
+	grid-template-columns: 90% 10%;
+	width: 80%;
+	padding-top: 2vh;
+}
+
+.signup_system_step1 .registration_step1 .tshirt select{
+
+   
+    font-size: 2vw;
+    width: 50px;
+    
+}
+
 }
 
 
@@ -976,7 +1076,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment img,
 	.login_system img,
 	.signup_system img,
-	.registration_complete img{
+	.registration_complete img,
+	.signup_system_step1 img{
 		width: 8vw;
 	}
 
@@ -986,7 +1087,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		font-size: 2vw;
 	}
 
-	.container_one_payment h4 {
+	.container_one_payment h4,
+	.signup_system_step1 h5{
 		font-size: 1vw;
 	}
 
@@ -994,21 +1096,24 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment p,
 	.login_system p,
 	.signup_system p,
-	.registration_complete p{
+	.registration_complete p,
+	.signup_system_step1 p{
 		font-size: 1.3vw;
 	}
 
 	.container button,
 	.container_one_payment button,
 	.login_system button,
-	.signup_system button{
+	.signup_system button,
+	.signup_system_step1 button{
 		font-size: 1.5vw;
 	}
 
 	.container button:hover,
 	.container_one_payment button:hover,
 	.login_system button:hover,
-	.signup_system button:hover{
+	.signup_system button:hover,
+	.signup_system_step1 button:hover{
 		font-size: 1.5vw;
 	}
 
@@ -1140,7 +1245,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	
 }
 
-.signup_system .register-form input {
+.signup_system .register-form input,
+.signup_system_step1 .registration_step1 input{
 	font-size: 1.3vw;
 	
 }
@@ -1179,6 +1285,23 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		
 		
 	}
+	
+	/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
+
+
+.signup_system_step1 .registration_step1 .tshirt{
+	display: grid;
+	grid-template-columns: 90% 10%;
+	width: 80%;
+	padding-top: 2vh;
+}
+
+.signup_system_step1 .registration_step1 .tshirt select{
+    font-size: 1.2vw;
+    width: 50px;
+    
+}
+
 
 
 
