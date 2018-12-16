@@ -34,6 +34,20 @@ function  addNewUser(){
     .then(d => {
         console.log(d);
     })
+	
+	
+function saveInfo(){
+  localStorage.setItem("name", registerform.elements.FName.value);
+	  localStorage.setItem("mail", registerform.elements.email.value);
+	
+	console.log("hi");
+	 const regName = localStorage.name;
+	const email = localStorage.email;
+	
+	  document.querySelector('.name').textContent = regName;
+	
+}
+	
 }
    function getAllUsers() {
             fetch(endpoint)
@@ -52,7 +66,6 @@ function  addNewUser(){
             root.appendChild(clone);
 
         }
-
 
 
 /// user already exists

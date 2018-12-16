@@ -86,7 +86,7 @@ console.log(localStorage);
 
 function logOut (){
     window.localStorage.clear();
-	window.location='login.html'
+	window.location='donation_system.html'
 };
 
 

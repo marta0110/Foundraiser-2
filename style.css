@@ -46,7 +46,8 @@
 .container,
 .container_one_payment,
 .login_system,
-.signup_system {
+.signup_system,
+.registration_complete{
 	width: 80vw;
 	height: auto;
 	background-color: #262626;
@@ -61,14 +62,16 @@
 .container img,
 .container_one_payment img,
 .login_system img,
-.signup_system img {
+.signup_system img,
+.registration_complete .nav img{
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
 }
 
 .container h3,
-.container_one_payment h3 {
+.container_one_payment h3,
+.registration_complete h3{
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 400;
@@ -82,7 +85,8 @@
 .container p,
 .container_one_payment p,
 .login_system p,
-.signup_system p{
+.signup_system p,
+.registration_complete p{
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.5vw;
@@ -133,20 +137,32 @@
 }
 
 .login_system .nav,
-.signup_system .nav {
+.signup_system .nav{
 	display: grid;
 	grid-template-columns: 60% 20% 20%;
 }
 
+.registration_complete .nav{
+	display: grid;
+	grid-template-columns: 40% 30% 30%;
+}
+
 .login_system .nav p,
-.signup_system .nav p {
+.signup_system .nav p{
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
 	cursor: pointer;
 }
 
-.login_system .nav .sign_up_button {
+.registration_complete .nav .main_page,
+.registration_complete .nav .login_button{
+	padding-top: 3vh;
+	cursor: pointer;
+	color: white;
+}
+
+.login_system .nav .sign_up_button{
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
@@ -165,7 +181,9 @@
 	cursor: pointer;
 }
 
-.signup_system .nav .login_button:hover {
+.signup_system .nav .login_button:hover,
+.registration_complete .nav .main_page:hover,
+.registration_complete .nav .login_button:hover{
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -577,6 +595,31 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 }
 
 
+/* registration confirmation diffrent styling */ 
+.registration_complete .bird{
+	  width: 80%;
+	height:auto;
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
+}
+
+.registration_complete .name,
+.registration_complete .mail,
+.registration_complete .resend{
+	color: #CE9596;
+}
+
+.registration_complete .resend_mail p{
+	font-size: 2.5vw;
+	cursor: pointer;
+}
+
+.registration_complete .confirmation{
+	margin-bottom: 10vh;
+}
 
 @media screen and (min-width: 650px) {
 
@@ -628,7 +671,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 100%;
 	}
 
-	.container {
+	.container,
+	.registration_complete{
 		width: 36%;
 		height: 101%;
 		margin-top: -10px;
@@ -636,6 +680,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-bottom: 0;
 
 	}
+	
 
 	.login_system,
 	.signup_system {
@@ -650,7 +695,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container img,
 	.container_one_payment .nav img,
 	.login_system .nav img,
-	.signup_system .nav img{
+	.signup_system .nav img,
+	.registration_complete .nav img{
 		width: 10vw;
 		height: auto;
 		padding-top: 3vw;
@@ -659,12 +705,14 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container img,
 	.container_one_payment .nav p,
 	.login_system .nav p,
-	.signup_system .nav p {
+	.signup_system .nav p,
+	.registration_complete .nav p{
 		font-size: 1.5vw;
 	}
 	.container h3,
 	.container_one_payment h3,
-	.login_system h3 {
+	.login_system h3,
+	.registration_complete h3{
 		font-size: 2.5vw;
 		text-align: center;
 		height: 4vh;
@@ -672,7 +720,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	.container p,
 	.container_one_payment p,
-		{
+	.registration_complete p{
 		font-size: 2vw;
 		width: 80%;
 		margin: 0 auto;
@@ -872,9 +920,31 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 }
 
-	
-	
+/* registration confirmation diffrent styling */ 
+.registration_complete .bird{
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+}
 
+
+.registration_complete .resend_mail{
+	cursor: pointer;
+	bottom: 0;
+	position: absolute;
+	
+	
+}
+	
+	.registration_complete .resend_mail p{
+		font-size: 1.7vw;
+		padding-top: 1vh;
+	}
+
+	.registration_complete .resend_mail hr{
+		border: 0.5px solid white;
+		width: 90%;
+		margin: 0 auto;
+	}
 	/* POLLUTION TEXT */
 	.pollution {
 		position: absolute;
@@ -906,12 +976,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment img,
 	.login_system img,
 	.signup_system img,
-	{
+	.registration_complete img{
 		width: 8vw;
 	}
 
 	.container h3,
-	.container_one_payment h3 {
+	.container_one_payment h3,
+	.registration_complete h3{
 		font-size: 2vw;
 	}
 
@@ -922,7 +993,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container p,
 	.container_one_payment p,
 	.login_system p,
-	.signup_system p{
+	.signup_system p,
+	.registration_complete p{
 		font-size: 1.3vw;
 	}
 
@@ -1081,6 +1153,32 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 }
 
+/* registration confirmation diffrent styling */ 
+.registration_complete .bird{
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	width: 70%;
+}
+
+
+.registration_complete .resend_mail{
+	width: 80%;
+	margin-left: 10%;
+	
+	
+	
+}
+	
+	.registration_complete .resend_mail p{
+		font-size: 1vw;
+		padding-top: 1vh;
+	}
+
+	.registration_complete .resend_mail hr{
+		width: 100%;
+		
+		
+	}
 
 
 

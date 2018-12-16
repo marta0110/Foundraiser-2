@@ -21,6 +21,11 @@ $(".login_button").on('click',function(){
    $(".login_system").slideToggle(), "slow";
    });
 
+$("#registerbutton").on('click',function(){
+ $(".registration_complete").slideToggle(), "slow";
+});
+
+
 
 function GoBack(){
 	 window.location='donation_system.html'

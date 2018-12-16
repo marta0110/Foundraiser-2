@@ -32,22 +32,22 @@ function checkLogin(username, password){
 			 
 			console.log("test")
 	
-				 document.querySelector(".wrong_data").textContent= "Please insert correct data";
-	 
+			   localStorage.setItem('name', data[0].username);
+			 localStorage.setItem('FName', data[0].FName);
+			 localStorage.setItem('LName', data[0].LName);
+            localStorage.setItem('avatar', data[0].avatar);
+            localStorage.setItem('id', data[0].id);
+             window.location='donation.html'	
 			
 			
             //something is wrong
         } else {
 			
 		
- 
+  document.querySelector(".wrong_data").textContent= "Please insert correct data";
+	 
        
-	 	     localStorage.setItem('name', data[0].username);
-			 localStorage.setItem('FName', data[0].FName);
-			 localStorage.setItem('LName', data[0].LName);
-            localStorage.setItem('avatar', data[0].avatar);
-            localStorage.setItem('id', data[0].id);
-             window.location='donation.html'
+	 	  
 	 
     }})
 }
