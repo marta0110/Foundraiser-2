@@ -1,79 +1,121 @@
-/* MOBILE VERSION LOGGED IN - DONATE*/
 body{
 	margin:0 auto; 
-	
+	box-sizing: border-box;
 }
-.lines_bg{
+
+/* MOBILE VERSION LOGGED IN - DONATE*/
+/* slideshow*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100vw;
+	height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.container_donation_loggedin .slideshow-container .mySlides img{
 	width: 100vw;
-	height: 100vh;
-	position: relative;
-	position: fixed;
- 
+	height: auto;
 }
 
-.lines_bg div{
-	display: inline-block;
+/* Caption text */
+.container_donation_loggedin .slideshow-container .text {
+  color: #f2f2f2;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+background-color: #262626;
 }
 
-.lines_bg .line1{
-	margin-left: 2vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
+.container_donation_loggedin .slideshow-container .text h5{
+	font-family: "Montserrat", "sans-serif";
+	color: white;
+	font-weight: 400;
+	font-size: 5vw;
+	text-align: center;
+	height: 1vh;
+}
+
+.container_donation_loggedin .slideshow-container .text .time{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	text-align: center;
+}
+
+
+.container_donation_loggedin .slideshow-container .text .time h6{
+	font-family: "Raleway", "sans-serif";
+	color: white;
+	font-size: 3.5vw;
+	font-weight: 100;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 2vh;
+}
+
+.container_donation_loggedin .slideshow-container .text p{
+	font-family: "Raleway", "sans-serif";
+	color: white;
+	font-size: 3.3vw;
+	font-weight: 100;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 5vh;
+}
+
+/* The dots/bullets/indicators */
+
+.dots{
+	margin-left: 42vw;
+	padding-top: 2vh;
+	z-index: 10;
 	position: absolute;
-	width:2.5vw;
-
 }
-
-.lines_bg .line2{
-	margin-left: 4vw;
-	width:23vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E8AFB1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 	
-
 }
 
-.lines_bg .line3{
-	margin-left: 27vw;
-	width:23vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
+.active {
+  background-color:  #BC8A8C;
 }
 
-.lines_bg .line4{
-	margin-left: 50vw;
-	width:23vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-	
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.lines_bg .line5{
-	margin-left: 73vw;
-	width:23vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.lines_bg .line6{
-	margin-left: 96vw;
-	width:2vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.lines_bg .line7{
-	margin-left: 98vw;
-	width:2vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
+
 
 /* MOBILE VERSION LOG IN -SIGN UP - DONATE FORMS*/
 
@@ -790,6 +832,33 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 @media screen and (min-width: 720px) {
 
+/*donation_loggedin.html styling*/	
+	
+/* Slideshow container - donation_loggedin.html*/
+
+
+
+/* Caption text */
+.container_donation_loggedin .slideshow-container .text {
+  color: white;
+  
+}
+
+.container_donation_loggedin .slideshow-container .text h5{
+	font-size: 3.5vw;
+	
+}
+
+.container_donation_loggedin .slideshow-container .text .time h6{
+	font-size: 2.5vw;
+	
+}
+
+.container_donation_loggedin .slideshow-container .text p{
+	font-size: 2.2vw;
+	
+}
+
 
 
 	/* TABLET VERSION FOR SIGN UP LOGIN DONATE FORMS*/
@@ -1379,6 +1448,114 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
     
 }
 
+	
+	/* LINES FOR WEB VERSION */
+
+.lines_bg{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	position: fixed;
+ 
+}
+
+.lines_bg div{
+	display: inline-block;
+}
+
+.lines_bg .line1{
+	margin-left: 2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	width:2.5vw;
+
+}
+
+.lines_bg .line2{
+	margin-left: 4vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	
+
+}
+
+.lines_bg .line3{
+	margin-left: 27vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line4{
+	margin-left: 50vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+	
+}
+
+.lines_bg .line5{
+	margin-left: 73vw;
+	width:23vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line6{
+	margin-left: 96vw;
+	width:2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+.lines_bg .line7{
+	margin-left: 98vw;
+	width:2vw;
+	 border-left: 1px solid gray;
+	height: 100vh;
+	position: absolute;
+}
+
+	/*donation_loggedin.html styling*/	
+	
+/* Slideshow container - donation_loggedin.html*/
+
+
+
+/* Caption text */
+.container_donation_loggedin .slideshow-container .text {
+  position: absolute;
+	background-color: transparent;
+	width: 50%;
+	z-index: 5;
+  
+}
+
+.container_donation_loggedin .slideshow-container .text h5{
+	font-size: 2.5vw;
+	
+}
+
+.container_donation_loggedin .slideshow-container .text .time h6{
+	font-size: 2vw;
+	
+}
+
+.container_donation_loggedin .slideshow-container .text p{
+	font-size: 1.7vw;
+	
+}
+
+.dots{
+		margin-left: 47vw;
+	}
 
 
 
