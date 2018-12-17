@@ -19,6 +19,7 @@ $(".sign_up_button").on('click',function(){
 
 $(".login_button").on('click',function(){
    $(".login_system").slideToggle(), "slow";
+	$(".signup_system").slideToggle(), "slow";
    });
 
 $("#registerbutton").on('click',function(){
@@ -28,6 +29,15 @@ $("#registerbutton").on('click',function(){
 $("#confirm").on('click',function(){
  $(".signup_system").slideToggle(), "slow";
 });
+
+$(".button_signup_volunteer").on('click',function(){
+   $(".signup_system_step1").slideToggle(), "slow";
+
+   });
+ 
+
+
+
 
 
 function GoBack(){

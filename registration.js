@@ -11,6 +11,7 @@ registerform.addEventListener("submit", e => {
 //sending data to database
 function  addNewUser(){
 
+		checkUser();
 // here add the check Existing user as a condition if the username doesn't exist, then execute the following, else alert message
     const payload = {
         FName: registerform.elements.FName.value,
@@ -33,24 +34,24 @@ function  addNewUser(){
     .then(res => res.json())
     .then(d => {
         console.log(d);
+	  saveInfo(d);
     })
 	
 	
-function saveInfo(){
-  localStorage.setItem("name", registerform.elements.FName.value);
-	  localStorage.setItem("mail", registerform.elements.email.value);
+function saveInfo(data){
+	console.log(data);
+  
 	
-	console.log("hi");
-	 const regName = localStorage.name;
-	const email = localStorage.email;
+	  document.querySelector('.name').textContent = data.FName;
+	document.querySelector('.mail').textContent = data.email;
 	
-	  document.querySelector('.name').textContent = regName;
 	
 }
 	
 }
+
    function getAllUsers() {
-            fetch(endpoint)
+            fetch(endpointR)
                 .then(res => res.json())
                 .then(showAllUsers)
         }
@@ -62,21 +63,13 @@ function saveInfo(){
         function showSingleUser(users) {
             const clone = template.cloneNode(true);
           
-            clone.querySelector("p").textContent = users.username;
+        
             root.appendChild(clone);
 
         }
 
 
-/// user already exists
-
-registerform.addEventListener('submit',(e)=>{
-    e.preventDefault()
-    const ExistingUser = registerform.elements.username.value;
-    console.log("user" ,ExistingUser)
-	checkUser();
-	
-
+ //user already exists
 
 function checkUser(ExistingUser){
 
@@ -84,8 +77,8 @@ function checkUser(ExistingUser){
     .then(res=>res.json())
     .then(data=>{
         console.log("lala")
+		 console.log(data[0].username)
         if(data.username == username){
-			 console.log(data)
 			   console.log("lala2")
 			 
 document.querySelector(".wrong_username").textContent= "This username already exists";
@@ -93,7 +86,9 @@ document.querySelector(".wrong_username").textContent= "This username already ex
         } 
       
     })
-}})
+}
+
+
 
 
 

@@ -11,11 +11,14 @@
 <body class="donation_system">
 	<div class="step_1">
 		<div class="container">
+					<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
+			<p class="mainpage_button">Home</p>
+		</div>
 			<h3> We need your help </h3>
 			<p>By volunteering in our community, you help animals who are forced to live in polluted conditions. Because of us - humans.</p>
 			<button type="button" class="button_login_payment"> Login </button>
-			<button class="button_signup" type="button"> Sign up</button>
+			<button class="button_signup_volunteer" type="button"> Sign up</button>
 		</div>
 		<div onclick="GoBack()" ; class="donation_img">
 			<img src="images/login_bg_img.png" class="stretch" alt="lakes" />
@@ -26,6 +29,9 @@
 	</div>
 
 	<div class="login_system" style="display: none">
+			<div onclick="GoBack()" class="arrow">
+			<img onclick="GoBack()" class="arrow" src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'" alt="arrow_navigation">
+		</div>
 
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
@@ -42,12 +48,12 @@
 			<div class="username_login_form">
 
 				<img src="images/login_icon.png" alt="login">
-				<input id="user_name" type="text" name='username' placeholder="user name" required minlength="3" maxlength="10">
+				<input id="user_name" type="text" name='username' placeholder="user name" required minlength="3" maxlength="30">
 				<span class="required"></span>
 			</div>
 			<div class="username_password">
 				<img src="images/password_icon.png" alt="login">
-				<input id="user_pw" type="password" name='password' placeholder="password" required minlength="3" maxlength="10">
+				<input id="user_pw" type="password" name='password' placeholder="password" required minlength="3" maxlength="30">
 				<span class="required"></span>
 			</div>
 			<div class="forgot_password">
@@ -64,7 +70,10 @@
 
 	</div>
 	
-	<div class="signup_system_step1">
+	<div class="signup_system_step1" style="display: none">
+		<div onclick="GoBack()" class="arrow">
+			<img onclick="GoBack()" class="arrow" src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'" alt="arrow_navigation">
+		</div>
 			<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
 			<p class="login_button"> Log in</p>
@@ -111,6 +120,9 @@
 	</div>
 
 	<div class="signup_system" style="display: none">
+	<div onclick="GoBack()" class="arrow">
+			<img onclick="GoBack()" class="arrow" src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'" alt="arrow_navigation">
+		</div>
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
 			<p class="login_button"> Log in</p>
@@ -172,6 +184,9 @@
 	
 	
 	<div class="registration_complete" style="display: none">
+	<div onclick="GoBack()" class="arrow">
+			<img onclick="GoBack()" class="arrow" src="images/arrow.png" onmouseover="this.src='images/arrow2.png'" onmouseout="this.src='images/arrow.png'" alt="arrow_navigation">
+		</div>
 	
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
@@ -206,9 +221,6 @@
 
         </li>
     </template>
-
-	<p style="display: none"> lalalala</p>
-
 	<!--<script src="script.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="login.js"></script>

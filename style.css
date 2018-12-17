@@ -188,20 +188,29 @@ background-color: #262626;
 /* UNIVERSAL ARROW NAVIGATION*/
 
 .container_one_payment .arrow,
-.login_system .arrow {
+.login_system .arrow,
+.signup_system .arrow,
+.signup_system_step1 .arrow,
+.registration_complete .arrow{
 	width: 80%;
 	cursor: pointer;
 	padding-left: 2vw;
 }
 
 .container_one_payment .arrow img,
-.login_system .arrow img {
+.login_system .arrow img,
+.signup_system .arrow img,
+.signup_system_step1 .arrow img,
+.registration_complete .arrow img{
 	width: 15px;
 	height: auto;
 }
 
 .container_one_payment .arrow:hover,
-.login_system .arrow:hover {
+.login_system .arrow:hover,
+.signup_system .arrow .arrow:hover,
+.signup_system_step1 .arrow:hover,
+.registration_complete .arrow:hover{
 	padding-left: 1vw;
 	transition: 0.5s;
 }
@@ -256,12 +265,12 @@ background-color: #262626;
 	padding-bottom: 3vw;
 }
 
-.container img,
 .container_one_payment img,
 .login_system img,
 .signup_system img,
 .registration_complete .nav img,
-.signup_system_step1 .nav img{
+.signup_system_step1 .nav img,
+.container .nav img{
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
@@ -337,6 +346,11 @@ background-color: #262626;
 	grid-template-columns: 20% 80%;
 }
 
+.container .nav{
+		display: grid;
+	grid-template-columns: 80% 20%;
+}
+
 .login_system .nav,
 .signup_system .nav,
 .signup_system_step1 .nav{
@@ -380,7 +394,8 @@ background-color: #262626;
 }
 
 .signup_system .nav .login_button,
-.signup_system_step1 .nav .login_button{
+.signup_system_step1 .nav .login_button,
+.container .nav .mainpage_button{
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
@@ -390,7 +405,8 @@ background-color: #262626;
 .signup_system .nav .login_button:hover,
 .signup_system_step1 .nav .login_button:hover,
 .registration_complete .nav .main_page:hover,
-.registration_complete .nav .login_button:hover{
+.registration_complete .nav .login_button:hover,
+.container .nav .mainpage_button:hover{
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -1051,7 +1067,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 
-	.container img,
+	.container .nav img,
 	.container_one_payment .nav img,
 	.login_system .nav img,
 	.signup_system .nav img,
@@ -1062,12 +1078,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-top: 3vw;
 	}
 
-	.container img,
+	
 	.container_one_payment .nav p,
 	.login_system .nav p,
 	.signup_system .nav p,
 	.registration_complete .nav p,
-	.signup_system_step1 .nav p{
+	.signup_system_step1 .nav p,
+	.container .nav p{
 		font-size: 1.5vw;
 	}
 	.container h3,
@@ -1363,7 +1380,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.login_system img,
 	.signup_system img,
 	.registration_complete img,
-	.signup_system_step1 img{
+	.signup_system_step1 img,
+	.container .nav img{
 		width: 8vw;
 	}
 
@@ -1378,12 +1396,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		font-size: 1vw;
 	}
 
-	.container p,
+	
 	.container_one_payment p,
 	.login_system p,
 	.signup_system p,
 	.registration_complete p,
-	.signup_system_step1 p{
+	.signup_system_step1 p,
+	.container .nav p{
 		font-size: 1.3vw;
 	}
 
