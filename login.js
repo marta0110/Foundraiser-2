@@ -31,7 +31,7 @@ function checkLogin(username, password){
 			 localStorage.setItem('LName', data[0].LName);
             localStorage.setItem('avatar', data[0].avatar);
             localStorage.setItem('id', data[0].id);
-             window.location='donation.html';
+             window.location='donation_loggedin.html';
 	 
 			
 			

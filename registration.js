@@ -22,9 +22,9 @@ function  addNewUser(){
 		avatar: registerform.elements.pic.accept,
 
     };
-	checkUser(registerform.elements.username.value);
-	
-	if(username.length > 2 && FName.length > 2 && LName.length > 2 && password.length > 2 && email.length > 2){
+//	checkUser(registerform.elements.username.value);
+//	
+//	if(username.length > 2 && FName.length > 2 && LName.length > 2 && password.length > 2 && email.length > 2){
 		console.log("test");
 	
   fetch(endpointR, {
@@ -40,7 +40,7 @@ function  addNewUser(){
         console.log(d);
 	  saveInfo(d);
     })
-	}
+	
 	
 	function saveInfo(data){
 		console.log(data);

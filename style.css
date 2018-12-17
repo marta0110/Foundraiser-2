@@ -1,185 +1,239 @@
-body{
-	margin:0 auto; 
+body {
+	margin: 0 auto;
 	box-sizing: border-box;
 }
 
 /* MOBILE VERSION LOGGED IN - DONATE*/
 
-.sidenav_scroll{
+.sidenav_scroll {
 	display: none;
 }
+.header {
+	display: none;
+}
+
+/* MOBILE VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+
+.contribiution_text{
+	width: 100vw;
+	height: auto;
+	padding-top: 5vh;
+}
+
+.contribiution_text h7{
+	font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+}
+
+.contribiution_text h6{
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 5vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 10vw;
+}
+
+.contribiution_text p{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.contribiution_text .save_lakes{
+		font-family: "Montserrat", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	margin-right: 10vw;
+	
+}
 /* wrapper menu */
-.bg_nav{
-background-color: #CE9596;
-	width: 60px;
-	height: 60px;
-z-index: 10;
+
+.bg_nav {
+	background-color: #CE9596;
+	width: 55px;
+	height: 55px;
+	z-index: 10;
 	align-items: center;
 	margin: 0 auto;
 	border-radius: 100%;
 	justify-content: center;
 	margin-right: 3vw;
 	margin-top: 3vw;
-	  transition: all .5s ease-in-out;
-	
+	transition: all .5s ease-in-out;
 }
 
+.bg_nav:hover {
+	border-radius: 0;
 
-.bg_nav:hover{
-	 border-radius:0;
-	 
 }
 
 .wrapper-menu {
 	margin-top: 2vh;
-	 display: block;
-    margin-left: auto;
-    margin-right: auto;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 330ms ease-out;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: transform 330ms ease-out;
 	z-index: 10;
 }
 
 .wrapper-menu.open {
-  transform: rotate(-45deg);  
+	transform: rotate(-45deg);
 }
 
 .line-menu {
-border-bottom: 2px solid white;
-  border-radius: 5px;
-  width: 100%;
-z-index: 10;
-	
+	border-bottom: 2px solid white;
+	border-radius: 10px;
+	width: 100%;
+	z-index: 10;
 
 }
 
+
 .line-menu.half {
-  width: 50%;
+	width: 50%;
+	border-bottom: 1.8px solid white;
+	border-radius: 10px;
+	z-index: 10;
 }
 
 .line-menu.start {
-  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transform-origin: right;
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: right;
 }
 
 .open .line-menu.start {
-  transform: rotate(-90deg) translateX(3px);
+	transform: rotate(-90deg) translateX(3px);
 }
 
 .line-menu.end {
-  align-self: flex-end;
-  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transform-origin: left;
+	align-self: flex-end;
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: left;
 }
 
 .open .line-menu.end {
-  transform: rotate(-90deg) translateX(-3px);
+	transform: rotate(-90deg) translateX(-3px);
 }
 
 
 /*side menu */
+
 .container_donation_loggedin .sidenav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  z-index: 6;
-  top: 0;
-  right: 0;
-  background-color: #CE9596;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 15vh;
+	height: 100vh;
+	width: 0;
+	position: fixed;
+	z-index: 6;
+	top: 0;
+	right: 0;
+	background-color: #CE9596;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 15vh;
 
 
 }
 
 .container_donation_loggedin .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.3s;
 	font-family: "Raleway", "sans-serif";
 	font-size: 3.5vw;
 	font-weight: 100;
 	justify-self: start;
-	
+
 
 }
 
-.container_donation_loggedin .sidenav{
+.container_donation_loggedin .sidenav {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 10% 90%;
 	grid-auto-rows: 50px;
 	grid-auto-columns: 100px;
-   margin: 0 auto;
- 
+	margin: 0 auto;
+
 
 }
 
-.container_donation_loggedin .sidenav hr{
-	width: 30px;
-	border:0;
+.container_donation_loggedin .sidenav hr {
+	width: 20px;
+	border: 0;
 	border-top: 0.5px solid white;
 	margin-top: 2vh;
-	margin-left:  20vh;
-	
+	margin-left: 2vw;
+
 }
-.container_donation_loggedin .menu{
+
+.container_donation_loggedin .menu {
 	cursor: pointer;
 	z-index: 10;
 	position: absolute;
 	right: 2vh;
-	top:2vh;
+	top: 2vh;
 	width: 10vw;
 }
 
-.container_donation_loggedin .sidenav a:hover{
-  color: #262626;
+.container_donation_loggedin .sidenav a:hover {
+	color: #262626;
 }
 
 .container_donation_loggedin .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+	position: absolute;
+	top: 0;
+	left: 25px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
 /* slideshow*/
-.mySlides {display: none;}
-img {vertical-align: middle;}
 
-/* Slideshow container */
-.slideshow-container {
-  width: 100vw;
-	height: auto;
-  position: relative;
-  margin: auto;
+.mySlides {
+	display: none;
 }
 
-.container_donation_loggedin .slideshow-container .mySlides img{
+img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+	width: 100vw;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+.container_donation_loggedin .slideshow-container .mySlides img {
 	width: 100vw;
 	height: auto;
 }
 
 /* Caption text */
+
 .container_donation_loggedin .slideshow-container .text {
-  color: #f2f2f2;
-  padding: 8px 12px;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-background-color: #262626;
+	color: #f2f2f2;
+	padding: 8px 12px;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	background-color: #262626;
 }
 
-.container_donation_loggedin .slideshow-container .text h5{
+.container_donation_loggedin .slideshow-container .text h5 {
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 400;
@@ -188,7 +242,7 @@ background-color: #262626;
 	height: 1vh;
 }
 
-.container_donation_loggedin .slideshow-container .text .time{
+.container_donation_loggedin .slideshow-container .text .time {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	width: 100%;
@@ -196,7 +250,7 @@ background-color: #262626;
 }
 
 
-.container_donation_loggedin .slideshow-container .text .time h6{
+.container_donation_loggedin .slideshow-container .text .time h6 {
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.5vw;
@@ -207,7 +261,7 @@ background-color: #262626;
 	margin-bottom: 2vh;
 }
 
-.container_donation_loggedin .slideshow-container .text p{
+.container_donation_loggedin .slideshow-container .text p {
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.3vw;
@@ -220,43 +274,53 @@ background-color: #262626;
 
 /* The dots/bullets/indicators */
 
-.dots{
+.dots {
 	margin-left: 42vw;
 	padding-top: 2vh;
 	z-index: 3;
 	position: absolute;
 }
+
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #E8AFB1;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-	
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #E8AFB1;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+
 }
 
 .active {
-  background-color:  #BC8A8C;
+	background-color: #BC8A8C;
 }
 
 /* Fading animation */
+
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
 }
 
 
@@ -268,7 +332,7 @@ background-color: #262626;
 .login_system .arrow,
 .signup_system .arrow,
 .signup_system_step1 .arrow,
-.registration_complete .arrow{
+.registration_complete .arrow {
 	width: 80%;
 	cursor: pointer;
 	padding-left: 2vw;
@@ -278,7 +342,7 @@ background-color: #262626;
 .login_system .arrow img,
 .signup_system .arrow img,
 .signup_system_step1 .arrow img,
-.registration_complete .arrow img{
+.registration_complete .arrow img {
 	width: 15px;
 	height: auto;
 }
@@ -287,7 +351,7 @@ background-color: #262626;
 .login_system .arrow:hover,
 .signup_system .arrow .arrow:hover,
 .signup_system_step1 .arrow:hover,
-.registration_complete .arrow:hover{
+.registration_complete .arrow:hover {
 	padding-left: 1vw;
 	transition: 0.5s;
 }
@@ -330,8 +394,8 @@ background-color: #262626;
 	padding-bottom: 3vw;
 }
 
-.registration_complete{
-		width: 80vw;
+.registration_complete {
+	width: 80vw;
 	height: 100vh;
 	background-color: #262626;
 	border-radius: 2px;
@@ -348,23 +412,25 @@ background-color: #262626;
 .registration_complete .nav img,
 .signup_system_step1 .nav img,
 .container .nav img,
-.container_donation_loggedin .nav img{
+.container_donation_loggedin .nav img {
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
 }
 
-.container_donation_loggedin .nav{
-	background-color: #262626;
+.container_donation_loggedin .nav {
+	background-color: white;
 	z-index: 2;
-	width; 100vw;
+	width;
+	100vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	
+
 }
+
 .container h3,
 .container_one_payment h3,
-.registration_complete h3{
+.registration_complete h3 {
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 400;
@@ -380,7 +446,7 @@ background-color: #262626;
 .login_system p,
 .signup_system p,
 .registration_complete p,
-.signup_system_step1 p{
+.signup_system_step1 p {
 	font-family: "Raleway", "sans-serif";
 	color: white;
 	font-size: 3.5vw;
@@ -395,7 +461,7 @@ background-color: #262626;
 .container_one_payment button,
 .login_system button,
 .signup_system button,
-.signup_system_step1 button{
+.signup_system_step1 button {
 	border: 5px solid #CE9596;
 	background-color: #262626;
 	width: 80%;
@@ -413,7 +479,7 @@ background-color: #262626;
 .container_one_payment button:hover,
 .login_system button:hover,
 .signup_system button:hover,
-.signup_system_step1 button:hover{
+.signup_system_step1 button:hover {
 	background-color: #CE9596;
 	width: 80%;
 	font-family: "Raleway", "sans-serif";
@@ -432,26 +498,26 @@ background-color: #262626;
 	grid-template-columns: 20% 80%;
 }
 
-.container .nav{
-		display: grid;
+.container .nav {
+	display: grid;
 	grid-template-columns: 80% 20%;
 }
 
 .login_system .nav,
 .signup_system .nav,
-.signup_system_step1 .nav{
+.signup_system_step1 .nav {
 	display: grid;
 	grid-template-columns: 60% 20% 20%;
 }
 
-.registration_complete .nav{
+.registration_complete .nav {
 	display: grid;
 	grid-template-columns: 40% 30% 30%;
 }
 
 .login_system .nav p,
 .signup_system .nav p,
-.signup_system_step1 .p{
+.signup_system_step1 .p {
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -459,20 +525,20 @@ background-color: #262626;
 }
 
 .registration_complete .nav .main_page,
-.registration_complete .nav .login_button{
+.registration_complete .nav .login_button {
 	padding-top: 3vh;
 	cursor: pointer;
 	color: white;
 }
 
-.login_system .nav .sign_up_button{
+.login_system .nav .sign_up_button {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 .signup_system .nav .sign_up_button,
-.signup_system_step1 .nav .sign_up_button{
+.signup_system_step1 .nav .sign_up_button {
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -481,7 +547,7 @@ background-color: #262626;
 
 .signup_system .nav .login_button,
 .signup_system_step1 .nav .login_button,
-.container .nav .mainpage_button{
+.container .nav .mainpage_button {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
@@ -492,7 +558,7 @@ background-color: #262626;
 .signup_system_step1 .nav .login_button:hover,
 .registration_complete .nav .main_page:hover,
 .registration_complete .nav .login_button:hover,
-.container .nav .mainpage_button:hover{
+.container .nav .mainpage_button:hover {
 	color: #CE9596;
 	text-decoration: underline;
 	padding-top: 3vh;
@@ -507,7 +573,7 @@ background-color: #262626;
 }
 
 .signup_system .nav .login_button:hover + .sign_up_button,
-.signup_system_step1 .nav .login_button:hover + .sign_up_button{
+.signup_system_step1 .nav .login_button:hover + .sign_up_button {
 	color: white;
 	text-decoration: none;
 
@@ -526,7 +592,7 @@ background-color: #262626;
 }
 
 .login_system h4,
-.signup_system_step1 h4{
+.signup_system_step1 h4 {
 	color: white;
 	padding-top: 2vh;
 	font-family: "Raleway", "sans-serif";
@@ -537,7 +603,7 @@ background-color: #262626;
 	margin: 0 auto;
 }
 
-.login_system .sentence{
+.login_system .sentence {
 	display: grid;
 	grid-template-columns: 52% 47%;
 	margin: 0;
@@ -614,7 +680,7 @@ background-color: #262626;
 }
 
 .signup_system .register-form,
-signup_system_step1 registration_step1{
+signup_system_step1 registration_step1 {
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 80%;
@@ -744,7 +810,7 @@ signup_system_step1 registration_step1{
 
 .container_one_payment .donation_amount .enter_amount input:focus,
 .login_system .login-form input:focus,
-.signup_system_step1 .registration_step1 input:focus{
+.signup_system_step1 .registration_step1 input:focus {
 	border-bottom: 2px solid #CE9596;
 	color: #CE9596;
 
@@ -842,7 +908,7 @@ signup_system_step1 registration_step1{
 }
 
 .signup_system .register-form input,
-.signup_system_step1 .registration_step1 input{
+.signup_system_step1 .registration_step1 input {
 	background-color: #262626;
 	border: 0;
 	border-bottom: 2px solid white;
@@ -878,6 +944,7 @@ signup_system_step1 registration_step1{
 
 
 /* register form correct data */
+
 .required:after {
 	content: "*";
 	color: white;
@@ -909,64 +976,65 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 }
 
 
-/* registration confirmation diffrent styling */ 
-.registration_complete .bird{
-	  width: 80%;
-	height:auto;
-	  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* registration confirmation diffrent styling */
+
+.registration_complete .bird {
+	width: 80%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 4vh;
 	padding-bottom: 4vh;
 }
 
 .registration_complete .name,
 .registration_complete .mail,
-.registration_complete .resend{
+.registration_complete .resend {
 	color: #CE9596;
 }
 
-.registration_complete .resend_mail p{
+.registration_complete .resend_mail p {
 	font-size: 2.5vw;
 	cursor: pointer;
 }
 
 
-.registration_complete .resend_mail{
+.registration_complete .resend_mail {
 	cursor: pointer;
 	bottom: 0;
 	position: absolute;
 	width: 100%;
 	margin: 0 auto;
-		
+
 }
 
 
-/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
+/* SIGN UP  - step 1 -DIFFRENT STYLING */
 
-.signup_system_step1 .registration_step1{
+.signup_system_step1 .registration_step1 {
 	padding-top: 5vh;
 }
 
-.signup_system_step1 .registration_step1 .tshirt{
+.signup_system_step1 .registration_step1 .tshirt {
 	display: grid;
 	grid-template-columns: 80% 20%;
 	width: 80%;
 	padding-top: 2vh;
 }
 
-.signup_system_step1 .registration_step1 .tshirt select{
+.signup_system_step1 .registration_step1 .tshirt select {
 
-    color: #CE9596;
-    font-family: "Raleway", "sans-serif";
-    font-weight: 100;
-    font-size: 3vw;
-    border: 0;
-    border-bottom: 2px solid #CE9596;
-    background-color: #262626;
-    width: 50px;
-    justify-self: center;
-    margin: 0 auto;
+	color: #CE9596;
+	font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 3vw;
+	border: 0;
+	border-bottom: 2px solid #CE9596;
+	background-color: #262626;
+	width: 50px;
+	justify-self: center;
+	margin: 0 auto;
 	align-self: start;
 	justify-self: start;
 }
@@ -999,111 +1067,162 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 /* TABLET VERSION */
 
 @media screen and (min-width: 720px) {
+	
+	
+	/* MOBILE VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
 
-/*donation_loggedin.html styling*/	
-	.bg_nav{
+	
+	.section1{
+		width: 100vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-left: 5vw;
+	}
+.contribiution_text{
+	width: 45vw;
+	height: auto;
+	padding-top: 5vh;
+	
+}
+	
+#container_payment_loggedin{
+		right: 5vw;
+		margin-top: 5vh;
+	width: 40vw;
+	}
+
+.contribiution_text h7{
+	font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 3vw;
+}
+
+.contribiution_text h6{
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 10vw;
+}
+
+.contribiution_text p{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 3vw;
+	margin-left: 10vw;
+	margin-right: 0vw;
+}
+
+.contribiution_text .save_lakes{
+		font-family: "Montserrat", "sans-serif";
+	font-weight: 100;
+	font-size: 3vw;
+	margin-right: 10vw;
+	
+}
+
+	/*donation_loggedin.html styling*/
+	.bg_nav {
 		margin-top: 2vh;
 		width: 55px;
 		height: 55px;
 	}
-	
-/*side menu */
-.container_donation_loggedin .sidenav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  z-index: 6;
-  top: 0;
-  right: 10vw;
-  background-color: #CE9596;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 15vh;
+
+	/*side menu */
+	.container_donation_loggedin .sidenav {
+		height: 100vh;
+		width: 0;
+		position: fixed;
+		z-index: 6;
+		top: 0;
+		right: 10vw;
+		background-color: #CE9596;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 15vh;
 
 
-}
+	}
 
-.container_donation_loggedin .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-	font-family: "Raleway", "sans-serif";
-	font-size: 3.5vw;
-	font-weight: 100;
-	justify-self: start;
-	
+	.container_donation_loggedin .sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: white;
+		display: block;
+		transition: 0.3s;
+		font-family: "Raleway", "sans-serif";
+		font-size: 3.5vw;
+		font-weight: 100;
+		justify-self: start;
 
-}
 
-.container_donation_loggedin .sidenav{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-auto-rows: 50px;
-	grid-auto-columns: 100px;
-   margin: 0 auto;
- 
+	}
 
-}
+	.container_donation_loggedin .sidenav {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		grid-auto-rows: 50px;
+		grid-auto-columns: 100px;
+		margin: 0 auto;
 
-.container_donation_loggedin .sidenav hr{
-	width: 30px;
-	border:0;
-	border-top: 0.5px solid white;
-	margin-top: 2vh;
-	margin-left:  20vh;
-	
-}
-.container_donation_loggedin .menu{
-	cursor: pointer;
-	z-index: 10;
-	position: absolute;
-	right: 2vh;
-	top:2vh;
-	width: 10vw;
-}
 
-.container_donation_loggedin .sidenav a:hover{
-  color: #262626;
-}
+	}
 
-.container_donation_loggedin .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-	
-	
-	
-	
-/* Slideshow container - donation_loggedin.html*/
+	.container_donation_loggedin .sidenav hr {
+		width: 30px;
+		border: 0;
+		border-top: 0.5px solid white;
+		margin-top: 2vh;
+		margin-left: 5vh;
+
+	}
+	.container_donation_loggedin .menu {
+		cursor: pointer;
+		z-index: 10;
+		position: absolute;
+		right: 2vh;
+		top: 2vh;
+		width: 10vw;
+	}
+
+	.container_donation_loggedin .sidenav a:hover {
+		color: #262626;
+	}
+
+	.container_donation_loggedin .sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		left: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
 
 
 
-/* Caption text */
-.container_donation_loggedin .slideshow-container .text {
-  color: white;
-  
-}
 
-.container_donation_loggedin .slideshow-container .text h5{
-	font-size: 3.5vw;
-	
-}
+	/* Slideshow container - donation_loggedin.html*/
+	/* Caption text */
+	.container_donation_loggedin .slideshow-container .text {
+		color: white;
 
-.container_donation_loggedin .slideshow-container .text .time h6{
-	font-size: 2.5vw;
-	
-}
+	}
 
-.container_donation_loggedin .slideshow-container .text p{
-	font-size: 2.2vw;
-	
-}
+	.container_donation_loggedin .slideshow-container .text h5 {
+		font-size: 3.5vw;
+
+	}
+
+	.container_donation_loggedin .slideshow-container .text .time h6 {
+		font-size: 2.5vw;
+
+	}
+
+	.container_donation_loggedin .slideshow-container .text p {
+		font-size: 2.2vw;
+
+	}
 
 
 
@@ -1128,7 +1247,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 100%;
 	}
 
-	.container{
+	.container {
 		width: 36%;
 		height: 101%;
 		margin-top: -10px;
@@ -1136,19 +1255,19 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-bottom: 0;
 
 	}
-	
-	.registration_complete{
-			width: 36%;
+
+	.registration_complete {
+		width: 36%;
 		height: 110%;
 		margin-top: -10px;
 		margin-left: -10px;
 		padding-bottom: 0;
 	}
-	
+
 
 	.login_system,
 	.signup_system,
-	.signup_system_step1{
+	.signup_system_step1 {
 		width: 36%;
 		height: auto;
 		margin-top: -10px;
@@ -1163,25 +1282,25 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.signup_system .nav img,
 	.registration_complete .nav img,
 	.signup_system_step1 .nav img,
-	.container_donation_loggedin .nav img{
+	.container_donation_loggedin .nav img {
 		width: 10vw;
 		height: auto;
 		padding-top: 3vw;
 	}
 
-	
+
 	.container_one_payment .nav p,
 	.login_system .nav p,
 	.signup_system .nav p,
 	.registration_complete .nav p,
 	.signup_system_step1 .nav p,
-	.container .nav p{
+	.container .nav p {
 		font-size: 1.5vw;
 	}
 	.container h3,
 	.container_one_payment h3,
 	.login_system h3,
-	.registration_complete h3{
+	.registration_complete h3 {
 		font-size: 2.5vw;
 		text-align: center;
 		height: 4vh;
@@ -1190,7 +1309,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container p,
 	.container_one_payment p,
 	.registration_complete p,
-	.signup_system_step1 p{
+	.signup_system_step1 p {
 		font-size: 2vw;
 		width: 80%;
 		margin: 0 auto;
@@ -1201,7 +1320,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment button,
 	.login_system button,
 	.signup_system button,
-	.signup_system_step1 button{
+	.signup_system_step1 button {
 		font-size: 2vw;
 		padding: 0.5vw;
 	}
@@ -1211,14 +1330,14 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment button:hover,
 	.login_system button:hover,
 	.signup_system button:hover,
-	.signup_system_step1 button:hover{
+	.signup_system_step1 button:hover {
 		font-size: 2vw;
 	}
 
 
 	.container_one_payment h4,
 	.login_system h4,
-	.signup_system_step1 h4{
+	.signup_system_step1 h4 {
 		font-size: 2.5vw;
 
 	}
@@ -1307,14 +1426,14 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 	.login_system .login-form img,
-	.signup_system .register-form img{
+	.signup_system .register-form img {
 		width: 3vw;
 		height: auto;
 	}
 
 	.login_system .login-form input,
 	.signup_system .register-form input,
-	.signup_system_step1 .registration_step1 input{
+	.signup_system_step1 .registration_step1 input {
 		font-size: 2vw;
 		width: 70%;
 	}
@@ -1357,64 +1476,62 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	}
 	/* SIGNUP SYSTEM DIFFRENT STYLING */
+	.signup_system .register-form .personal_info {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		width: 80%;
+		height: 13vh;
+		align-items: end;
 
-	
-.signup_system .register-form .personal_info {
-	display: grid;
-	grid-template-columns: 20% 80%;
-	width: 80%;
-	height: 13vh;
-	align-items: end;
+	}
 
-}
-
-	.signup_system .register-form .personal_info img{
+	.signup_system .register-form .personal_info img {
 		margin-bottom: 5vh;
 	}
-.signup_system .register-form .personal_info h5 {
-	font-family: "Raleway", sans-serif;
-	font-size: 2vw;
-	color: white;
-	font-weight: 200;
-	justify-self: start;
+	.signup_system .register-form .personal_info h5 {
+		font-family: "Raleway", sans-serif;
+		font-size: 2vw;
+		color: white;
+		font-weight: 200;
+		justify-self: start;
 		align-self: end;
-	
-}
 
-.signup_system .register-form input {
-	font-size: 1.9vw;
-	
-}
+	}
 
+	.signup_system .register-form input {
+		font-size: 1.9vw;
 
-div input:invalid:not(:placeholder-shown) ~ .correct::after {
-
-	font-size: 1.8vw;
-	
-
-}
-
-/* registration confirmation diffrent styling */ 
-.registration_complete .bird{
-	padding-top: 6vh;
-	padding-bottom: 6vh;
-}
+	}
 
 
-.registration_complete .resend_mail{
-	cursor: pointer;
-	bottom: 0;
-	position: absolute;
-	
-	
-}
-	
-	.registration_complete .resend_mail p{
+	div input:invalid:not(:placeholder-shown) ~ .correct::after {
+
+		font-size: 1.8vw;
+
+
+	}
+
+	/* registration confirmation diffrent styling */
+	.registration_complete .bird {
+		padding-top: 6vh;
+		padding-bottom: 6vh;
+	}
+
+
+	.registration_complete .resend_mail {
+		cursor: pointer;
+		bottom: 0;
+		position: absolute;
+
+
+	}
+
+	.registration_complete .resend_mail p {
 		font-size: 1.7vw;
 		padding-top: 1vh;
 	}
 
-	.registration_complete .resend_mail hr{
+	.registration_complete .resend_mail hr {
 		border: 0.5px solid white;
 		width: 90%;
 		margin: 0 auto;
@@ -1435,85 +1552,212 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		z-index: 10;
 	}
 
-	
-
-/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
 
 
-.signup_system_step1 .registration_step1 .tshirt{
-	display: grid;
-	grid-template-columns: 90% 10%;
-	width: 80%;
-	padding-top: 2vh;
-}
+	/* SIGN UP  - step 1 -DIFFRENT STYLING */
+	.signup_system_step1 .registration_step1 .tshirt {
+		display: grid;
+		grid-template-columns: 90% 10%;
+		width: 80%;
+		padding-top: 2vh;
+	}
 
-.signup_system_step1 .registration_step1 .tshirt select{
+	.signup_system_step1 .registration_step1 .tshirt select {
 
-   
-    font-size: 2vw;
-    width: 50px;
-    
-}
+
+		font-size: 2vw;
+		width: 50px;
+
+	}
 
 }
 
 
 @media screen and (min-width: 992px) {
 	
-/* Donation system step 1*/	
+		
+	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+
 	
-	.container_donation_loggedin .nav{
-	background-color: transparent;
-		position: absolute;
-		position: fixed;
+	.section1{
+		margin-left: 8.5vw;
+	}
+.contribiution_text{
+	width: 45vw;
+	height: auto;
+	padding-top: 5vh;
+	
+}
+	
+#container_payment_loggedin{
+		right: 8vw;
+	    width: 30vw;
 	z-index: 2;
-	width: 100vw;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	}
+	
+	#container_payment_loggedin h3{
+		font-size: 1.8vw;
+		margin-bottom: 0;
+	}
+	
+	#container_payment_loggedin h4{
+		font-size: 1.5vw;
+		margin-top: 0;
+	}
+
+	#container_payment_loggedin .donation_amount label{
+		font-size: 1.2vw;
+	}
+	
+	#container_payment_loggedin .donation_amount  .enter_amount img{
+		width: 3vw;
+	}
+	
+	#container_payment_loggedin .donation_amount  .enter_amount p{
+		width: 1.1vw;
+	}
+
+.contribiution_text h7{
+	font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 1.8vw;
+}
+
+.contribiution_text h6{
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 2.8vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 9vw;
+}
+
+.contribiution_text p{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 1.8vw;
+	margin-left: 9vw;
+	margin-right: 0vw;
+	width: 32.5vw;
+}
+
+.contribiution_text .save_lakes{
+		font-family: "Montserrat", "sans-serif";
+	font-weight: 100;
+	font-size: 1.8vw;
+	margin-right: 10vw;
 	
 }
 
-	.container_donation_loggedin .nav .image_bg{
+	/* Donation system step 1*/
+	.container_donation_loggedin .nav {
+		background-color: transparent;
+		position: absolute;
+		position: fixed;
+		z-index: 2;
+		width: 100vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+	.container_donation_loggedin .nav .image_bg {
 		width: 8vw;
 		height: auto;
-		background-color: #262626;
+		background-color: white;
 		align-content: center;
 		cursor: pointer;
-	
-		
+
+
 	}
-	
-	.container_donation_loggedin .nav .bg_nav{
+
+	.container_donation_loggedin .nav .bg_nav {
 		margin-right: 2vw;
 	}
-	
-.container_donation_loggedin .nav .image_bg img{
-		width: 100px;
-	height:auto;
-	padding-top: 1vw;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	
-	}
-	
-	.container_donation_loggedin .nav .sidenav_scroll{
+
+	.container_donation_loggedin .nav .image_bg img {
+		width: 90px;
+		height: auto;
+		padding-top: 1vw;
+		margin-left: auto;
+		margin-right: auto;
 		display: block;
-		width:4vw;
-		height: 80vh;
-		background-color:  #CE9596;
-		left: 0;
-	
+
 	}
-	
-	.container_donation_loggedin .nav .sidenav_scroll .language p{
+
+	.container_donation_loggedin .nav .sidenav_scroll {
+		display: block;
+		width: 4vw;
+		height: 80vh;
+		background-color: #CE9596;
+		left: 0;
+
+	}
+
+
+	.container_donation_loggedin .nav .sidenav_scroll .profile img {
+		width: 35px;
+		height: auto;
+		display: block;
+		margin-left: 5px;
+		margin-right: auto;
+		cursor: pointer;
+
+	}
+
+	.container_donation_loggedin .nav .sidenav_scroll .language p {
 		color: white;
-	font-family: "Raleway", "sans-serif";
-	font-size: 1.5vw;
-	font-weight: 100;
+		font-family: "Raleway", "sans-serif";
+		font-size: 1.5vw;
+		font-weight: 100;
 		text-align: center;
 		cursor: pointer;
 	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		z-index: 10;
+
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: white;
+		width: 10vw;
+		padding: 10px 10px;
+		z-index: 10;
+		color: #CE9596;
+		font-weight: 100;
+		font-family: "Raleway", "sans-serif";
+		font-size: 1vw;
+
+	}
+
+	.dropdown-content p {
+		font-weight: 100;
+		font-family: "Raleway", "sans-serif";
+		font-size: 1vw;
+		cursor: pointer;
+
+	}
+
+	.dropdown-content hr {
+		border: 0.5px solid #CE9596;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+		z-index: 10;
+	}
+
+	.dropdown:hover .dropdown-content p:hover {
+		color: #262626;
+	}
+
+
+
 
 	/* Donation system step 1*/
 	.pollution {
@@ -1526,28 +1770,51 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.signup_system img,
 	.registration_complete img,
 	.signup_system_step1 img,
-	.container .nav img{
+	.container .nav img {
 		width: 8vw;
 	}
 
 	.container h3,
 	.container_one_payment h3,
-	.registration_complete h3{
+	.registration_complete h3 {
 		font-size: 2vw;
 	}
 
+
+	.container_donation_loggedin .header h3 {
+		position: absolute;
+		z-index: 10;
+		color: white;
+		font-size: 2.5vw;
+		font-family: "Montserrat", "sans-serif";
+		font-weight: 300;
+		margin-left: 8vw;
+		margin-top: 50vh;
+	}
+
+	.container_donation_loggedin .header h4 {
+		position: absolute;
+		z-index: 10;
+		color: white;
+		font-size: 2.5vw;
+		font-family: "Montserrat", "sans-serif";
+		font-weight: 300;
+		margin-left: 8vw;
+		margin-top: 56vh;
+	}
+
 	.container_one_payment h4,
-	.signup_system_step1 h5{
+	.signup_system_step1 h5 {
 		font-size: 1vw;
 	}
 
-	
+
 	.container_one_payment p,
 	.login_system p,
 	.signup_system p,
 	.registration_complete p,
 	.signup_system_step1 p,
-	.container .nav p{
+	.container .nav p {
 		font-size: 1.3vw;
 	}
 
@@ -1555,7 +1822,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment button,
 	.login_system button,
 	.signup_system button,
-	.signup_system_step1 button{
+	.signup_system_step1 button {
 		font-size: 1.5vw;
 	}
 
@@ -1563,7 +1830,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.container_one_payment button:hover,
 	.login_system button:hover,
 	.signup_system button:hover,
-	.signup_system_step1 button:hover{
+	.signup_system_step1 button:hover {
 		font-size: 1.5vw;
 	}
 
@@ -1630,8 +1897,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 	.login_system .login-form img,
-	.signup_system .register-form img
-	{
+	.signup_system .register-form img {
 		width: 2vw;
 		height: auto;
 		padding-top: 3vh;
@@ -1662,269 +1928,263 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 	.login_system .login-form .log_in_some,
-	.signup_system .register-form .log_in_some{
+	.signup_system .register-form .log_in_some {
 		font-size: 1vw;
 	}
 
 
 	.login_system .login-form .some img,
-	.signup_system .register-form .some img{
+	.signup_system .register-form .some img {
 		width: 3vw;
 		height: auto;
 
 	}
 
-	.signup_system .register-form .some img{
+	.signup_system .register-form .some img {
 		padding-top: 3vh;
 	}
-	
-		/* SIGNUP SYSTEM DIFFRENT STYLING */
 
-	
-.signup_system .register-form .personal_info {
-	height: 14vh;
-	
+	/* SIGNUP SYSTEM DIFFRENT STYLING */
+	.signup_system .register-form .personal_info {
+		height: 14vh;
 
-}
-	.signup_system .register-form .personal_info img{
+
+	}
+	.signup_system .register-form .personal_info img {
 		margin-bottom: 5vh;
 	}
-.signup_system .register-form .personal_info h5 {
-	font-size: 1.5vw;
-	
-	
-}
-
-.signup_system .register-form input,
-.signup_system_step1 .registration_step1 input{
-	font-size: 1.3vw;
-	
-}
+	.signup_system .register-form .personal_info h5 {
+		font-size: 1.5vw;
 
 
-div input:invalid:not(:placeholder-shown) ~ .correct::after {
+	}
 
-	font-size: 1.2vw;
-	
+	.signup_system .register-form input,
+	.signup_system_step1 .registration_step1 input {
+		font-size: 1.3vw;
 
-}
-
-/* registration confirmation diffrent styling */ 
-.registration_complete .bird{
-	padding-top: 6vh;
-	padding-bottom: 6vh;
-	width: 70%;
-}
+	}
 
 
-.registration_complete .resend_mail{
-	width: 80%;
-	margin-left: 10%;
-	
-	
-	
-}
-	
-	.registration_complete .resend_mail p{
+	div input:invalid:not(:placeholder-shown) ~ .correct::after {
+
+		font-size: 1.2vw;
+
+
+	}
+
+	/* registration confirmation diffrent styling */
+	.registration_complete .bird {
+		padding-top: 6vh;
+		padding-bottom: 6vh;
+		width: 70%;
+	}
+
+
+	.registration_complete .resend_mail {
+		width: 80%;
+		margin-left: 10%;
+
+
+
+	}
+
+	.registration_complete .resend_mail p {
 		font-size: 1vw;
 		padding-top: 1vh;
 	}
 
-	.registration_complete .resend_mail hr{
+	.registration_complete .resend_mail hr {
 		width: 100%;
-		
-		
+
+
 	}
-	
-	/* SIGN UP  - step 1 -DIFFRENT STYLING */ 
+
+	/* SIGN UP  - step 1 -DIFFRENT STYLING */
+	.signup_system_step1 .registration_step1 .tshirt {
+		display: grid;
+		grid-template-columns: 90% 10%;
+		width: 80%;
+		padding-top: 2vh;
+	}
+
+	.signup_system_step1 .registration_step1 .tshirt select {
+		font-size: 1.2vw;
+		width: 50px;
+
+	}
 
 
-.signup_system_step1 .registration_step1 .tshirt{
-	display: grid;
-	grid-template-columns: 90% 10%;
-	width: 80%;
-	padding-top: 2vh;
-}
-
-.signup_system_step1 .registration_step1 .tshirt select{
-    font-size: 1.2vw;
-    width: 50px;
-    
-}
-
-	
 	/* LINES FOR WEB VERSION */
+	.lines_bg {
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+		position: fixed;
 
-.lines_bg{
-	width: 100vw;
-	height: 100vh;
-	position: relative;
-	position: fixed;
- 
-}
+	}
 
-.lines_bg div{
-	display: inline-block;
-}
+	.lines_bg div {
+		display: inline-block;
+	}
 
-.lines_bg .line1{
-	margin-left: 4vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-	width:4vw;
+	.lines_bg .line1 {
+		margin-left: 4vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
+		width: 4vw;
 
-}
+	}
 
-.lines_bg .line2{
-	margin-left: 8vw;
-	width:21vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-	
-
-}
-
-.lines_bg .line3{
-	margin-left: 29vw;
-	width:21vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-}
-
-.lines_bg .line4{
-	margin-left: 50vw;
-	width:21vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-	
-}
-
-.lines_bg .line5{
-	margin-left: 71vw;
-	width:21vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-}
-
-.lines_bg .line6{
-	margin-left: 92vw;
-	width:4vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-}
-
-.lines_bg .line7{
-	margin-left: 96vw;
-	width:4vw;
-	 border-left: 1px solid gray;
-	height: 100vh;
-	position: absolute;
-}
-
-	/*donation_loggedin.html styling*/	
-	
-/* Slideshow container - donation_loggedin.html*/
+	.lines_bg .line2 {
+		margin-left: 8vw;
+		width: 21vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
 
 
+	}
 
-/* Caption text */
-.container_donation_loggedin .slideshow-container .text {
-  position: absolute;
-	background-color: transparent;
-	width: 50%;
-	z-index: 5;
-  
-}
+	.lines_bg .line3 {
+		margin-left: 29vw;
+		width: 21vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
+	}
 
-.container_donation_loggedin .slideshow-container .text h5{
-	font-size: 2.2vw;
-	
-}
+	.lines_bg .line4 {
+		margin-left: 50vw;
+		width: 21vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
 
-.container_donation_loggedin .slideshow-container .text .time h6{
-	font-size: 1.8vw;
-	
-}
+	}
 
-.container_donation_loggedin .slideshow-container .text p{
-	font-size: 1.5vw;
-	
-}
+	.lines_bg .line5 {
+		margin-left: 71vw;
+		width: 21vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
+	}
 
-.dots{
+	.lines_bg .line6 {
+		margin-left: 92vw;
+		width: 4vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
+	}
+
+	.lines_bg .line7 {
+		margin-left: 96vw;
+		width: 4vw;
+		border-left: 1px solid gray;
+		height: 100vh;
+		position: absolute;
+	}
+
+	/*donation_loggedin.html styling*/
+	/* Slideshow container - donation_loggedin.html*/
+	/* Caption text */
+	.container_donation_loggedin .slideshow-container .text {
+		position: absolute;
+		background-color: transparent;
+		width: 40vw;
+		z-index: 5;
+		margin-left: 7vw;
+		top: 62vh;
+
+	}
+
+
+	.container_donation_loggedin .slideshow-container .text h5 {
+		font-size: 2.2vw;
+		margin-top: 0vh;
+		font-family: "Raleway", "sans-serif";
+		font-size: 400;
+		text-align: left;
+
+	}
+
+	.container_donation_loggedin .slideshow-container .text .time h6 {
+		font-size: 1.8vw;
+		margin-left: 0;
+		text-align: left;
+	}
+
+	.container_donation_loggedin .slideshow-container .text p {
+		font-size: 1.5vw;
+		text-align: left;
+		margin-left: 0;
+
+	}
+
+	.dots {
 		margin-left: 47vw;
 	}
 
-	
-/* sidenav logged in page */
-	
+
+	/* sidenav logged in page */
 	/*side menu */
-.container_donation_loggedin .sidenav {
-  height: 100vh;
-  width: 0;
-  position: fixed;
-  z-index: 6;
-  top: 0;
-  right: 8vw;
-  background-color: #CE9596;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 15vh;
+	.container_donation_loggedin .sidenav {
+		height: 80vh;
+		width: 0;
+		position: fixed;
+		z-index: 6;
+		top: 2vh;
+		right: 8vw;
+		background-color: #CE9596;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 15vh;
 
 
-}
+	}
 
-.container_donation_loggedin .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 15px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-	font-family: "Raleway", "sans-serif";
-	font-size: 3.5vw;
-	font-weight: 100;
-	justify-self: start;
-	
+	.container_donation_loggedin .sidenav a {
+		transition: 0.3s;
+		font-size: 1.9vw;
 
-}
 
-.container_donation_loggedin .sidenav{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-auto-rows: 50px;
-	grid-auto-columns: 100px;
-   margin: 0 auto;
- 
 
-}
+	}
 
-.container_donation_loggedin .sidenav hr{
-	width: 30px;
-	border:0;
-	border-top: 0.5px solid white;
-	margin-top: 2vh;
-	margin-left:  20vh;
-	
-}
-.container_donation_loggedin .menu{
-	cursor: pointer;
-	z-index: 10;
-	position: absolute;
-	right: 2vh;
-	top:2vh;
-	width: 10vw;
-}
+	.container_donation_loggedin .sidenav {
+		display: grid;
+		grid-template-columns: 40% 60%;
+		grid-auto-rows: 50px;
+		grid-auto-columns: 100px;
+		margin: 0 auto;
 
-.container_donation_loggedin .sidenav a:hover{
-  color: #262626;
-}
+
+
+	}
+
+	.container_donation_loggedin .sidenav hr {
+		width: 30px;
+		border: 0;
+		border-top: 0.5px solid white;
+		margin-top: 2vh;
+		margin-left: 20vh;
+
+	}
+	.container_donation_loggedin .menu {
+		cursor: pointer;
+		z-index: 10;
+		position: absolute;
+		right: 2vh;
+		top: 2vh;
+		width: 10vw;
+	}
+
+	.container_donation_loggedin .sidenav a:hover {
+		color: #262626;
+	}
 
 
 }

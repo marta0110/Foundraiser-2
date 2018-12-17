@@ -68,17 +68,17 @@ function addItem (){
         }
 
 function setHeader() {
-  const UserName = localStorage.name;
+  const UserName = localStorage.FName;
   const UserImage = localStorage.avatar;
 
 console.log(localStorage);
-    console.log(localStorage.name);
+    console.log(localStorage.FName);
         console.log(localStorage.avatar);
     
     
-  document.querySelector('#UserName').textContent = "Hi " + UserName;
+  document.querySelector('#UserName').textContent = "Hello " + UserName + ",";
 
-  document.getElementById('img').setAttribute("src", UserImage)
+
   document.getElementById('img').setAttribute("src", UserImage);
 
 }
