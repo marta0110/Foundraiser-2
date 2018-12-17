@@ -1478,8 +1478,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: auto;
 		background-color: #262626;
 		align-content: center;
+		cursor: pointer;
 	
 		
+	}
+	
+	.container_donation_loggedin .nav .bg_nav{
+		margin-right: 2vw;
 	}
 	
 .container_donation_loggedin .nav .image_bg img{
@@ -1490,6 +1495,17 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	margin-right: auto;
 	display: block;
 	
+	}
+	
+	.container_donation_loggedin .nav .sidenav_scroll{
+		display: block;
+		width:4vw;
+		height: 80vh;
+		background-color:  #CE9596;
+		left: 0;
+	
+		
+		
 	}
 
 	/* Donation system step 1*/
