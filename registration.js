@@ -40,8 +40,6 @@ function  addNewUser(){
         console.log(d);
 	  saveInfo(d);
     })
-	} else{
-		document.querySelector(".wrong_data").textContent= "Please insert correct data";
 	}
 	
 	function saveInfo(data){

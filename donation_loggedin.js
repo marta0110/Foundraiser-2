@@ -18,10 +18,36 @@ function showSlides() {
   setTimeout(showSlides, 5000); 
 }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+let wrapperMenu = document.querySelector('.wrapper-menu');
+let timesClicked = 0;
+
+
+wrapperMenu.onclick = function(){
+	timesClicked++;
+	
+	if(timesClicked%2==0){
+wrapperMenu.addEventListener('click', function(){					document.getElementById("mySidenav").style.width = "0";
+wrapperMenu.classList.toggle('open');
+//wrapperMenu.setAttribute("class","actions_one");
+	console.log("close");	
+		
+	} )}else{
+		
+		
+				
+wrapperMenu.addEventListener('click', function(){
+  wrapperMenu.classList.toggle('open'); 
+	 document.getElementById("mySidenav").style.width = "100%";
+	console.log("open");
+							 
+		 
 }
+	)}
+	
+}
+	
+	
+ 
+
+
