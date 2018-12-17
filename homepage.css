@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+body {
+    margin: 0;
+
+}
+
+
+#header {
+    position: absolute;
+}
+
+
+
+#fronttext {
+    font-family: "Montserrat";
+    color: white;
+    position: absolute;
+    font-size: 24px;
+    bottom: 100px;
+    left: 20px;
+
+
+}
+
+#lakesSection {
+    position: relative;
+    background-image: url("images/2a7f91da0cddad1373f1ac3c827f1c75.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+
+/*reseting the button style*/
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    bottom: 60px;
+    left: 20px;
+}
+
+
+#contribute {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #CE9596;
+    font-weight: bold;
+    position: absolute;
+    border: 2px solid #CE9596;
+    padding: 10px 12px;
+
+}
+
+
+#swanpic {
+    width: 70vw;
+   position: relative;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#firstline {
+    font-family: "Raleway";
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+
+#secondline {
+    font-family: "Noto Serif TC";
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 28px;
+
+}
+
+
+#thirdline {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 28px;
+
+}
+
+#fourthline {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 28px;
+}
+
+#quote {
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 28px;
+}
+
+.pink {
+    color: #CE9596;
+    font-weight: bold;
+}
+
+
+
+#donationSection {
+    background-image: url(images/donation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+
+}
+
+#donationtext {
+
+    font-family: "Montserrat";
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 105px;
+
+}
+
+
+#donationline {
+    font-family: "Raleway";
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 180px;
+    margin-right: 100px;
+}
+
+
+#donate,
+#volunteer {
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #CE9596;
+    font-weight: bold;
+    border: 2px solid #CE9596;
+    padding: 10px 12px;
+
+}
+
+#donate {
+    margin-top: 260px;
+    margin-left: 60px;
+}
+
+#volunteer {
+    margin-top: 290px;
+}
+
+
+
+#slogan {
+    width: 60%;
+    position: relative;
+    margin-left: 170px;
+
+}
+
+#event1pic {
+    width: 100vw;
+}
+
+#eventbck {
+    background-color: #2A2025;
+    padding: 35px;
+    height: 40vh;
+}
+
+
+#picnic {
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+}
+
+#eventdate{
+    font-family: "Raleway";
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+}
+#eventdescrip{
+    font-family: "Raleway";
+    font-size: 16px;
+    color: white;
+    font-weight: light;
+}
+
+#wannajoin{
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: #CE9596;
+    font-weight: bold;
+    border: 2px solid #CE9596;
+    padding: 10px 12px;
+
+}
+
+#event2 {
+    visibility: hidden;
+  
+}
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 961px) {
+
+  
+
+    #frontpage {
+        display: grid;
+        grid-template-areas: 1fr fr;
+    }
+
+    #frontpic {
+        width: 100%;
+        background-size: cover;
+    }
+
+
+    #swan {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    }
+
+    #swanpic {
+        width: 30vw;
+        margin-left: 55px;
+        grid-area: 1/1;
+    }
+
+#swanSection {
+  
+        grid-area: 1/3;
+       
+
+}
+#firstline {
+    
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+
+#secondline {
+    font-family: "Noto Serif TC";
+    font-size: 35px;
+    font-weight: lighter;
+    margin-left: 28px;
+
+}
+
+
+#thirdline {
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 28px;
+
+}
+
+#fourthline {
+    font-family: "Raleway";
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 28px;
+}
+
+#quote {
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 28px;
+}
+
+.pink {
+    color: #CE9596;
+    font-weight: bold;
+}
+
+
+#events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#event1 {
+    grid-area: 1/1;
+}
+#event2 {
+    visibility: visible;
+    grid-area: 1/2;
+}
+
+}
