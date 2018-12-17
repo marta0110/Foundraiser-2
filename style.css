@@ -1843,17 +1843,17 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 }
 
 .container_donation_loggedin .slideshow-container .text h5{
-	font-size: 2.5vw;
+	font-size: 2.2vw;
 	
 }
 
 .container_donation_loggedin .slideshow-container .text .time h6{
-	font-size: 2vw;
+	font-size: 1.8vw;
 	
 }
 
 .container_donation_loggedin .slideshow-container .text p{
-	font-size: 1.7vw;
+	font-size: 1.5vw;
 	
 }
 
@@ -1861,6 +1861,70 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-left: 47vw;
 	}
 
+	
+/* sidenav logged in page */
+	
+	/*side menu */
+.container_donation_loggedin .sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  right: 8vw;
+  background-color: #CE9596;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 15vh;
+
+
+}
+
+.container_donation_loggedin .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+	font-family: "Raleway", "sans-serif";
+	font-size: 3.5vw;
+	font-weight: 100;
+	justify-self: start;
+	
+
+}
+
+.container_donation_loggedin .sidenav{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-auto-rows: 50px;
+	grid-auto-columns: 100px;
+   margin: 0 auto;
+ 
+
+}
+
+.container_donation_loggedin .sidenav hr{
+	width: 30px;
+	border:0;
+	border-top: 0.5px solid white;
+	margin-top: 2vh;
+	margin-left:  20vh;
+	
+}
+.container_donation_loggedin .menu{
+	cursor: pointer;
+	z-index: 10;
+	position: absolute;
+	right: 2vh;
+	top:2vh;
+	width: 10vw;
+}
+
+.container_donation_loggedin .sidenav a:hover{
+  color: #262626;
+}
 
 
 }
