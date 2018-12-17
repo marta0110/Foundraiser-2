@@ -1,5 +1,5 @@
 const endpointR = "https://5bff9c6d0296210013dc7df1.mockapi.io/api/v1/users";
-const registerbutton = document.querySelector('#registerbutton')
+//const registerbutton = document.querySelector('#registerbutton')
 const registerform = document.querySelector('.register-form');
 
 
@@ -11,7 +11,7 @@ registerform.addEventListener("submit", e => {
 //sending data to database
 function  addNewUser(){
 
-		checkUser();
+		
 // here add the check Existing user as a condition if the username doesn't exist, then execute the following, else alert message
     const payload = {
         FName: registerform.elements.FName.value,
@@ -22,6 +22,10 @@ function  addNewUser(){
 		avatar: registerform.elements.pic.accept,
 
     };
+	checkUser(registerform.elements.username.value);
+	
+	if(username.length > 2 && FName.length > 2 && LName.length > 2 && password.length > 2 && email.length > 2){
+		console.log("test");
 	
   fetch(endpointR, {
         method :"post",
@@ -36,17 +40,19 @@ function  addNewUser(){
         console.log(d);
 	  saveInfo(d);
     })
+	} else{
+		document.querySelector(".wrong_data").textContent= "Please insert correct data";
+	}
 	
-	
-function saveInfo(data){
-	console.log(data);
-  
-	
-	  document.querySelector('.name').textContent = data.FName;
-	document.querySelector('.mail').textContent = data.email;
-	
-	
-}
+	function saveInfo(data){
+		console.log(data);
+
+
+		  document.querySelector('.name').textContent = data.FName;
+		document.querySelector('.mail').textContent = data.email;
+
+
+	}
 	
 }
 
@@ -77,8 +83,7 @@ function checkUser(ExistingUser){
     .then(res=>res.json())
     .then(data=>{
         console.log("lala")
-		 console.log(data[0].username)
-        if(data.username == username){
+        if(username == ExistingUser){
 			   console.log("lala2")
 			 
 document.querySelector(".wrong_username").textContent= "This username already exists";
