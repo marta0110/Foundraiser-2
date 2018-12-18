@@ -136,7 +136,7 @@ button {
 
 #donationtext {
 
-    font-family: "Montserrat";
+    font-family: "Raleway";
     color: white;
     position: absolute;
     font-size: 40px;
@@ -372,7 +372,68 @@ footer {
     .pink {
         color: #CE9596;
         font-weight: bold;
+        text-decoration-line: underline;
     }
+
+    #collage {
+        height: 150vh;
+    }
+
+    #slogan {   
+        width: 40vw;
+        position: absolute;
+        margin-top:108vh;
+        margin-left: 60vw;
+        
+    
+    }
+
+
+
+    #donationSection {
+        background-image: url(images/donation.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 150vh;
+        width: 100%;
+        
+    
+    }
+    
+    #donationtext {
+    
+        
+        font-family: "Raleway";
+        color: white;
+        position: absolute;
+        font-size: 50px;
+        margin-top: 42vh;
+       margin-left: 22vw;
+        
+       
+    
+    }
+    
+    
+    #donationline {
+        font-family: "Raleway";
+        color: white;
+        position: absolute;
+        font-size: 30px;
+        margin-top: 58vh;
+       margin-left: 23vw;
+        text-align: right;
+    }
+    
+    
+   
+  
+
+    
+
+
+
 
 
     #events {
