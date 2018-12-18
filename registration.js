@@ -13,9 +13,26 @@ registerform.addEventListener("submit", e => {
 
 //sending data to database
 function addNewUser() {
+			console.log(registerform.elements.username.value)
+	if(registerform.elements.username.value.length > 2 && registerform.elements.FName.value.length > 2  && registerform.elements.LName.value.length > 2 &&
+	registerform.elements.email.value.length  > 2 &&
+	registerform.elements.password.value.length > 2){
 
-	checkUser(registerform.elements.username.value);
-	// here add the check Existing user as a condition if the username doesn't exist, then execute the following, else alert message
+				
+		checkUser(registerform.elements.username.value);
+		console.log(registerform.elements.username.value)
+		// here add the check Existing user as a condition if the username doesn't exist, then execute the following, else alert message 
+	
+	
+}
+ else{
+	 
+	 
+		document.querySelector(".wrong_username").textContent = "Please fill all information"
+	 		
+ }
+	
+	
 
 
 }
@@ -37,7 +54,6 @@ function showSingleUser(users) {
 	root.appendChild(clone);
 
 }
-
 
 
 //user already exists
@@ -66,11 +82,6 @@ function checkUser(ExistingUser) {
 
 				};
 
-
-
-
-				//	
-				//	if(username.length > 2 && FName.length > 2 && LName.length > 2 && password.length > 2 && email.length > 2){
 				console.log("test");
 
 				fetch(endpointR, {
