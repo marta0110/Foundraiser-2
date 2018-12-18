@@ -28,13 +28,15 @@ body {
 	padding-top: 5vh;
 }
 
-.contribiution_text h7{
+.contribiution_text h7,
+.volunteer_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
 }
 
-.contribiution_text h6{
+.contribiution_text h6,
+.volunteer_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 5vw;
@@ -43,7 +45,9 @@ body {
 	margin-left: 10vw;
 }
 
-.contribiution_text p{
+.contribiution_text p,
+.volunteer_text p,
+.section3_login p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
@@ -119,6 +123,51 @@ body {
 	margin-top: 7vh;
 	align-self: center;
 	justify-self: center;
+}
+
+/* MOBILE VERSION LOGGED IN - SECTION3 - CONTRIBIUTION*/
+
+.section3_login{
+	width:100vw;
+	height: auto;
+	margin-top: 5vh;
+}
+
+.section3_login .volunteer_text{
+	width: 100vw;
+	height: auto;
+}
+.section3_login img{
+width:100vw;
+height:auto;
+	margin-bottom: 2vh;
+}
+
+.section3_login .volunteer_text3 h7{
+	font-family: "Montserrat", "sans-serif";
+	font-size: 4vw;
+	text-align: center;
+	margin-left:  5vw;
+}
+
+.volunteer_text3 button{
+	border: 5px solid #CE9596;
+	background-color: white;
+	width: 80%;
+	font-family: "Raleway", "sans-serif";
+	color: #CE9596;
+	font-size: 5vw;
+	font-weight: 100;
+	margin-bottom: 3vh;
+	text-align: center;
+	margin-left: 10%;
+	cursor: pointer;
+}
+
+.volunteer_text3 button:hover{
+	
+	background-color: #CE9596;
+	color: white;
 }
 
 
@@ -554,7 +603,7 @@ img {
 .container_one_payment button,
 .login_system button,
 .signup_system button,
-.signup_system_step1 button {
+.signup_system_step1 button{
 	border: 5px solid #CE9596;
 	background-color: #262626;
 	width: 80%;
@@ -572,7 +621,7 @@ img {
 .container_one_payment button:hover,
 .login_system button:hover,
 .signup_system button:hover,
-.signup_system_step1 button:hover {
+.signup_system_step1 button:hover{
 	background-color: #CE9596;
 	width: 80%;
 	font-family: "Raleway", "sans-serif";
@@ -1155,7 +1204,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 @media screen and (min-width: 720px) {
 	
 	
-	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION + COMMON STYLING FOR SECTION 3*/
 
 	
 	.section1{
@@ -1164,7 +1213,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		grid-template-columns: 1fr 1fr;
 		margin-left: 5vw;
 	}
-.contribiution_text{
+.contribiution_text,
+.section3_login .volunteer_text{
 	width: 45vw;
 	height: auto;
 	padding-top: 5vh;
@@ -1177,13 +1227,15 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	width: 40vw;
 	}
 
-.contribiution_text h7{
+.contribiution_text h7,
+	.section3_login .volunteer_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 3vw;
 }
 
-.contribiution_text h6{
+.contribiution_text h6,
+	.section3_login .volunteer_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
@@ -1192,10 +1244,11 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	margin-left: 10vw;
 }
 
-.contribiution_text p{
+.contribiution_text p,
+	.section3_login p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
-	font-size: 3vw;
+	font-size: 2.8vw;
 	margin-left: 10vw;
 	margin-right: 0vw;
 }
@@ -1375,6 +1428,66 @@ position: absolute;
 	justify-self: center;
 
 }
+	
+	/* TABLET VERSION LOGGED IN - SECTION3 - OTHER STYLING THAT SAME FOR SECTION 1 */
+	
+	.section3_login{
+	display: grid;
+		grid-template-columns: 1fr 1fr;
+		width:100vw;
+	}
+	
+	.section3_login img{
+		width: 45vw;
+		margin-top: 6vh;
+		margin-right: 5vw;
+	}
+	
+	
+	.section3_login .volunteer_text{
+		margin-left: 5vw;
+		order: 1;
+	}
+	
+	.section3_login .volunteers{
+		order: 2;
+	}
+	
+	.section3_login .swan{
+		order:6;
+	
+	}
+	
+	.section3_login .girl{
+		order:3;
+		width:40vw;
+		margin-left: 5vw;
+	}
+	.section3_login .volunteer_text2{
+		order: 4;
+		margin-right: 5vw;
+		width: 45vw;
+	}
+	
+	.section3_login p{
+		margin-left: 0;
+	}
+	
+	.section3_login .volunteer_text3{
+		order: 5;
+		padding-left: 5vw;
+	}
+	
+	.section3_login .volunteer_text3 h7{
+		font-size: 3vw;
+		text-align: left;
+		padding-left: 0;
+	}
+	
+	.section3_login .volunteer_text3 button{
+		font-size: 3vw;
+		width: 24vw;
+	}
 	/*side menu */
 	.container_donation_loggedin .sidenav {
 		height: 100vh;
@@ -1828,6 +1941,11 @@ position: absolute;
 
 @media screen and (min-width: 992px) {
 	
+	.container_donation_loggedin{
+		position: absolute;
+		z-index:10;
+	}
+	
 		
 	
 /* LINES FOR support image */
@@ -1838,7 +1956,7 @@ position: absolute;
 }
 	
 	
-	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION plus common settings for section3*/
 	.header{
 		
 		display: block;
@@ -2540,5 +2658,115 @@ position: absolute;
 	justify-self: center;
 
 }
+	
+/* DESKOP VERSION LOGGED IN - SECTION3 - OTHER STYLING THAT SAME FOR SECTION 1 */
+	
+	.section3_login{
+	display: grid;
+		grid-template-columns: 1fr 1fr;
+		width:100vw;
+		z-index: 10;
+	}
+	
+	.section3_login .volunteer_text{
+		margin-left: 4vw;
+	}
+	
+	.section3_login .volunteer_text .bold{
+	margin-left: 10vw;
+		width: 20vw;
+		text-align: right;
+	}
+	
+	.section3_login .volunteer_text .bold h7{
+			font-family: "Montserrat","sans-serif";
+	}
+	.section3_login img{
+		width: 45vw;
+		margin-top: 6vh;
+		margin-right: 0;
+	}
+	
+.section3_login .volunteer_text h7{
+	font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 1.5vw;
+	margin-left: 3.5vw;
+}
+
+
+.section3_login .volunteer_text h6{
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 2.5vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	margin-left: 12vw;
+}
+
+
+	.section3_login p{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 1.5vw;
+	margin-left: 9vw;
+	margin-right: 0vw;
+	width: 32.5vw;
+}
+	
+	
+	.section3_login .volunteer_text{
+		margin-left: 5vw;
+		order: 1;
+	}
+	
+	.section3_login .volunteers{
+		order: 2;
+		margin-right: 4vw;
+		width:42vw;
+		
+	}
+	
+	.section3_login .swan{
+		order:6;
+		width:42vw;
+	
+	}
+	
+	.section3_login .girl{
+		order:3;
+		width:42vw;
+		margin-left: 8vw;
+	}
+	.section3_login .volunteer_text2{
+		order: 4;
+		margin-left:7vw;
+		width: 45vw;
+		place-self: center;
+	}
+	
+	.section3_login p{
+		margin-left: 0;
+	}
+	
+	.section3_login .volunteer_text3{
+		order: 5;
+		padding-left: 8vw;
+		width:40vw;
+		place-self: center;
+	}
+	
+	.section3_login .volunteer_text3 h7{
+		font-size: 2vw;
+		width; 40vw;
+		text-align: left;
+		margin-left: 0;
+	}
+	
+	.section3_login .volunteer_text3 button{
+		font-size: 2vw;
+		width: 24vw;
+		margin-top: 5vh;
+	}
 
 }
