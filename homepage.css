@@ -23,11 +23,11 @@ body {
 
 
 #fronttext {
-    font-family: "Montserrat";
+    font-family: "Raleway";
     color: white;
     position: absolute;
     font-size: 24px;
-    bottom: 100px;
+    bottom: 160px;
     left: 20px;
 
 
@@ -35,7 +35,7 @@ body {
 
 #lakesSection {
     position: relative;
-    background-image: url("images/2a7f91da0cddad1373f1ac3c827f1c75.jpg");
+    background-image: url("images/lakes.jpg");
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -66,16 +66,17 @@ button {
     position: absolute;
     border: 2px solid #CE9596;
     padding: 10px 12px;
+    bottom: 110px;
 
 }
 
 
 #swanpic {
     width: 70vw;
-   position: relative;
-display: block;
-margin-left: auto;
-margin-right: auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #firstline {
@@ -204,20 +205,21 @@ margin-right: auto;
     color: white;
 }
 
-#eventdate{
+#eventdate {
     font-family: "Raleway";
     font-size: 22px;
     color: white;
     font-weight: lighter;
 }
-#eventdescrip{
+
+#eventdescrip {
     font-family: "Raleway";
     font-size: 16px;
     color: white;
     font-weight: light;
 }
 
-#wannajoin{
+#wannajoin {
     font-family: "Montserrat";
     font-size: 20px;
     color: #CE9596;
@@ -229,14 +231,34 @@ margin-right: auto;
 
 #event2 {
     display: none;
-  
+
 }
+
+
+.volunteerspics {
+    display: none;
+}
+
+
+
+
+footer {
+    background-color: #262626;
+    height: 50vh;
+    display: grid;
+
+
+}
+
+
+
+
 
 /*DESKTOP*/
 
 @media only screen and (min-width: 961px) {
 
-  
+
 
     #frontpage {
         display: grid;
@@ -244,87 +266,164 @@ margin-right: auto;
     }
 
     #frontpic {
-        width: 100%;
-        background-size: cover;
+        width: 100vw;
+
     }
+
+
+    #fronttext {
+        font-family: "Raleway";
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        bottom: 100px;
+        left: 90px;
+
+
+    }
+
+    #contribute {
+        position: absolute;
+        font-family: "Raleway", "sans-serif";
+        font-size: 2vw;
+        font-weight: 100;
+        color: #CE9596;
+        margin-left: 5%;
+        margin-bottom: -3.5%;
+        text-align: center;
+        cursor: pointer;
+        border: 5px solid #CE9596;
+
+
+    }
+
 
 
     #swan {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr 1fr;
-    width: 100vw;
-    height: 100vh;
+        grid-template-columns: 50% 50% ; 
+        width: 100vw;
+        height: 100vh;
     }
 
     #swanpic {
-        width: 30vw;
-        margin-left: 10vw;
-       
+        width: 36vw;
+        margin-left: 8vw;
+        
+
     }
 
-#swanSection {
-  
-        grid-area: 1/3;
+    .swanSection {
+        margin-right:15vw;
+        margin-top:10vh;
+        grid-area: 1/2;
+       
        
 
-}
-#firstline {
-    
-    font-family: "Raleway";
-    font-size: 40px;
-    font-weight: lighter;
-    margin-left: 10px;
-}
+    }
 
+    #firstline {
 
-#secondline {
-    font-family: "Noto Serif TC";
-    font-size: 35px;
-    font-weight: lighter;
-    margin-left: 28px;
-
-}
-
-
-#thirdline {
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 28px;
-
-}
-
-#fourthline {
-    font-family: "Raleway";
-    font-size: 25px;
-    font-weight: lighter;
-    margin-left: 28px;
-}
-
-#quote {
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 28px;
-}
-
-.pink {
-    color: #CE9596;
-    font-weight: bold;
-}
-
-
-#events {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#event1 {
-    grid-area: 1/1;
-}
-#event2 {
-    visibility: visible;
+        font-family: "Raleway";
+        font-size: 40px;
+        font-weight: lighter;
+       position: relative;
     grid-area: 1/2;
-}
+    margin-top:3vh;
+    
+     
+      
+      
+    }
 
+
+    #secondline {
+        font-family: "Noto Serif TC";
+        font-size: 35px;
+        font-weight: lighter;
+        margin-left: 28px;
+
+    }
+
+
+    #thirdline {
+        font-family: "Montserrat";
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 28px;
+
+    }
+
+    #fourthline {
+        font-family: "Raleway";
+        font-size: 25px;
+        font-weight: lighter;
+        margin-left: 28px;
+    }
+
+    #quote {
+        font-family: "Montserrat";
+        font-size: 30px;
+        font-weight: bold;
+      margin-right: 4vw;
+        text-align: right;
+    }
+
+    .pink {
+        color: #CE9596;
+        font-weight: bold;
+    }
+
+
+    #events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #event1 {
+        grid-area: 1/1;
+    }
+
+    #event2 {
+        display: inherit;
+        grid-area: 1/2;
+    }
+
+
+    .volunteerspics {
+        display: grid;
+        grid-gap: 60px;
+        height: 150vh;
+
+
+    }
+
+
+
+    #woman1pic {
+        width: 350px;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #man1pic {
+        width: 350px;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
+
+
+    footer {
+        height: 20vh;
+    }
 }
