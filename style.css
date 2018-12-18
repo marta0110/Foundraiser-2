@@ -1,6 +1,7 @@
 body {
 	margin: 0 auto;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 /* MOBILE VERSION LOGGED IN - DONATE*/
@@ -59,8 +60,29 @@ body {
 }
 
 /* MOBILE VERSION LOGGED IN - SECTION2 - YOU SUPPORT HELPS*/ 
+.support{
+	background-color: #262626;	
+	padding-top: 1vh;
+	text-align: center;
+	margin-top: 5vh;
+	margin-bottom: -5vh;
+	padding-bottom: 6vh;
+	
+}
 
+.support h3{
+		font-family: "Montserrat", "sans-serif";
+	font-size: 6vw;
+	color: white;
+	margin-bottom: 0;
+	
+}
 
+.support .helps{
+	color:#CE9596;
+	font-size: 7vw;
+
+}
 .section2{
 	width: 100vw;
 	height:auto;
@@ -68,27 +90,9 @@ body {
 	margin-top: 5vh;
 }
 
-.section2 .support{
-	background-color: #262626;	
-	padding-top: 1vh;
-	text-align: center;
-	
-}
 
-.section2 .support h3{
-		font-family: "Montserrat", "sans-serif";
-	font-size: 6vw;
-	color: white;
-	
-}
 
-.section2 .support .helps{
-	color:#CE9596;
-	font-size: 7vw;
-
-}
-
-.section2 .support img{
+.section2 img{
 	width:100vw;
 	height:auto;
 	z-index: 5;
@@ -449,7 +453,8 @@ img {
 .container,
 .login_system,
 .signup_system,
-.signup_system_step1{
+.signup_system_step1,
+.donation_complete{
 	width: 80vw;
 	height: auto;
 	background-color: #262626;
@@ -491,7 +496,7 @@ img {
 .registration_complete .nav img,
 .signup_system_step1 .nav img,
 .container .nav img,
-.container_donation_loggedin .nav img {
+.container_donation_loggedin .nav img{
 	width: 22vw;
 	height: auto;
 	padding-top: 5vw;
@@ -507,15 +512,24 @@ img {
 
 }
 
+.donation_complete img{
+	width:100%;
+}
+
 .container h3,
 .container_one_payment h3,
-.registration_complete h3 {
+.registration_complete h3,
+.donation_complete h3{
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 400;
 	font-size: 5vw;
 	text-align: center;
 	height: 1vh;
+}
+.donation_complete .donation_word{
+	color: #CE9596;
+	background-color: red;
 }
 
 
@@ -1133,13 +1147,6 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	}
 
-	.container_one_payment {
-		width: 36%;
-		height: auto;
-		margin-top: -10px;
-		margin-left: -10px;
-		padding-bottom: 10px;
-	}
 }
 
 
@@ -1213,17 +1220,51 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 
 /* LINES FOR support image */
+	
+.support{
+	padding-top: 0;
+	padding-bottom: 3vh;
+	padding-top: 1px;
+}
+
+.support h3{
+		font-family: "Montserrat", "sans-serif";
+	font-size: 4vw;
+	color: white;
+	margin-bottom: 0;
+	
+	
+}
+
+.support .helps{
+	color:#CE9596;
+	font-size: 5vw;
+
+}
+	
+.section2{
+	position: relative;
+  text-align: center;
+  color: white;
+}
+
+.section2 img{
+		width: 100%;
+		height: auto;
+	}
 
 .lines_support{
 	display: block;
  position: absolute;
   bottom: 8px;
-	z-index: 10;
+	z-index: 4;
 	margin-left: 0;
-	height: 70.5%;
+	height: 101%;
+	top: 1%;
+	
 
 }
-
+	
 	.lines_support div {
 		display: inline-block;
 	}
@@ -1232,7 +1273,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-left: 8vw;
 		width: 21vw;
 		border-left: 1px solid white;
-		height: 100vh;
+		height: 100%;
 		position: absolute;
 
 	}
@@ -1241,7 +1282,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-left: 29vw;
 		width: 21vw;
 		border-left: 1px solid white;
-		height: 100vh;
+		height: 100%;
 		position: absolute;
 
 	}
@@ -1250,7 +1291,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-left: 50vw;
 		width: 21vw;
 		border-left: 1px solid white;
-		height: 100vh;
+		height: 100%;
 		position: absolute;
 	
 	}
@@ -1259,7 +1300,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	margin-left: 71vw;
 		width: 21vw;
 		border-left: 1px solid white;
-		height: 100vh;
+		height: 100%;
 		position: absolute;
 
 	}
@@ -1268,41 +1309,10 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-left: 92vw;
 		width: 4vw;
 		border-left: 1px solid white;
-		height: 100vh;
+	height: 100%;
 		position: absolute;
 	}
 
-
-	
-.section2{
-	position: relative;
-  text-align: center;
-  color: white;
-}
-
-.section2 .support{
-	background-color: #262626;	
-	padding-top: 1vh;
-	text-align: center;
-	position: relative;
-}
-
-.section2 .support h3{
-		font-family: "Montserrat", "sans-serif";
-	font-size: 6vw;
-	color: white;
-	
-}
-
-.section2 .support .helps{
-	color:#CE9596;
-	font-size: 7vw;
-}
-
-.section2 .support img{
-	width:100vw;
-	height:auto;
-}
 
 .section2 .numbers h4{
 	font-family: "Montserrat", "sans-serif";
@@ -1312,16 +1322,55 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 }
 
 .section2 .numbers{
-	 position: absolute;
+position: absolute;
   bottom: 8px;
-  left: 8vw;
-	
+  left: 0;
+	top: 0px;
+	width: 100vw;
 }
+	.section2 .numbers h4{
+		font-weight: 100;
+		margin-bottom: 0;
+	}	
 	
-
+	.section2 .numbers p{
+		font-size: 3vw;
+		margin-top: 1vh;
+		width:38vw;
+		text-align: end;
+		
+	
+	}
+	
+.section2 .numbers .united,
+.section2 .numbers .saved,
+.section2 .numbers .raised,
+.section2 .numbers .clean{
+     width: 50vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	}
+	
+	.section2 .numbers .united{
+		margin-left: -9vw;
+	}
+	
+	
+.section2 .numbers .raised{
+		margin-left: 12vw;
+	}
+	
+	.section2 .numbers .clean{
+			margin-left: -52vw;
+	}
+	
+		.section2 .numbers .saved{
+			margin-left: -9vw;
+	}
+	
 .section2 .numbers .clean,
 .section2 .numbers .saved{
-	margin-top: 7vh;
+	margin-top: 0;
 	align-self: center;
 	justify-self: center;
 
@@ -1472,6 +1521,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-bottom: 15px;
 	}
 
+.container_one_payment {
+		width: 36%;
+		height: auto;
+		margin-top: -10px;
+		margin-left: -10px;
+		padding-bottom: 10px;
+	}
 
 	.container .nav img,
 	.container_one_payment .nav img,
@@ -1777,18 +1833,16 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 /* LINES FOR support image */
 
 .lines_support{
-	display: block;
- position: absolute;
-  bottom: 8px;
-	z-index: 10;
-	margin-left: 0;
-	height: 71%;
+	top:0;
 
 }
 	
 	
 	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
-
+	.header{
+		
+		display: block;
+	}
 	
 	.section1{
 		margin-left: 8.5vw;
@@ -1831,13 +1885,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 .contribiution_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 }
 
 .contribiution_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
-	font-size: 2.8vw;
+	font-size: 2.5vw;
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	margin-left: 9vw;
@@ -1846,7 +1900,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 .contribiution_text p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 	margin-left: 9vw;
 	margin-right: 0vw;
 	width: 32.5vw;
@@ -1855,7 +1909,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 .contribiution_text .save_lakes{
 		font-family: "Montserrat", "sans-serif";
 	font-weight: 100;
-	font-size: 1.8vw;
+	font-size: 1.5vw;
 	margin-right: 10vw;
 	
 }
@@ -2057,7 +2111,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 	.container_one_payment label {
-		font-size: 1.4vw;
+		font-size: 1.5vw;
 
 	}
 
@@ -2232,6 +2286,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 100vh;
 		position: relative;
 		position: fixed;
+		
 
 	}
 
@@ -2397,5 +2452,93 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		color: #262626;
 	}
 
+	/* WEB VERSION LOGGED IN SECTION 2 */
+		
+.support{
+	padding-top: 0;
+	padding-bottom: 3vh;
+	padding-top: 0px;
+	width: 45vw;
+	z-index: 10;
+}
+
+.support h3{
+		font-family: "Montserrat", "sans-serif";
+	font-size: 3vw;
+	color: white;
+	margin-bottom: 0;
+	margin-left: 4vw;
+	padding-top: 0;
+	
+	
+}
+
+.support .helps{
+	font-size: 4vw;
+
+}
+
+.section2 .numbers h4{
+	font-size: 3vw;
+}
+
+.section2 .numbers{
+position: absolute;
+  bottom: 8px;
+  left: -2vw;
+	top: 0px;
+	width: 100vw;
+}
+	.section2 .numbers h4{
+		font-weight: 100;
+		margin-bottom: 0;
+	}	
+	
+	.section2 .numbers p{
+		font-size: 2.5vw;
+		margin-top: 0vh;
+		width:35vw;
+		text-align: end;
+		
+	
+	}
+	
+.section2 .numbers .united,
+.section2 .numbers .saved,
+.section2 .numbers .raised,
+.section2 .numbers .clean{
+     width: 50vw;
+	display: grid;
+	grid-template-columns: 1fr;
+	}
+	
+	.section2 .numbers .united{
+		margin-left: -9vw;
+	}
+	
+	.section2 .numbers .united p{
+		margin-left: 3vw;
+	}
+	
+	
+.section2 .numbers .raised{
+		margin-left: 12vw;
+	}
+	
+	.section2 .numbers .clean{
+			margin-left: -51vw;
+	}
+	
+		.section2 .numbers .saved{
+			margin-left: -8vw;
+	}
+	
+.section2 .numbers .clean,
+.section2 .numbers .saved{
+	margin-top: 0;
+	align-self: center;
+	justify-self: center;
+
+}
 
 }
