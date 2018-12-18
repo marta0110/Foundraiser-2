@@ -68,6 +68,7 @@ function addItem (){
         }
 
 function setHeader() {
+	
   const UserName = localStorage.FName;
   const UserImage = localStorage.avatar;
 
@@ -83,6 +84,10 @@ console.log(localStorage);
 
 }
 
+if (localStorage.getItem("avatar") === null) {
+  document.getElementById('img').setAttribute("src", "images/username.png");
+	console.log("avatar");
+}
 
 function logOut (){
     window.localStorage.clear();
