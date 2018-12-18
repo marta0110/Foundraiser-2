@@ -228,7 +228,7 @@ margin-right: auto;
 }
 
 #event2 {
-    visibility: hidden;
+    display: none;
   
 }
 
