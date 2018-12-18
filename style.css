@@ -12,8 +12,15 @@ body {
 	display: none;
 }
 
-/* MOBILE VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+.lines_support{
+	display: none;
+}
 
+/* MOBILE VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+.section1{
+	position: relative;
+	height:auto;
+}
 .contribiution_text{
 	width: 100vw;
 	height: auto;
@@ -50,6 +57,67 @@ body {
 	margin-right: 10vw;
 	
 }
+
+/* MOBILE VERSION LOGGED IN - SECTION2 - YOU SUPPORT HELPS*/ 
+
+
+.section2{
+	width: 100vw;
+	height:auto;
+	position: relative;
+	margin-top: 5vh;
+}
+
+.section2 .support{
+	background-color: #262626;	
+	padding-top: 1vh;
+	text-align: center;
+	
+}
+
+.section2 .support h3{
+		font-family: "Montserrat", "sans-serif";
+	font-size: 6vw;
+	color: white;
+	
+}
+
+.section2 .support .helps{
+	color:#CE9596;
+	font-size: 7vw;
+
+}
+
+.section2 .support img{
+	width:100vw;
+	height:auto;
+	z-index: 5;
+}
+
+.section2 .numbers h4{
+	font-family: "Montserrat", "sans-serif";
+	font-size: 4vw;
+	color: black;
+
+}
+
+.section2 .numbers{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 60vw;
+	margin: 0 auto;
+	align-items: center;
+	
+}
+
+.section2 .numbers .clean,
+.section2 .numbers .saved{
+	margin-top: 7vh;
+	align-self: center;
+	justify-self: center;
+}
+
+
 /* wrapper menu */
 
 .bg_nav {
@@ -379,7 +447,6 @@ img {
 /* STYLING SAME FOR EACH ELEMENTS IN THE CONTAINERS */
 
 .container,
-.container_one_payment,
 .login_system,
 .signup_system,
 .signup_system_step1{
@@ -393,6 +460,18 @@ img {
 	z-index: 2;
 	padding-bottom: 3vw;
 }
+
+.container_one_payment{
+	width: 80vw;
+	height: auto;
+	background-color: #262626;
+	border-radius: 2px;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	z-index: 2;
+	padding-bottom: 3vw;
+}
+
 
 .registration_complete {
 	width: 80vw;
@@ -1069,7 +1148,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 @media screen and (min-width: 720px) {
 	
 	
-	/* MOBILE VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
+	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
 
 	
 	.section1{
@@ -1121,6 +1200,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	margin-right: 10vw;
 	
 }
+	
 
 	/*donation_loggedin.html styling*/
 	.bg_nav {
@@ -1129,6 +1209,123 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 55px;
 	}
 
+	/* MOBILE VERSION LOGGED IN - SECTION2 - YOU SUPPORT HELPS*/ 
+
+
+/* LINES FOR support image */
+
+.lines_support{
+	display: block;
+ position: absolute;
+  bottom: 8px;
+	z-index: 10;
+	margin-left: 0;
+	height: 70.5%;
+
+}
+
+	.lines_support div {
+		display: inline-block;
+	}
+
+	.lines_support .line1 {
+		margin-left: 8vw;
+		width: 21vw;
+		border-left: 1px solid white;
+		height: 100vh;
+		position: absolute;
+
+	}
+
+.lines_support .line2 {
+		margin-left: 29vw;
+		width: 21vw;
+		border-left: 1px solid white;
+		height: 100vh;
+		position: absolute;
+
+	}
+
+	.lines_support .line3 {
+		margin-left: 50vw;
+		width: 21vw;
+		border-left: 1px solid white;
+		height: 100vh;
+		position: absolute;
+	
+	}
+
+	.lines_support .line4 {
+	margin-left: 71vw;
+		width: 21vw;
+		border-left: 1px solid white;
+		height: 100vh;
+		position: absolute;
+
+	}
+
+	.lines_support .line5 {
+		margin-left: 92vw;
+		width: 4vw;
+		border-left: 1px solid white;
+		height: 100vh;
+		position: absolute;
+	}
+
+
+	
+.section2{
+	position: relative;
+  text-align: center;
+  color: white;
+}
+
+.section2 .support{
+	background-color: #262626;	
+	padding-top: 1vh;
+	text-align: center;
+	position: relative;
+}
+
+.section2 .support h3{
+		font-family: "Montserrat", "sans-serif";
+	font-size: 6vw;
+	color: white;
+	
+}
+
+.section2 .support .helps{
+	color:#CE9596;
+	font-size: 7vw;
+}
+
+.section2 .support img{
+	width:100vw;
+	height:auto;
+}
+
+.section2 .numbers h4{
+	font-family: "Montserrat", "sans-serif";
+	font-size: 4vw;
+	color: white;
+
+}
+
+.section2 .numbers{
+	 position: absolute;
+  bottom: 8px;
+  left: 8vw;
+	
+}
+	
+
+.section2 .numbers .clean,
+.section2 .numbers .saved{
+	margin-top: 7vh;
+	align-self: center;
+	justify-self: center;
+
+}
 	/*side menu */
 	.container_donation_loggedin .sidenav {
 		height: 100vh;
@@ -1576,6 +1773,20 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 @media screen and (min-width: 992px) {
 	
 		
+	
+/* LINES FOR support image */
+
+.lines_support{
+	display: block;
+ position: absolute;
+  bottom: 8px;
+	z-index: 10;
+	margin-left: 0;
+	height: 71%;
+
+}
+	
+	
 	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION*/
 
 	

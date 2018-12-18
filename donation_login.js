@@ -22,9 +22,6 @@ $(".login_button").on('click',function(){
 	$(".signup_system").slideToggle(), "slow";
    });
 
-$("#registerbutton").on('click',function(){
- $(".registration_complete").slideToggle(), "slow";
-});
 
 $("#confirm").on('click',function(){
  $(".signup_system").slideToggle(), "slow";

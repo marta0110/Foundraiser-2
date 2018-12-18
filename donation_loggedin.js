@@ -27,39 +27,21 @@ wrapperMenu.onclick = function(){
 	timesClicked++;
 	
 	if(timesClicked%2==0){
-wrapperMenu.addEventListener('click', function(){					document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("mySidenav").style.width = "0";
 wrapperMenu.classList.toggle('open');
 //wrapperMenu.setAttribute("class","actions_one");
 	console.log("close");	
 		
-	} )}else{
-		
-		
-				
-wrapperMenu.addEventListener('click', function(){
+	}else{
   wrapperMenu.classList.toggle('open'); 
 	 document.getElementById("mySidenav").style.width = "50%";
 	console.log("open");
 							 
 		 
 }
-	)}
 	
 }
-	
-//
-//function myFunction(x) {
-//  if (x.matches) { // If media query matches
-//    document.body.style.backgroundColor = "yellow";
-//  } else {
-//   document.body.style.backgroundColor = "pink";
-//  }
-//}
-//
-//var x = window.matchMedia("(min-width: 960px)")
-//myFunction(x) // Call listener function at run time
-//x.addListener(myFunction) // Attach listener function on state changes
-	
+
  
 
 
