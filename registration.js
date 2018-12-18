@@ -105,6 +105,7 @@ function checkUser(ExistingUser) {
 
 					document.querySelector('.name').textContent = data.FName;
 					document.querySelector('.mail').textContent = data.email;
+				
 
 
 				}

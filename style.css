@@ -604,7 +604,7 @@ img {
 }
 
 .registration_complete .nav .main_page,
-.registration_complete .nav .login_button {
+.registration_complete .nav .login_button_registration{
 	padding-top: 3vh;
 	cursor: pointer;
 	color: white;
@@ -636,7 +636,7 @@ img {
 .signup_system .nav .login_button:hover,
 .signup_system_step1 .nav .login_button:hover,
 .registration_complete .nav .main_page:hover,
-.registration_complete .nav .login_button:hover,
+.registration_complete .nav .login_button_registration:hover,
 .container .nav .mainpage_button:hover {
 	color: #CE9596;
 	text-decoration: underline;
