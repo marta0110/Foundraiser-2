@@ -625,7 +625,7 @@ img {
 }
 
 .signup_system .nav .login_button,
-.signup_system_step1 .nav .login_button,
+.signup_system_step1 .nav .login_button_step1,
 .container .nav .mainpage_button {
 	color: white;
 	text-decoration: none;
@@ -634,7 +634,7 @@ img {
 }
 
 .signup_system .nav .login_button:hover,
-.signup_system_step1 .nav .login_button:hover,
+.signup_system_step1 .nav .login_button_step1:hover,
 .registration_complete .nav .main_page:hover,
 .registration_complete .nav .login_button_registration:hover,
 .container .nav .mainpage_button:hover {
@@ -652,7 +652,7 @@ img {
 }
 
 .signup_system .nav .login_button:hover + .sign_up_button,
-.signup_system_step1 .nav .login_button:hover + .sign_up_button {
+.signup_system_step1 .nav .login_button_step1:hover + .sign_up_button {
 	color: white;
 	text-decoration: none;
 

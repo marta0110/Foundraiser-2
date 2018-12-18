@@ -16,6 +16,25 @@ $(".login_button").on('click',function(){
 
    });
 
+$(".login_button_step1").on('click',function(){
+   $(".login_system").slideToggle(), "slow";
+	 $(".signup_system_step1").slideToggle(), "slow";
+
+   });
+
+$(".registerbutton").on('click',function(){
+   $(".registration_complete").slideToggle(), "slow";
+	 $(".signup_system").slideToggle(), "slow";
+
+   });
+
+$(".login_button_registration").on('click',function(){
+   $(".login_system").slideToggle(), "slow";
+	 $(".registration_complete").slideToggle(), "slow";
+
+   });
+
+
 
 
 $(".button_signup_volunteer").on('click',function(){
@@ -24,17 +43,21 @@ $(".button_signup_volunteer").on('click',function(){
    });
 
 //$("#confirm").on('click',function(){
-// $(".signup_system").slideToggle(), "slow";
-//  });
+//$(".signup_system").slideToggle(), "slow";
+//	$(".container").slideToggle(), "slow";
+// });
 // 
 console.log("hejsa")
 
 const signup_system = document.querySelector(".signup_system");
-const container= document.querySelector(".container");
+const container= document.querySelector(".step1 .container");
 
+console.log("i test u")
 function openReg(){
-signup_system.style.display = "block";
-container.style.display = "none";
+	
+document.querySelector(".signup_system").style.display = "block";
+document.querySelector(".container").style.display = "none";
+console.log("i test u 2")	
 }
 
 
