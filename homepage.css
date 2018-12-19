@@ -21,6 +21,10 @@ body {
 }
 
 
+.image_bckg{
+    background-color: black;
+}
+
 
 #fronttext {
     font-family: "Raleway";
