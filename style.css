@@ -9,6 +9,81 @@ body {
 	overflow-x: hidden;
 }
 
+/* MOBILE VERSION frontpage*/
+.frontpage{
+	width:100vw;
+	height:auto;
+	position: relative;
+}
+
+.frontpage img{
+	width:100%;
+	height:auto;
+}
+
+.frontpage .content-front {
+	width:100vw;
+	height: auto;
+	position: absolute;
+	z-index: 10;
+	top:50%;
+	left: 10vw;
+}
+
+.frontpage .content-front h1{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	color:white;
+	width: 60vw;
+	
+}
+
+.frontpage .content-front button{
+		border: 5px solid #CE9596;
+	width: 40%;
+	font-family: "Raleway", "sans-serif";
+	color: #CE9596;
+	font-size: 5vw;
+	font-weight: 100;
+	margin-bottom: 3vh;
+	text-align: center;
+	margin-left: 10%;
+	cursor: pointer;
+}
+
+
+/*  FRONTPAGE- mobile version section 1 swan */
+
+.swan .swan_text{
+	margin-top: 5vh;
+}
+.swan .readmore{
+	width:50%;
+	display: grid;
+	grid-template-columns: 25% 80%;
+		
+}
+
+.swan .readmore img{
+	width: 10vw;
+	margin-left: 10vw;
+}
+
+.swan .readmore p{
+	padding-bottom:5%;
+	cursor:pointer;
+	 
+}
+
+.swan .readmore p:hover{
+	color: palevioletred;
+}
+.swan p{
+	margin-top: 0;
+	
+}
+
 /* MOBILE VERSION LOGGED IN - DONATE*/
 
 .sidenav_scroll {
@@ -36,7 +111,8 @@ body {
 
 .contribiution_text h7,
 .volunteer_text h7,
-.section4_loggedin h7{
+.section4_loggedin h7,
+.swan h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
@@ -44,7 +120,8 @@ body {
 
 .contribiution_text h6,
 .volunteer_text h6,
-.section4_loggedin h6{
+.section4_loggedin h6,
+.swan .swan_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 5vw;
@@ -53,15 +130,18 @@ body {
 	margin-left: 10vw;
 }
 
+
 .contribiution_text p,
 .volunteer_text p,
 .section3_login p,
-.section4_loggedin p{
+.section4_loggedin p,
+.swan p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
 	margin-left: 10vw;
 	margin-right: 10vw;
+	
 }
 
 .contribiution_text .save_lakes{
@@ -173,7 +253,9 @@ height:auto;
 	cursor: pointer;
 }
 
-.volunteer_text3 button:hover{
+
+.volunteer_text3 button:hover,
+.frontpage .content-front button:hover{
 	
 	background-color: #CE9596;
 	color: white;
@@ -1567,6 +1649,50 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 @media screen and (min-width: 720px) {
 	
 	
+	
+	/* MOBILE VERSION frontpage*/
+
+
+.frontpage .content-front button{
+	cursor: pointer;
+}
+	
+	
+
+
+/*  FRONTPAGE- TABLET VERSION SECTION 1 SWAN */
+
+.swan .swan_text{
+	margin-top: 5vh;
+		margin-left: 5vw;
+}
+	
+.swan .readmore{
+	width:50%;
+	display: grid;
+	grid-template-columns: 25% 80%;
+		
+}
+
+.swan .readmore img{
+	width: 8vw;
+	margin-left: 10vw;
+}
+
+.swan .readmore p{
+	padding-bottom:5%;
+	cursor:pointer;
+	 
+}
+
+.swan .readmore p:hover{
+	color: palevioletred;
+}
+.swan p{
+	margin-top: 0;
+	
+}
+	
 	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION + COMMON STYLING FOR SECTION 3*/
 
 	
@@ -1593,7 +1719,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 .contribiution_text h7,
 .section3_login .volunteer_text h7,
-.section4_loggedin .news_text h7{
+.section4_loggedin .news_text h7,
+	.swan .swan_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 3vw;
@@ -1605,7 +1732,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 .contribiution_text h6,
 	.section3_login .volunteer_text h6,
-	.section4_loggedin .news_text h6{
+	.section4_loggedin .news_text h6,
+		.swan .swan_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 4vw;
@@ -1616,7 +1744,8 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 .contribiution_text p,
 	.section3_login p,
-	.section4_loggedin .news_text p{
+	.section4_loggedin .news_text p,
+		.swan .swan_text p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 2.8vw;
@@ -2663,6 +2792,55 @@ position: absolute;
 	
 	
 	
+	/* DESKTOP VERSION frontpage*/
+
+
+.frontpage .content-front button{
+	width: 35%;
+	margin-left: 0;
+	
+}
+	
+
+/*  FRONTPAGE- DESKTOP VERSION SECTION 1 SWAN */
+
+	.swan{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+.swan .swan_text{
+	margin-top: 5vh;
+		margin-left: 7vw;
+}
+	
+.swan .readmore{
+	width:50%;
+	display: grid;
+	grid-template-columns: 30% 80%;
+		
+}
+
+.swan .readmore img{
+	width: 5vw;
+	margin-left: 10vw;
+}
+
+.swan .readmore p{
+	padding-bottom:5%;
+	cursor:pointer;
+	z-index: 10;
+	 
+}
+
+.swan .readmore p:hover{
+	color: palevioletred;
+}
+.swan p{
+	margin-top: 0;
+	
+}
+	
+	
 /* LINES FOR support image section 2 */
 
 .lines_support{
@@ -2742,13 +2920,15 @@ position: absolute;
 		width: 1.1vw;
 	}
 
-.contribiution_text h7{
+.contribiution_text h7,
+	.swan .swan_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 1.5vw;
 }
 
-.contribiution_text h6{
+.contribiution_text h6,
+	.swan .swan_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 2.5vw;
@@ -2757,7 +2937,8 @@ position: absolute;
 	margin-left: 9vw;
 }
 
-.contribiution_text p{
+.contribiution_text p,
+	.swan .swan_text p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 1.5vw;
