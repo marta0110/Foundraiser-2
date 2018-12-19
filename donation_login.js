@@ -39,6 +39,13 @@ $("#confirm").on('click',function(){
  $(".signup_system").slideToggle(), "slow";
   });
 
+
+$(".donation_login").on('click',function(){
+ $(".donation_complete").slideToggle(), "slow";
+	$(".container_one_payment").slideToggle(), "slow";
+	
+  });
+
 //console.log("hejsa")
 //
 //const signup_system = document.querySelector(".signup_system");
