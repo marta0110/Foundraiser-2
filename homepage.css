@@ -137,7 +137,9 @@ button {
 }
 
 
-
+.section2{
+    display: none;
+}
 #donationSection {
     background-image: url(images/donation.png);
     background-repeat: no-repeat;
@@ -452,6 +454,14 @@ footer {
 
 
     }
+
+    #banner {
+        
+    }
+
+.section2 {
+    display:block;
+}
 
     #donationmotto {
         font-family: "Noto Serif TC";
