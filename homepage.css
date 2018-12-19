@@ -199,7 +199,8 @@ button {
 }
 
 #event1 {
-    background-color: #262626
+    background-color: #262626;
+    height:80vh;
 }
 
 #event1pic {
@@ -213,9 +214,11 @@ button {
     font-family: "Montserrat";
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 #eventdate {
+    text-align: center;
     font-family: "Raleway";
     font-size: 22px;
     color: white;
@@ -223,8 +226,11 @@ button {
 }
 
 #eventdescrip {
+    text-align: center;
+    padding:10px;
+    margin-right: 8px;
     font-family: "Raleway";
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     font-weight: light;
 }
@@ -236,8 +242,10 @@ button {
     font-weight: bold;
     border: 2px solid #CE9596;
     padding: 10px 12px;
+    margin-left: 30%;
 
 }
+
 
 #event2 {
     display: none;
@@ -251,6 +259,14 @@ button {
 
 .volunteerspics {
     display: none;
+}
+
+#volunteersection {
+    display: none;
+}
+
+#firstlinev{
+    visibility: hidden;
 }
 
 #thirdlineV {
@@ -473,6 +489,8 @@ footer {
 
     }
 
+   
+
     #volunteer {
         position: absolute;
         margin-left: 25vw;
@@ -493,10 +511,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2px;
-        
-       
-
-
+    
     }
 
     #event1 {
@@ -534,12 +549,92 @@ footer {
         display:block;
         grid-area: 1/3;
          width: 25vw;
-         height:auto;
+         height:80vh;
          background-color: #262626;
-         margin-left: 1vw;
+         margin-left: 0.4vw;
        
  
      }
+
+     #picnic{
+         font-size: 25px;
+        text-align: center;
+     }
+
+     #eventdate {
+        text-align: center;
+     }
+
+
+     #eventdescrip{
+         text-align: center;
+         font-size: 18px;
+     }
+
+
+     #wannajoin {
+         margin-top: 1.5vh;
+        margin-left: 30%;
+     }
+
+
+ /*SECTION VOLUNTEER*/
+
+ #firstlinev {
+
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: lighter;
+    position: relative;
+    grid-area: 1/2;
+    margin-top: 3vh;
+
+
+
+
+}
+
+
+#secondlinev {
+    font-family: "Noto Serif TC";
+    font-size: 35px;
+    font-weight: lighter;
+    margin-left: 28px;
+
+}
+
+
+#thirdlinev {
+    font-family: "Montserrat";
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 28px;
+
+}
+
+#fourthlinev {
+    font-family: "Raleway";
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 28px;
+}
+
+#quote {
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 4vw;
+    text-align: right;
+}
+
+.pink {
+    color: #CE9596;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+
+
 
 
 
