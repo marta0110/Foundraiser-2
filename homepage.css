@@ -580,26 +580,36 @@ footer {
 
  /*SECTION VOLUNTEER*/
 
- #firstlinev {
+ 
 
+
+#volunteersection{
+    display:grid;
+    grid-template-columns: 1fr  2fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-right: 25vw;
+    height:100vh;
+}
+
+
+#firstlinev {
+    display:block;
     font-family: "Raleway";
     font-size: 40px;
     font-weight: lighter;
     position: relative;
-    grid-area: 1/2;
-    margin-top: 3vh;
-
-
-
 
 }
 
-
 #secondlinev {
+    
     font-family: "Noto Serif TC";
     font-size: 35px;
-    font-weight: lighter;
+    margin-top: 20vh;
     margin-left: 28px;
+    font-weight: lighter;
+    grid-area: 1/2;
+    
 
 }
 
@@ -609,6 +619,8 @@ footer {
     font-size: 25px;
     font-weight: bold;
     margin-left: 28px;
+    grid-area: 1/2;
+    margin-top: 30vh;
 
 }
 
