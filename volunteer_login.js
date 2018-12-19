@@ -34,9 +34,6 @@ $(".login_button_registration").on('click',function(){
 
    });
 
-
-
-
 $(".button_signup_volunteer").on('click',function(){
    $(".signup_system_step1").slideToggle(), "slow";
 
