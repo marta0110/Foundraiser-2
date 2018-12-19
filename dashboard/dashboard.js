@@ -30,7 +30,8 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
                                 beginAtZero: true,
                                 min: 0,
                                 max: 1000,
-                                stepSize: 100
+                                stepSize: 100,
+                                
                               }
                             }
                           ]
@@ -40,9 +41,9 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
                         labels: myData,
                     
                         datasets: [{
-                            label: "mon",
+                            label: "Amount donated",
                             data: myData,
-                            backgroundColor: ["#262626"]
+                            backgroundColor: ["red"]
 
                         }]
 
