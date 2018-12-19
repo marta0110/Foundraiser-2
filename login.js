@@ -12,21 +12,18 @@ loginform.addEventListener('submit', (e) => {
 })
 
 
-// login form
+// login form - check does the user is in database, wrote correct information - if yes - go to login page
 
 function checkLogin(username, password) {
-
 	console.log(username + password)
-	fetch('https://5bff9c6d0296210013dc7df1.mockapi.io/api/v1/users?search=' + username)
+fetch('https://5bff9c6d0296210013dc7df1.mockapi.io/api/v1/users?search=' + username)
 		.then(res => res.json())
 		.then(data => {
 			//console.log("data: ", data[0].password);
 console.log(data)
-		
 if (data.length == 0) {
-
-				document.querySelector(".wrong_data").textContent = "Please insert correct data";
-				console.log("wrong data");
+document.querySelector(".wrong_data").textContent = "Please insert correct data";
+onsole.log("wrong data");
 }
 	
 	if (data[0].username == username && data[0].password == password) {
@@ -39,17 +36,9 @@ if (data.length == 0) {
 				localStorage.setItem('avatar', data[0].avatar);
 				localStorage.setItem('id', data[0].id);
 				window.location = 'donation_loggedin.html';
-
-
-
-				//something is wrong
+				//data is incorrect
 			} else {
-
-				document.querySelector(".wrong_data").textContent = "Please insert correct data";
-
-
-
+document.querySelector(".wrong_data").textContent = "Please insert correct data";
 			}
 		})
-
 }

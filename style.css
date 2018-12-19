@@ -176,7 +176,7 @@ height:auto;
 }
 
 
-/* wrapper menu */
+/* DONATION_LOGGEDIN.HTML - menu */
 
 .bg_nav {
 	background-color: #CE9596;
@@ -252,7 +252,7 @@ height:auto;
 }
 
 
-/*side menu */
+/* DONATION_LOGGEDIN.HTML - side menu */
 
 .container_donation_loggedin .sidenav {
 	height: 100vh;
@@ -324,7 +324,7 @@ height:auto;
 	margin-left: 50px;
 }
 
-/* slideshow*/
+/* DONATION_LOGGEDIN.HTML - slideshow*/
 
 .mySlides {
 	display: none;
@@ -464,6 +464,10 @@ img {
 	padding-left: 2vw;
 }
 
+.signup_system_step1 .arrow{
+	padding-top: 2vh;
+}
+
 .container_one_payment .arrow img,
 .login_system .arrow img,
 .signup_system .arrow img,
@@ -577,7 +581,7 @@ img {
 }
 
 
-/* DONATION COMPLETE = NOT LOGGED IN DIFFERENT STYLING */
+/* DONATION COMPLETE - NOT LOGGED IN DIFFERENT STYLING */
 .donation_complete_notlogedin img{
 	width: 30%;
 	height: auto;
@@ -1143,6 +1147,9 @@ signup_system_step1 registration_step1 {
 
 /* SIGN UP DIFFRENT STYLING */
 
+
+
+
 .signup_system .register-form .personal_info {
 	display: grid;
 	grid-template-columns: 15% 85%;
@@ -1193,6 +1200,15 @@ signup_system_step1 registration_step1 {
 
 }
 
+.signup_system .register-form .wrong_username{
+	color:white;
+	font-family: "Raleway", "sans-serif";
+	font-size: 2vw;
+	font-weight: 100;
+	padding-bottom: 2vh;
+	padding-left: 2vw;
+	
+}
 
 /* register form correct data */
 

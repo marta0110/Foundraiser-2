@@ -1,5 +1,4 @@
-//donation_system one off payment events
-
+//donation_system one off payment events on volunteer_system.html
 
 
 $(".button_login_payment").on('click',function(){
@@ -39,11 +38,7 @@ $(".button_signup_volunteer").on('click',function(){
 
    });
 
-//$("#confirm").on('click',function(){
-//$(".signup_system").slideToggle(), "slow";
-//	$(".container").slideToggle(), "slow";
-// });
-// 
+
 console.log("hejsa")
 
 const signup_system = document.querySelector(".signup_system");
@@ -56,7 +51,6 @@ document.querySelector(".signup_system").style.display = "block";
 document.querySelector(".container").style.display = "none";
 console.log("i test u 2")	
 }
-
 
 
 function GoBack_v(){

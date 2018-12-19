@@ -1,5 +1,4 @@
 const endpointR = "https://5bff9c6d0296210013dc7df1.mockapi.io/api/v1/users";
-//const registerbutton = document.querySelector('#registerbutton')
 const registerform = document.querySelector('.register-form');
 const registrationcomplete = document.querySelector('.registration_complete');
 
@@ -10,31 +9,19 @@ registerform.addEventListener("submit", e => {
 });
 
 
-
 //sending data to database
 function addNewUser() {
-			console.log(registerform.elements.username.value)
-	if(registerform.elements.username.value.length > 2 && registerform.elements.FName.value.length > 2  && registerform.elements.LName.value.length > 2 &&
-	registerform.elements.email.value.length  > 2 &&
-	registerform.elements.password.value.length > 2){
+	console.log(registerform.elements.username.value)
+	if (registerform.elements.username.value.length > 2 && registerform.elements.FName.value.length > 2 && registerform.elements.LName.value.length > 2 &&
+		registerform.elements.email.value.length > 2 &&
+		registerform.elements.password.value.length > 2) {
 
-				
 		checkUser(registerform.elements.username.value);
 		console.log(registerform.elements.username.value)
 		// here add the check Existing user as a condition if the username doesn't exist, then execute the following, else alert message 
-	
-	
-}
- else{
-	 
-	 
+	} else {
 		document.querySelector(".wrong_username").textContent = "Please fill all information"
-	 		
- }
-	
-	
-
-
+	}
 }
 
 function getAllUsers() {
@@ -52,9 +39,7 @@ function showSingleUser(users) {
 
 
 	root.appendChild(clone);
-
 }
-
 
 //user already exists
 
@@ -66,11 +51,7 @@ function checkUser(ExistingUser) {
 			console.log(ExistingUser)
 
 			if (data[0].username == ExistingUser) {
-				console.log("lala2")
-
 				document.querySelector(".wrong_username").textContent = "This username already exists";
-
-
 			} else { //the user does not exist, create her
 				const payload = {
 					FName: registerform.elements.FName.value,
@@ -81,9 +62,7 @@ function checkUser(ExistingUser) {
 					avatar: registerform.elements.pic.accept,
 
 				};
-
 				console.log("test");
-
 				fetch(endpointR, {
 						method: "post",
 						body: JSON.stringify(payload),
@@ -99,27 +78,16 @@ function checkUser(ExistingUser) {
 					})
 
 
+				//sane name and user mail for confirmation message
 				function saveInfo(data) {
 					console.log(data);
-
-
 					document.querySelector('.name').textContent = data.FName;
 					document.querySelector('.mail').textContent = data.email;
-				
-
-
 				}
-				
-			
 
-    registrationcomplete.style.display = "block";
-	registerform.style.display = "none";
-  
-
-
-			
+				registrationcomplete.style.display = "block";
+				registerform.style.display = "none";
 
 			}
-
 		})
 }

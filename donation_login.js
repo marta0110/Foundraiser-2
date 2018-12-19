@@ -1,10 +1,9 @@
-//donation_system one off payment events
+//donation_system one off payment events - 
 
 $(".button_one_payment").on('click', function () {
 	$(".container_one_payment").slideToggle(), "slow";
 	$(".container").slideToggle(), "slow";
 });
-
 
 $(".button_login_payment").on('click', function () {
 	$(".login_system").slideToggle(), "slow";
@@ -35,19 +34,17 @@ $(".signup_system_step1").slideToggle(), "slow";
 
 });
 
+$("#confirm").on('click', function () {
+	$(".signup_system").slideToggle(), "slow";
+});
+
+
+
 // DONATE BUTTON WITHOUT LOGIN 
 $(".one_type_donation").on('click', function () {
 $(".donation_complete_notlogedin").slideToggle(), "slow";
 $(".container_one_payment").slideToggle(), "slow";
 });
-
-
-
-
-$("#confirm").on('click', function () {
-	$(".signup_system").slideToggle(), "slow";
-});
-
 
 
 // DONATE BUTTON WITH LOGIN 
@@ -60,26 +57,8 @@ $("#container_payment_loggedin").slideToggle(), "slow";
 	
   });
 
-//const donation_complete = document.querySelector(".donation_complete")
-//
-//const one_payment = document.querySelector("#addNewDonation")
-//
-//function thanks() {
-//donation_complete.style.display = "block";
-//one_payment.style.visibility = "hidden";
-//}
 
-//console.log("hejsa")
-//
-//const signup_system = document.querySelector(".signup_system");
-//const container= document.querySelector(".container");
-//
-//function openReg(){
-//signup_system.style.display = "block";
-//container.style.display = "none";
-//}
-//
-
+// function - go to the landing page or frontpage
 function MainPage(){
 	 window.location='homepage.html'
 }
