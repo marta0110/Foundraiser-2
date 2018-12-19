@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+SC|Raleway" rel="stylesheet">
 </head>
+
 <body>
+	<!--background lines-->
 	<div class="lines_bg">
 		<div class="line1"></div>
 		<div class="line2"></div>
@@ -17,7 +19,10 @@
 		<div class="line6"></div>
 		<div class="line7"></div>
 	</div>
+
+	<!--all content of the website-->
 	<div class="container_donation_loggedin">
+		<!--navigation-->
 		<div class="nav">
 			<div class="image_bg">
 				<img src="images/logo_black.png" alt="logo">
@@ -30,7 +35,12 @@
 				</div>
 			</div>
 			<div class="sidenav_scroll">
-				<div class="points"></div>
+				<div class="observer">
+					<span class="dot-obs"></span>
+					<span class="dot-obs"></span>
+					<span class="dot-obs"></span>
+					<span class="dot-obs"></span>
+				</div>
 				<div class="profile">
 					<div class="dropdown">
 						<img src="images/username.png" id="img">
@@ -63,7 +73,7 @@
 			<h3 id="UserName">Hello</h3>
 			<h4> Join us on our upcoming events</h4>
 		</div>
-
+		<!--SLIDESHOW-->
 		<div class="slideshow-container">
 
 			<div class="dots">
@@ -72,16 +82,21 @@
 				<span class="dot"></span>
 			</div>
 			<div class="mySlides fade">
-				<img src="images/event1.png">
+				<img src="images/event1.png" alt='event'>
 				<div class="text">
 					<h5> A sunrise photo session </h5>
 					<div class="time">
 						<h6> Sun 26 Dec 2018 </h6>
 						<h6> 10.00 a. m.</h6>
 					</div>
-					<p>Join our sunrisephotography session around lakes of Copenhagen, Our start point is Ostebro lake where we will shoot picture of the smal island and the natural enviroment of the birds surrounding it
-
+					<p>Join our sunrise photography session around lakes of Copenhagen. Our start point is Ostebro lake where we will shoot picture of the natural enviroment for the birds.
 					</p>
+					<div class="readmore">
+						<img src="images/readmore.png">
+						<p>read more</p>
+
+					</div>
+
 				</div>
 			</div>
 
@@ -95,6 +110,11 @@
 					</div>
 					<p>Join our 25th marathon around Copenhagen lakes on which we will try to raise the money necessary to clean lakes in Copenhagen and help animals which live there.
 					</p>
+					<div class="readmore">
+						<img src="images/readmore.png">
+						<p>read more</p>
+
+					</div>
 				</div>
 			</div>
 			<div class="mySlides fade">
@@ -107,10 +127,16 @@
 					</div>
 					<p>Let’s spend nice family time around the lakes. If the sun will be on the sky we’ll organize a blnkets and heaters for people partecipating in the event. We will have also delicious warm boller freshly baked from bakery
 					</p>
+					<div class="readmore">
+						<img src="images/readmore.png">
+						<p>read more</p>
+
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<!--section1-->
 		<div class="section1">
 			<div class="contribiution_text">
 				<h7> CONTRIBIUTION</h7>
@@ -159,7 +185,7 @@
 					<button class="donation_login" type="submit" value="Donate"> Donate</button>
 				</form>
 			</div>
-			
+			<!--thank you for donation window-->
 			<div class="donation_complete_logged_in" style="display:none">
 				<h3> Thank you </h3>
 				<img class="thankyou_birds" src="images/donation_confitmation.png" alt="bird">
@@ -170,14 +196,12 @@
 				</div>
 			</div>
 		</div>
-
+		<!--section2-->
 		<div class="support">
 			<h3> Your support <span class="helps">helps </span></h3>
 		</div>
 		<div class="section2">
 			<img src="images/support.png">
-
-
 			<div class="lines_support">
 				<div class="line1"></div>
 				<div class="line2"></div>
@@ -185,7 +209,6 @@
 				<div class="line4"></div>
 				<div class="line5"></div>
 			</div>
-
 			<div class="numbers">
 				<div class="united">
 					<h4>United</h4>
@@ -205,6 +228,7 @@
 				</div>
 			</div>
 		</div>
+		<!--section3-->
 		<div class="section3_login">
 			<div class="volunteer_text">
 				<h7> VOLUNTEER</h7>
@@ -230,17 +254,118 @@
 			</div>
 			<img class="girl" src="images/swan.jpg">
 		</div>
-		<main></main>
-		<template id="templateDonation">
-        <article id="donation">      
-           <p> Donation</p>
-        </article>
-    </template>
+
+		<!--section4-->
+		<div class="section4_loggedin">
+			<div class="news_text">
+				<h7> NEWS</h7>
+				<h6> Discover our last activites</h6>
+				<p>No matter is it rainy snowy or sunny. We are here to help. Find out what occupied us lately
+				</p>
+			</div>
+
+			<div class="image_news">
+
+				<div class="container-overlay">
+					<img src="images/news1.png" alt='event'>
+					<div class="overlay">
+						<div class="text-overlay">
+							<h5>Volunteers meeting</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div class="container-overlay">
+					<img src="images/news2.png" alt='event'>
+					<div class="overlay2">
+							<div class="text-overlay">
+							<h5>Relax with us</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-overlay">
+					<img src="images/news3.png" alt='event'>
+					<div class="overlay">
+						<div class="text-overlay">
+							<h5> Last plastic bottle raise</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-overlay">
+					<img src="images/lakes.jpg" alt='event'>
+						<div class="overlay2">
+							<div class="text-overlay">
+							<h5>Morning jogging</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-overlay">
+					<img src="images/event2.png" alt='event'>
+					<div class="overlay">
+						<div class="text-overlay">
+							<h5> Our sunset walks</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-overlay">
+					<img src="images/login_bg_img.png" alt="Avatar" class="image">
+						<div class="overlay2">
+							<div class="text-overlay">
+							<h5>Winter arrived !</h5>
+							<div class="readmore">
+								<img src="images/readmore.png">
+								<p>read more</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			
+			</div>
+		</div>
 	</div>
 
 
 
+
+
+
+	<main></main>
+	<template id="templateDonation">
+        <article id="donation">      
+           <p> Donation</p>
+        </article>
+    </template>
+
+
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="intersection.js"></script>
 	<script src="donation_loggedin.js"></script>
 	<script src="donation_login.js"></script>
 	<script src="donation.js"></script>
