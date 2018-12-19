@@ -291,6 +291,113 @@ height:auto;
 }
 
 
+/* MOBILE VERSION FOOTER*/ 
+
+.section5_loggedin{
+	width: 100vw;
+	background-color: #262626;
+	padding: 10px;
+	height: auto;
+	padding-top: 5vh;
+}
+.section5_loggedin .img{
+	justify-content: center;
+	margin: 0 auto;
+	width: 40vw;
+	align-content: center;
+	
+}
+.section5_loggedin .logo_section img{
+	width: 100%;
+	margin: 0 auto;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+}
+
+.section5_loggedin .logo_section p{
+
+	color:white;
+	font-family: "Raleway","sans-serif";
+	font-weight: 100;
+	width: 60vw;
+	text-align: center;
+	margin-left: 20vw;
+	
+}
+
+.section5_loggedin .contact_section{
+	width: 100vw;
+	
+}
+.section5_loggedin .contact_section h5,
+.section5_loggedin .some h5{
+	color:white;
+	font-family: "Montserrat","sans-serif";
+	font-weight: 100;
+	width: 60vw;
+	text-align: center;
+	margin-left: 20vw;
+	font-size: 4vw;
+}
+.section5_loggedin .contact_section  .adress,
+.section5_loggedin .contact_section  .phone,
+.section5_loggedin .contact_section   .mail{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.section5_loggedin .contact_section  .adress img,
+.section5_loggedin .contact_section .phone img,
+.section5_loggedin .contact_section  .mail img{
+	width: 70%;
+	margin-left: 10vw;
+	padding-bottom: 2vh;
+}
+
+
+.section5_loggedin .contact_section  .adress p{
+	color:white;
+	font-family: "Raleway","sans-serif";
+	font-weight: 100;
+	text-align: center;
+	margin-left: 0;
+	padding-left: 0;
+	justify-self: start;
+	align-self: start;
+	padding-top: 0;
+	margin-top: 0;
+	margin-left: -10vw;
+}
+
+.section5_loggedin .contact_section .phone p,
+.section5_loggedin .contact_section  .mail p{
+	margin-left: 10vw;
+	color:white;
+	font-family: "Raleway","sans-serif";
+	font-weight: 100;
+	text-align: center;
+	justify-self: start;
+	align-self: start;
+	
+}
+
+.section5_loggedin .some .some-img{
+	display: inline-block;
+	width: 100vw;
+	margin: 0 auto;
+	margin-left: 20vw;
+	cursor: pointer;
+} 
+	
+.section5_loggedin .some .some-img img{
+	width:15%;
+	padding-right: 5vw;
+	
+}
+
+
+
 /* DONATION_LOGGEDIN.HTML - menu */
 
 .bg_nav {
@@ -564,7 +671,7 @@ img {
 
 @-webkit-keyframes fade {
 	from {
-		opacity: .4
+		opacity: .9
 	}
 	to {
 		opacity: 1
@@ -573,7 +680,7 @@ img {
 
 @keyframes fade {
 	from {
-		opacity: .4
+		opacity: .9
 	}
 	to {
 		opacity: 1
@@ -2050,6 +2157,106 @@ position: absolute;
 	
 }
 
+	
+
+/* tablet VERSION FOOTER*/ 
+
+.section5_loggedin{
+	width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 10vh;
+}
+.section5_loggedin .logo_section{
+	width: 30vw;
+	order: 2;
+	}
+	
+.section5_loggedin .logo_section	.img{
+	justify-content: center;
+	margin: 0 auto;
+	width: 20vw;
+	align-content: center;
+	
+}
+.section5_loggedin .logo_section img{
+	width: 100%;
+	margin: 0 auto;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+}
+
+.section5_loggedin .logo_section p{
+	color:white;
+	font-family: "Raleway","sans-serif";
+	font-weight: 100;
+	text-align: center;
+	margin-left: 0vw;
+	width: 30vw;
+	
+}
+
+.section5_loggedin .contact_section{
+	width: 30vw;
+	order: 1;
+	
+}
+.section5_loggedin .contact_section h5,
+.section5_loggedin .some h5{
+	color:white;
+	font-family: "Montserrat","sans-serif";
+	font-weight: 100;
+	width: 33vw;
+	text-align: center;
+	margin-left: 0vw;
+	font-size: 2.5vw;
+}
+.section5_loggedin .contact_section  .adress,
+.section5_loggedin .contact_section  .phone,
+.section5_loggedin .contact_section   .mail{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+
+.section5_loggedin .contact_section  .adress img,
+.section5_loggedin .contact_section .phone img,
+.section5_loggedin .contact_section  .mail img{
+	width: 70%;
+	margin-left: 0vw;
+	place-self: center;
+}
+
+
+.section5_loggedin .contact_section  .adress p{
+	width: 20vw;
+	margin-left: 2vw;
+	font-size: 2vw;
+	
+}
+
+.section5_loggedin .contact_section .phone p,
+.section5_loggedin .contact_section  .mail p{
+	margin-left: 3vw;
+	font-size: 2vw;
+	
+}
+.section5_loggedin .some {
+		order:3;
+	}
+
+.section5_loggedin .some .some-img{
+	display: inline-block;
+	width: 30vw;
+	margin-left: 0vw;
+
+} 
+	
+.section5_loggedin .some .some-img img{
+	width:15%;
+	
+}
+
 
 
 
@@ -2451,7 +2658,9 @@ position: absolute;
 	.container_donation_loggedin{
 		position: absolute;
 		z-index:10;
+		top: 0;
 	}
+	
 	
 	
 /* LINES FOR support image section 2 */
@@ -2468,21 +2677,23 @@ position: absolute;
 		grid-template-columns: 1fr;
 		align-items: center;
 		margin: 0 auto;
-		margin-left: 10px;
+		margin-left: 15px;
 		margin-top: 30vh;
 		grid-gap: 5px;
 	}
 	
 	.sidenav_scroll .observer .dot-obs{
-		width: 15px;
-		height:15px;
+		width: 10px;
+		height:10px;
 		border-radius: 100%;
-		border: 1px solid white;
+		border: 0.5px solid white;
+		
 		
 	}
 	
 	.activeAnchor{
 		background-color: white;
+		opacity: 0.7;
 	}
 	
 	
@@ -2614,10 +2825,10 @@ position: absolute;
 
 
 	.container_donation_loggedin .nav .sidenav_scroll .profile img {
-		width: 35px;
+		width: 25px;
 		height: auto;
 		display: block;
-		margin-left: 5px;
+		margin-left: 10px;
 		margin-right: auto;
 		cursor: pointer;
 
@@ -2630,7 +2841,7 @@ position: absolute;
 		font-weight: 100;
 		text-align: center;
 		cursor: pointer;
-		margin-top: 5vh;
+		margin-top: 3vh;
 	}
 	
 	.container_donation_loggedin .slideshow-container .text .readmore{
@@ -2794,7 +3005,7 @@ position: absolute;
 
 	.container_donation_loggedin .header h4 {
 		position: absolute;
-		z-index: 10;
+		z-index: 5;
 		color: white;
 		font-size: 2.5vw;
 		font-family: "Montserrat", "sans-serif";
@@ -3313,15 +3524,20 @@ position: absolute;
 		margin-right: 0;
 	}
 	
-.section3_login .volunteer_text h7{
+.section3_login .volunteer_text h7,
+.section4_loggedin .news_text h7{
 	font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 1.5vw;
 	margin-left: 3.5vw;
 }
 
+	.section4_loggedin .news_text h7{
+		margin-left: 9vw;
+	}
 
-.section3_login .volunteer_text h6{
+.section3_login .volunteer_text h6,
+	.section4_loggedin .news_text h6{
 	font-family: "Noto Serif", "sans-serif";
 	font-weight: 100;
 	font-size: 2.5vw;
@@ -3331,7 +3547,8 @@ position: absolute;
 }
 
 
-	.section3_login p{
+	.section3_login p,
+	.section4_loggedin .news_text p{
 		font-family: "Raleway", "sans-serif";
 	font-weight: 100;
 	font-size: 1.5vw;
@@ -3395,5 +3612,218 @@ position: absolute;
 		margin-top: 5vh;
 		z-index: 10;
 	}
+
+	/* WEBSITE VERSION LOGGED IN - SECTION4 - OVERLAYS */
+	
+	
+	.section4_loggedin{
+		margin-top: 10vh;
+	}
+	.image_news{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		background-color: red;
+		width: 84vw;
+		margin: 0 auto;
+		
+	}
+	
+	.image_news .container-overlay:nth-child(2){
+		margin-top: 10vh;
+		
+	}
+	
+	.image_news .container-overlay:nth-child(3){
+		margin-top: 20vh;
+	}
+	
+.image_news .container-overlay img{
+	display: block;
+  width: 100%;
+  height: auto;
+	}
+	
+	.container-overlay{
+  position: relative;
+  width: 100%;
+	height: 100%;
+	padding-bottom: 0vh;
+}
+	
+	
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(228, 164, 154, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container-overlay:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(228, 164, 154, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+	top:100%;
+  transition: .5s ease;
+}
+
+.container-overlay:hover .overlay2 {
+  height: 100%;
+	top:0;
+}
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+.text-overlay {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+		display: grid;
+	grid-template-columns: 1fr;
+	width: 100%;
+}
+
+.text-overlay h5{
+	color: white;
+	font-family: "Noto Serif", "sans-serif";
+	font-size: 3vw;
+	margin-top: 60%;
+	text-align: left;
+	margin-left: 10%;
+	width:100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	
+
+}
+
+
+.text-overlay .readmore{
+	display: grid;
+	grid-template-columns: 20% 80%;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 7%;
+	
+
+}
+
+.text-overlay .readmore img{
+	width: 5vw;
+	height: auto;
+	margin-left: 0;
+	padding-top: 10%;
+	padding-right: 0;
+	margin-right: 0;
+ 
+}
+
+.text-overlay .readmore p{
+	font-size: 2.3vw;
+	width: 50%;
+	padding-left: 0;
+	margin-left: 0;
+	align-self: start;
+	justify-self: start;
+	padding-bottom: 5%;
+	place-self: start;
+	padding-top: 0;
+	margin-top: 0;
+	
+}
+	
+
+/* WEBSITE VERSION FOOTER*/ 
+
+.section5_loggedin{
+
+}
+
+.section5_loggedin .logo_section	.img{
+	width: 15vw;
+}
+
+.section5_loggedin .logo_section p{
+   margin-left: 2.5vw;
+	width: 25vw;
+	
+	
+}
+.section5_loggedin .contact_section{
+	width: 28vw;
+	order: 1;
+	padding-left: 7vw;
+}
+.section5_loggedin .contact_section h5,
+.section5_loggedin .some h5{
+	font-size: 1.5vw;
+}
+
+.section5_loggedin .contact_section  .adress img,
+.section5_loggedin .contact_section .phone img,
+.section5_loggedin .contact_section  .mail img{
+	width: 60%;
+}
+
+
+.section5_loggedin .contact_section  .adress p{
+	margin-left: -2vw;
+	font-size: 1.5vw;
+	
+}
+
+.section5_loggedin .contact_section .phone p,
+.section5_loggedin .contact_section  .mail p{
+	margin-left: 1vw;
+	font-size: 1.5vw;
+	
+}
+.section5_loggedin .some {
+		order:3;
+	}
+
+.section5_loggedin .some .some-img{
+	display: inline-block;
+	width: 30vw;
+	margin-left: 10vw;
+
+} 
+	
+.section5_loggedin .some .some-img img{
+	width:10%;
+	padding-right: 2vw;
+	
+}
+
+
+	
 
 }

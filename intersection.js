@@ -9,6 +9,9 @@ const anchor2 = document.querySelector(
 const section3 = document.querySelector(".section3_login");
 const anchor3 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(3)");
 
+const section4 = document.querySelector(".section4_loggedin");
+const anchor4 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(4)");
+
 //Observe daily tasks section
 let observerDailyTasks = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -53,3 +56,17 @@ if (entry.intersectionRatio > 0) {
 });
 
 section3observer.observe(section3);
+
+////Observe section4
+
+let section4observer = new IntersectionObserver(entries => {
+	entries.forEach(entry => {
+if (entry.intersectionRatio > 0) {
+ anchor4.classList.add("activeAnchor");
+    } else {
+    anchor4.classList.remove("activeAnchor");
+   }
+  });
+});
+
+section4observer.observe(section4);
