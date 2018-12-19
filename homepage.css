@@ -41,6 +41,20 @@ body {
     background-size: cover;
 }
 
+#contribute {
+    position: absolute;
+    font-family: "Raleway", "sans-serif";
+    font-size: 25px;
+    font-weight: 100;
+    color: #CE9596;
+    margin-left: 1%;
+    margin-bottom: 15%;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #CE9596;
+
+
+}
 
 
 
@@ -57,18 +71,6 @@ button {
     left: 20px;
 }
 
-
-#contribute {
-    font-family: "Montserrat";
-    font-size: 20px;
-    color: #CE9596;
-    font-weight: bold;
-    position: absolute;
-    border: 2px solid #CE9596;
-    padding: 10px 12px;
-    bottom: 110px;
-
-}
 
 
 #swanpic {
@@ -142,8 +144,8 @@ button {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 105px;
+    margin-top: 80px;
+    margin-left: 25px;
 
 }
 
@@ -154,8 +156,8 @@ button {
     position: absolute;
     font-size: 20px;
     text-align: right;
-    margin-top: 180px;
-    margin-right: 100px;
+    margin-top: 150px;
+    margin-left: 75px;
 }
 
 
@@ -239,6 +241,9 @@ button {
     display: none;
 }
 
+#thirdlineV {
+    display: none;
+}
 
 
 
@@ -285,11 +290,11 @@ footer {
     #contribute {
         position: absolute;
         font-family: "Raleway", "sans-serif";
-        font-size: 2vw;
+        font-size: 40px;
         font-weight: 100;
         color: #CE9596;
         margin-left: 5%;
-        margin-bottom: -3.5%;
+        margin-bottom: 0.5%;
         text-align: center;
         cursor: pointer;
         border: 5px solid #CE9596;
@@ -395,7 +400,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 150vh;
+        height: 130vh;
         width: 100%;
         
     
@@ -427,28 +432,53 @@ footer {
     }
     
     
-   
-  
-
+    #donate,
+    #volunteer {
+        font-family: "Montserrat";
+        font-size: 40px;
+        color: #CE9596;
+        font-weight: bold;
+        border: 4px solid #CE9596;
+        padding: 10px 12px;
+        cursor: pointer;
+      
     
+    }
+    
+    #donate {
+        position: absolute;
+        margin-left:28vw;
+        margin-bottom: 20vh;
+        
+    }
+    
+    #volunteer {
+        position: absolute;
+        margin-left:25vw;
+        margin-bottom: 5vh;
+        }
 
 
+    #eventopener{
+        position: absolute;
 
+    }
 
 
     #events {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height:200vh;
+      
+     
+        
     }
 
-    #event1 {
-        grid-area: 1/1;
+    #event1pic,#event2pic {
+        position: absolute;
+        width:450px;
     }
-
-    #event2 {
-        display: inherit;
-        grid-area: 1/2;
-    }
+   
 
 
     .volunteerspics {
@@ -479,6 +509,9 @@ footer {
     }
 
 
+    #thirdlineV {
+        font-family: "Raleway";
+    }
 
 
 
