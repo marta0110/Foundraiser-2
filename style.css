@@ -31,7 +31,6 @@ body {
 /* MOBILE VERSION LOGGED IN /FRONTPAGE - SECTIONS- same styling */
 
 .contribiution_text h7,
-.volunteer_text h7,
 .section4_loggedin h7,
 .swan h7,
 .events .events_text h7 {
@@ -383,7 +382,63 @@ body {
 	transition: 0.8s;
 }
 
-/* MOBILE VERSION LOGGED IN /FRONTPAGE - SECTIONS- same styling - CONTRIBIUTION*/
+
+/* MOBILE VERSION FRONTPAGE -VOLUNTEERS*/
+
+.volunteer_section{
+	width: 100vw;
+	height: auto;
+	padding-top: 5%;
+}
+
+.volunteer_section .volunteer_text .header_volunteer .bold{
+	margin-left: 10%;
+	
+}
+
+.volunteer_section .volunteer_text .header_volunteer .bold h7{
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 600;
+	font-size: 4vw;
+	width: 80%;
+	
+}
+
+.volunteer_section .volunteers_img{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 100vw;
+	height: auto;
+}
+
+.volunteer_section .volunteers_img img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.volunteer_section .volunteers_img .volunteer_text2 h5{
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 600;
+	font-size: 4vw;
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+	
+}
+
+
+.volunteer_section .volunteers_img .volunteer_text2 p{
+		font-family: "Raleway", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	width: 100%;
+	margin-top: 0;
+	padding-top: 0;
+	text-align: center;
+}
+/* MOBILE VERSION LOGGED IN  - SECTION 1- CONTRIBIUTION*/
 
 .section1 {
 	position: relative;
@@ -2101,6 +2156,91 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		font-size: 2.5vw;
 	}
 
+	
+/* TABLET VERSION FRONTPAGE -VOLUNTEERS*/
+
+.volunteer_section{
+	width: 100vw;
+	height: auto;
+	padding-top: 5%;
+}
+
+.volunteer_section .volunteer_text .header_volunteer .bold{
+	margin-left: 10%;
+	
+}
+
+	.volunteer_section .volunteer_text h7{
+		font-family: "Raleway", "sans-serif";
+    font-weight: 100;
+    font-size: 4vw;
+	}
+
+	.volunteer_section .volunteer_text h6{
+	    font-family: "Noto Serif", "sans-serif";
+    font-weight: 100;
+    font-size: 4vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 10vw;
+	
+}
+.volunteer_section .volunteer_text .header_volunteer .bold h7{
+	font-family: "Montserrat", "sans-serif";
+	font-weight: 600;
+	font-size: 3vw;
+	width: 80%;
+	
+}
+ .volunteer_text p{
+		font-size: 2.8vw;
+	}
+	
+.volunteer_section .volunteers_img{
+	grid-template-columns: 1fr 1fr;
+}
+
+.volunteer_section .volunteers_img img{
+	width: 100%;
+	height: auto;
+	padding-top: 5vh;
+}
+
+	
+	.volunteer_section .volunteers_img .volunteer_2{
+		margin-top: 50vh;
+			width: 90%;
+			height:auto;
+	}
+	
+	.volunteer_section .volunteers_img .volunteer_3{
+		margin-top: -20vh;
+	}
+	
+		.volunteer_section .volunteers_img .volunteer_4{
+				width: 90%;
+			height:auto;
+			margin-top: 30vh;
+	}
+	
+	.volunteer_section .volunteers_img .volunteer_text2{
+		z-index: 10;
+		padding-top: 10px;
+	}
+.volunteer_section .volunteers_img .volunteer_text2 h5{
+	font-size: 3vw;
+	width: 100%;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+}
+
+
+.volunteer_section .volunteers_img .volunteer_text2 p{
+	font-size: 3vw;
+	width: 100%;
+	place-self: start;
+	padding-bottom: 40px;
+}
 
 	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION + COMMON STYLING FOR SECTION 3*/
 	.section1 {
@@ -3270,7 +3410,9 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-right: 10vw;
 
 	}
-
+	.fixed-height-button{
+		height: 100px;
+	}
 	/*	DESKOP VERSION -SECTION 1 - quote*/
 	.quote {
 		width: 43vw;
@@ -3423,6 +3565,84 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		font-size: 2.5vw;
 	}
 
+
+	
+/* TABLET VERSION FRONTPAGE -VOLUNTEERS*/
+
+.volunteer_section{
+	width: 84vw;
+	height: auto;
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
+
+.volunteer_section .volunteer_text .header_volunteer .bold{
+	margin-left: 11%;
+	width: 25%;
+	text-align: right;
+	
+}
+
+	.volunteer_section .volunteer_text h7{
+    font-size: 1.5vw;
+		margin-left: 1vw;
+	}
+
+	.volunteer_section .volunteer_text h6{
+    font-size: 2.5vw;	
+}
+.volunteer_section .volunteer_text .header_volunteer .bold h7{
+	font-size: 1.5vw;
+
+}
+ .volunteer_text p{
+		font-size: 1.5vw;
+	 width: 40vw;
+	 margin-right: 3vw;
+	 text-align: right;
+	 margin-left: 44vw;
+	 
+	}
+	
+.volunteer_section .volunteers_img{
+	grid-template-columns: 1fr 1fr;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+	.volunteer_section .volunteers_img .volunteer_2{
+		margin-top: 50vh;
+			width: 90%;
+			height:auto;
+		margin-left: 0.5vw;
+	}
+	
+	.volunteer_section .volunteers_img .volunteer_3{
+		margin-top: -30vh;
+		
+	}
+	
+		.volunteer_section .volunteers_img .volunteer_4{
+				width: 90%;
+			height:auto;
+			margin-top: 20vh;
+			margin-left: -0.5vw;
+	}
+	
+	.volunteer_section .volunteers_img .volunteer_text2{
+		z-index: 10;
+		padding-top: 10px;
+	}
+.volunteer_section .volunteers_img .volunteer_text2 h5{
+	font-size: 2vw;
+}
+
+
+.volunteer_section .volunteers_img .volunteer_text2 p{
+	font-size: 2vw;
+}
 
 
 
@@ -3993,6 +4213,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 100vh;
 		position: relative;
 		position: fixed;
+		top: 0;
 
 
 	}
