@@ -42,10 +42,10 @@ body {
 .frontpage .content-front button{
 		border: 5px solid #CE9596;
 	width: 40%;
-	font-family: "Raleway", "sans-serif";
+	font-family: "Montserrat", "sans-serif";
 	color: #CE9596;
 	font-size: 5vw;
-	font-weight: 100;
+	font-weight: 600;
 	margin-bottom: 3vh;
 	text-align: center;
 	margin-left: 10%;
@@ -84,7 +84,129 @@ body {
 	
 }
 
-/* MOBILE VERSION LOGGED IN - DONATE*/
+.quote{
+	width:90vw;
+	padding-left: 5vw;
+		padding-right: 5vw;
+	margin-bottom: 5vh;
+}
+.quote h1{
+		font-family: "Montserrat", "sans-serif";
+		color: black;
+		font-weight: 600;
+	text-align:right;
+}
+
+.quote .pink{
+	font-size: 9vw;
+	text-decoration: underline;
+}
+
+
+
+/* MOBILE VERSION SECTION3 - DONATE/VOLUNTEER IMAGE*/
+
+.donation{
+	width:100vw;
+	height:auto;
+	
+}
+
+
+ .part{
+	background-color: #262626;
+	width:60vw;
+	height: auto;
+float: right;
+	padding-right: 5%;
+
+}
+
+ .part h3{
+	font-family: "Montserrat", "sans-serif";
+		color: white;
+		font-weight: 600;
+	text-align:right;
+	font-size: 6vw;
+}
+
+ .part .sollution{
+color:#CE9596; 	
+}
+
+ .part .pollution{
+	font-size: 9vw;
+}
+
+.donation .donationSection{
+	width:100vw;
+	height: auto;
+}
+.donation .donationSection .image_donate{
+	position: relative;
+	width:100vw;
+	height: auto;
+}
+
+
+.donation .donationSection img{
+	width: 180%;
+	height: 100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.donation .donationSection .image_donate .donation_text{
+	top: 30%;
+	bottom: 0;
+	z-index: 10;
+	position: absolute;
+}
+
+.donation .donationSection .donation_text h3{
+	width: 40vw;
+	color:white;
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	padding-left:  3vw;
+}
+
+.donation .donationSection .donation_text h1{
+	font-family: "Montserrat", "sans-serif";
+		color: white;
+		font-weight: 600;
+	text-align:center;
+	font-size: 6vw;
+}
+
+.donation .donationSection .donation_text p{
+	text-align: right;
+	color: white;
+		font-family: "Raleway", "sans-serif";
+	width: 50%;
+	margin-left: 20%;
+	padding-bottom: 5%;
+	
+}
+
+.donation .donationSection .donation_text button{
+	border: 5px solid #CE9596;
+	width: 60%;
+	font-family: "Raleway", "sans-serif";
+	color: #CE9596;
+	font-size: 5vw;
+	font-weight: 100;
+	margin-bottom: 3vh;
+	text-align: center;
+	margin-left: 10%;
+	cursor: pointer;
+	
+}
+
+
+/* MOBILE VERSION frontpage NOT DISPLAYED ELEMENTS*/
+
 
 .sidenav_scroll {
 	display: none;
@@ -253,10 +375,13 @@ height:auto;
 	cursor: pointer;
 }
 
+.donation .donationSection .donation_text button{
+	
+}
 
 .volunteer_text3 button:hover,
-.frontpage .content-front button:hover{
-	
+.frontpage .content-front button:hover,
+.donation .donationSection .donation_text button:hover{
 	background-color: #CE9596;
 	color: white;
 }
@@ -1693,6 +1818,105 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	
 }
 	
+	/*	SECTION1 - quote*/
+.quote{
+	width:90vw;
+	padding-left: 5vw;
+		padding-right: 5vw;
+}
+.quote h1{
+	font-size: 5vw;
+}
+
+.quote .pink{
+	font-size: 7vw;
+
+}
+
+/* MOBILE VERSION SECTION3 - DONATE/VOLUNTEER IMAGE*/
+
+
+ .part{
+	width:50vw;
+float: right;
+	padding-right: 5%;
+}
+
+ .part h3{
+	font-size: 4vw;
+}
+ .part .pollution{
+	font-size: 9vw;
+}
+
+.donation .donationSection{
+	width:100vw;
+	height: auto;
+}
+.donation .donationSection .image_donate{
+	position: relative;
+	width:100vw;
+	height: auto;
+}
+
+
+.donation .donationSection img{
+	width: 180%;
+	height: 100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.donation .donationSection .image_donate .donation_text{
+	top: 30%;
+	bottom: 0;
+	z-index: 10;
+	position: absolute;
+}
+
+.donation .donationSection .donation_text h3{
+	width: 40vw;
+	color:white;
+	font-family: "Noto Serif", "sans-serif";
+	font-weight: 100;
+	font-size: 4vw;
+	padding-left:  3vw;
+}
+
+.donation .donationSection .donation_text h1{
+	font-family: "Montserrat", "sans-serif";
+		color: white;
+		font-weight: 600;
+	text-align:center;
+	font-size: 6vw;
+}
+
+.donation .donationSection .donation_text p{
+	text-align: right;
+	color: white;
+		font-family: "Raleway", "sans-serif";
+	width: 50%;
+	margin-left: 20%;
+	padding-bottom: 5%;
+	
+}
+
+.donation .donationSection .donation_text button{
+	border: 5px solid #CE9596;
+	width: 60%;
+	font-family: "Raleway", "sans-serif";
+	color: #CE9596;
+	font-size: 5vw;
+	font-weight: 100;
+	margin-bottom: 3vh;
+	text-align: center;
+	margin-left: 10%;
+	cursor: pointer;
+	
+}
+
+	
+	
 	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION + COMMON STYLING FOR SECTION 3*/
 
 	
@@ -2840,6 +3064,109 @@ position: absolute;
 	
 }
 	
+	/*	SECTION1 - quote*/
+.quote{
+	width:43vw;
+	padding-left: 49vw;
+		padding-right: 8vw;
+}
+.quote h1{
+	font-size: 3vw;
+}
+
+.quote .pink{
+	font-size: 5vw;
+
+}
+	
+	
+
+/* MOBILE VERSION SECTION3 - DONATE/VOLUNTEER IMAGE*/
+
+
+ .part{
+	width:42vw;
+float: right;
+	padding-right: 8%;
+	 padding-top: 0;
+	 padding-bottom: 0;
+}
+
+ .part h3{
+	font-size: 3vw;
+}
+ .part .pollution{
+	font-size: 9vw;
+}
+
+.donation .donationSection{
+	width:100vw;
+	height: auto;
+}
+.donation .donationSection .image_donate{
+	position: relative;
+	width:100vw;
+	height: auto;
+}
+
+
+.donation .donationSection img{
+	width: 100%;
+	height: 100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.donation .donationSection .image_donate .donation_text{
+	top: 30%;
+	bottom: 0;
+	z-index: 10;
+	position: absolute;
+}
+
+.donation .donationSection .donation_text h3{
+	width: 25vw;
+	font-size: 2vw;
+	padding-left: 9vw;
+
+}
+
+.donation .donationSection .donation_text h1{
+	margin-left: -22%;
+	font-size: 4vw;
+	padding-bottom: 2vh;
+	margin-bottom: 0;
+}
+
+.donation .donationSection .donation_text p{
+	width: 35%;
+	margin-left: 20%;
+	font-size: 2vw;
+	padding-top: 0;
+	margin-top: 0;
+
+}
+	
+	.donation .donationSection .donation_text .buttons_donate{
+		display: grid;
+		grid-template-columns: 1fr;
+		width: 20%;
+		margin-left: 30%;
+		
+	}
+
+.donation .donationSection .donation_text button{
+
+	width: 100%;
+	font-size: 3vw;
+	margin-bottom: 3vh;
+	margin-left: 10%;
+	padding:5px;
+	
+}
+
+		
+	
 	
 /* LINES FOR support image section 2 */
 
@@ -3803,32 +4130,42 @@ position: absolute;
 	.image_news{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background-color: red;
 		width: 84vw;
 		margin: 0 auto;
-		
+		background-color: transparent;
 	}
+	
 	
 	.image_news .container-overlay:nth-child(2){
 		margin-top: 10vh;
-		
-	}
+	} 
 	
 	.image_news .container-overlay:nth-child(3){
 		margin-top: 20vh;
-	}
+	} 
+	
+	.image_news .container-overlay:nth-child(4){
+		margin-top: -20vh;
+	} 
+	
+		.image_news .container-overlay:nth-child(5){
+		margin-top: -10vh;
+	} 
+	
 	
 .image_news .container-overlay img{
 	display: block;
   width: 100%;
-  height: auto;
+  max-height: 300px;
 	}
 	
 	.container-overlay{
   position: relative;
   width: 100%;
-	height: 100%;
+	  max-height: 300px;
 	padding-bottom: 0vh;
+		z-index:10;
+			background-color: transparent;
 }
 	
 	
@@ -3895,7 +4232,7 @@ position: absolute;
 .text-overlay h5{
 	color: white;
 	font-family: "Noto Serif", "sans-serif";
-	font-size: 3vw;
+	font-size: 2vw;
 	margin-top: 60%;
 	text-align: left;
 	margin-left: 10%;
@@ -3909,7 +4246,7 @@ position: absolute;
 
 .text-overlay .readmore{
 	display: grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 10% 90%;
 	width: 80%;
 	margin: 0 auto;
 	padding-top: 7%;
@@ -3918,17 +4255,17 @@ position: absolute;
 }
 
 .text-overlay .readmore img{
-	width: 5vw;
+	width: 3vw;
 	height: auto;
 	margin-left: 0;
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-right: 0;
 	margin-right: 0;
  
 }
 
 .text-overlay .readmore p{
-	font-size: 2.3vw;
+	font-size: 1.5vw;
 	width: 50%;
 	padding-left: 0;
 	margin-left: 0;
