@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>KBH Lakes</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+SC|Raleway" rel="stylesheet">
 </head>
 
@@ -19,7 +19,6 @@
 		<div class="line6"></div>
 		<div class="line7"></div>
 	</div>
-
 	<!--all content of the website-->
 	<div class="container_donation_loggedin">
 		<!--navigation-->
@@ -62,11 +61,10 @@
 			</div>
 		</div>
 		<div id="mySidenav" class="sidenav">
-			<hr><a href="#"> HELPING ANIMALS</a>
-			<hr><a href="#"> DONATE</a>
-			<hr><a href="#">VOLUNTEER</a>
-			<hr><a href="#">LOG IN</a>
-			<hr><a href="#">ABOUT</a>
+			<hr><a href="#contribiution"> DONATE</a>
+			<hr><a href="#volunteer">VOLUNTEER</a>
+			<hr><a href="#news">NEWS</a>
+			<hr><a href="#events"> EVENTS</a>
 		</div>
 
 		<div class="header">
@@ -74,7 +72,7 @@
 			<h4> Join us on our upcoming events</h4>
 		</div>
 		<!--SLIDESHOW-->
-		<div class="slideshow-container">
+		<div id="events" class="slideshow-container">
 
 			<div class="dots">
 				<span class="dot"></span>
@@ -94,9 +92,7 @@
 					<div class="readmore">
 						<img src="images/readmore.png">
 						<p>read more</p>
-
 					</div>
-
 				</div>
 			</div>
 
@@ -137,7 +133,7 @@
 		</div>
 
 		<!--section1-->
-		<div class="section1">
+		<div id="contribiution" class="section1">
 			<div class="contribiution_text">
 				<h7> CONTRIBIUTION</h7>
 				<h6> Donate KBH Lakes</h6>
@@ -147,12 +143,9 @@
 					<span class="save_lakes">Because of you, we can save lakes.</span></p>
 			</div>
 			<div id="container_payment_loggedin" class="container_one_payment">
-
 				<form id="addNewDonation">
-
 					<h3> I want to donate</h3>
 					<h4> Step 1. Choose the amount</h4>
-
 					<div class="donation_amount">
 
 						<label><input type="radio" name="month_type" value="donation_type_month"> Fixed monthly membership fee</label>
@@ -162,9 +155,7 @@
 							<img src="images/donate.png" alt="donate">
 							<input value="" type="text" name="amount" placeholder="enter emount" required>
 							<p> dkk</p>
-
 						</div>
-
 					</div>
 					<h4> Step 2. Choose the payment method</h4>
 					<div class="card_details">
@@ -197,7 +188,7 @@
 			</div>
 		</div>
 		<!--section2-->
-		<div class="support">
+		<div id="support" class="support">
 			<h3> Your support <span class="helps">helps </span></h3>
 		</div>
 		<div class="section2">
@@ -229,7 +220,7 @@
 			</div>
 		</div>
 		<!--section3-->
-		<div class="section3_login">
+		<div id="volunteer" class="section3_login">
 			<div class="volunteer_text">
 				<h7> VOLUNTEER</h7>
 				<h6> We need your help</h6>
@@ -256,7 +247,7 @@
 		</div>
 
 		<!--section4-->
-		<div class="section4_loggedin">
+		<div id="news" class="section4_loggedin">
 			<div class="news_text">
 				<h7> NEWS</h7>
 				<h6> Discover our last activites</h6>
@@ -265,7 +256,6 @@
 			</div>
 
 			<div class="image_news">
-
 				<div class="container-overlay">
 					<img src="images/news1.png" alt='event'>
 					<div class="overlay">
@@ -276,14 +266,12 @@
 								<p>read more</p>
 							</div>
 						</div>
-
-
 					</div>
 				</div>
 				<div class="container-overlay">
 					<img src="images/news2.png" alt='event'>
 					<div class="overlay2">
-							<div class="text-overlay">
+						<div class="text-overlay">
 							<h5>Relax with us</h5>
 							<div class="readmore">
 								<img src="images/readmore.png">
@@ -307,8 +295,8 @@
 				</div>
 				<div class="container-overlay">
 					<img src="images/lakes.jpg" alt='event'>
-						<div class="overlay2">
-							<div class="text-overlay">
+					<div class="overlay2">
+						<div class="text-overlay">
 							<h5>Morning jogging</h5>
 							<div class="readmore">
 								<img src="images/readmore.png">
@@ -324,7 +312,7 @@
 						<div class="text-overlay">
 							<h5> Our sunset walks</h5>
 							<div class="readmore">
-							<img src="images/readmore.png" alt="readmore">
+								<img src="images/readmore.png" alt="readmore">
 								<p>read more</p>
 							</div>
 						</div>
@@ -333,8 +321,8 @@
 
 				<div class="container-overlay">
 					<img src="images/login_bg_img.png" alt="Avatar" class="image">
-						<div class="overlay2">
-							<div class="text-overlay">
+					<div class="overlay2">
+						<div class="text-overlay">
 							<h5>Winter arrived !</h5>
 							<div class="readmore">
 								<img src="images/readmore.png" alt="readmore">
@@ -343,66 +331,64 @@
 						</div>
 					</div>
 				</div>
-
-			
 			</div>
 		</div>
-<!--FOOTER-->
-<div class="section5_loggedin">
-	<div class="logo_section">
-	<div class="img">
-	<img src="images/logo_white.png" alt="logo">
-	</div>
-		<p> We can't save the world but we can save the Copenhagen lakes</p>
-	</div>
-	
-	<div class="contact_section">
-	<h5> Contact us</h5>
-	<div class="adress">
-	<img src="images/location.png" alt="location">
-	<div class="adress_info">
-		<p> 2000 Frederiksberg</p>
-		<p> Fuglebakkevej 92</p>
-		</div>
-	</div>
-	
-	<div class="phone">
-	<img src="images/phone.png" alt="phone">
-		<p> 919-307-74</p>	
-	</div>
-		<div class="mail">
-	<img src="images/mail.png" alt="mail">
-		<p> marta.grzegowska@gmail.com</p>	
-	</div>	
-</div>
-<div class="some">
-		<h5> Follow us</h5>
-		<div class="some-img">
-	
-		<img src="images/fb.png" alt="fb">
-		<img src="images/instagram.png" alt="insta">
-		<img src="images/twitter.png" alt="insta">
-		</div>
-</div>
-	</div>
-</div>
-<div style="display:none">
-	
+		<!--FOOTER-->
+		<div class="section5_loggedin">
+			<div class="logo_section">
+				<div class="img">
+					<img src="images/logo_white.png" alt="logo">
+				</div>
+				<p> We can't save the world but we can save the Copenhagen lakes</p>
+			</div>
 
-	<main></main>
-	<template id="templateDonation">
+			<div class="contact_section">
+				<h5> Contact us</h5>
+				<div class="adress">
+					<img src="images/location.png" alt="location">
+					<div class="adress_info">
+						<p> 2000 Frederiksberg</p>
+						<p> Fuglebakkevej 92</p>
+					</div>
+				</div>
+
+				<div class="phone">
+					<img src="images/phone.png" alt="phone">
+					<p> 919-307-74</p>
+				</div>
+				<div class="mail">
+					<img src="images/mail.png" alt="mail">
+					<p> marta.grzegowska@gmail.com</p>
+				</div>
+			</div>
+			
+			<div class="some">
+				<h5> Follow us</h5>
+				<div class="some-img">
+					<img src="images/fb.png" alt="fb">
+					<img src="images/instagram.png" alt="insta">
+					<img src="images/twitter.png" alt="insta">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--TEMPLATE WITH DONATION BACKEND-->
+	<div style="display:none">
+		<main></main>
+		<template id="templateDonation">
         <article id="donation">      
            <p> Donation</p>
         </article>
     </template>
-</div>
+	</div>
 
-
+	<!--JAVASCRIPT-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="intersection.js"></script>
-	<script src="donation_loggedin.js"></script>
-	<script src="donation_login.js"></script>
-	<script src="donation.js"></script>
+	<script src="js/intersection.js"></script>
+	<script src="js/donation_loggedin.js"></script>
+	<script src="js/donation_login.js"></script>
+	<script src="js/donation.js"></script>
 </body>
 
 </html>

@@ -3,20 +3,18 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Serif+SC|Raleway" rel="stylesheet">
 	<title>KBH Lakes</title>
 </head>
 
 <body class="donation_system">
-
-
 <!--FIRST SECTION - LOG IN , SIGN UP OR ONE OFF PAYMENT-->
 	<div class="step_1">
 		<div class="container">
 			<div class="nav">
 				<img src="images/logo_white.png" alt="logo">
-				<p class="mainpage_button">Home</p>
+				<a href="index.html"> <p class="mainpage_button">Home</p></a>
 			</div>
 			<h3> Make a contribution </h3>
 			<p>When you make a contribution, you support the vulnerable part of Copenhagen. They need our protection and help.</p>
@@ -176,7 +174,7 @@
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
 			<p class="login_button_registration"> Log in</p>
-			<p class="main_page"> Main page</p>
+			<a href="index.html"> <p class="mainpage_button">Home</p></a>
 		</div>
 		<h3> Thank you <span class="name"> Jonas</span></h3>
 		<img class="bird" src="images/bird.png" alt="bird">
@@ -193,7 +191,7 @@
 	<div class="donation_complete_notlogedin" style="display: none">
 		<div class="nav">
 			<img src="images/logo_white.png" alt="logo">
-			<p onclick="mainPage()" ; class="main_page"> Main page</p>
+			<a href="index.html"> <p class="mainpage_button">Home</p></a>
 		</div>
 		<h3> Thank you </h3>
 		<img class="thankyou_birds" src="images/donation_confitmation.png" alt="bird">
@@ -214,12 +212,12 @@
             <span data-password="password">password</span>
         </li>
     </template>
-
+    
+<!--JAVASCRIPT-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="login.js"></script>
-	<script src="Userlist.js"></script>
-	<script src="registration.js"></script>
-	<script src="donation_login.js"></script>
-
+	<script src="js/login.js"></script>
+	<script src="js/Userlist.js"></script>
+	<script src="js/registration.js"></script>
+	<script src="js/donation_login.js"></script>
 </body>
 </html

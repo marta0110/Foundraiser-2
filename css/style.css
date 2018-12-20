@@ -1446,6 +1446,20 @@ img {
 	padding-top: 3vh;
 }
 
+.donation_complete_notlogedin .nav p{
+	padding-top: 3vh;
+}
+
+.donation_complete_notlogedin .nav a{
+  text-decoration: none;
+}
+
+.container .nav  a {
+		text-decoration: none;
+	padding-top: 3vh;
+	
+}
+
 .signup_system .nav .login_button:hover,
 .signup_system_step1 .nav .login_button_step1:hover,
 .registration_complete .nav .main_page:hover,
@@ -3027,11 +3041,18 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		height: 4vh;
 	}
 
-	.container p,
+	
 	.container_one_payment p,
 	.registration_complete p,
 	.signup_system_step1 p {
 		font-size: 2vw;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 7vh;
+	}
+	
+	.container p{
+		font-size: 1.5vw;
 		width: 80%;
 		margin: 0 auto;
 		margin-bottom: 7vh;
@@ -3678,8 +3699,11 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	}
 
 
-
 	/* DESKOP VERSION LOGGED IN - SECTION1 - CONTRIBIUTION plus common settings for section3*/
+	
+.arrow img{
+		padding-top: 4vh;
+	}
 	.header {
 		display: block;
 	}
@@ -3819,6 +3843,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		text-align: center;
 		cursor: pointer;
 		margin-top: 3vh;
+		margin-left: -10px;
 	}
 
 	.sidenav_scroll .language .en{
@@ -4097,6 +4122,11 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	.login_system .login-form .wrong_data {
 		font-size: 1vw;
 
+	}
+	
+	.signup_system .register-form .wrong_username{
+		font-size: 1.5vw;
+		
 	}
 
 	.login_system .login-form .forgot_password h5 {
@@ -4640,7 +4670,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		width: 100%;
 		max-height: 300px;
 		padding-bottom: 0vh;
-		z-index: 10;
+		z-index: 5;
 		background-color: transparent;
 	}
 
