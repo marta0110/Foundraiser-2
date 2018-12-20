@@ -34,19 +34,20 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
             datasets: [{
 
                data: [myData[0]],
-               backgroundColor: '#22aa99'
+               backgroundColor: '#CE9596'
             }, {
 
                data: [myData[1]],
-               backgroundColor: '#994499'
+               backgroundColor: '#E2AAAD'
+               
             }, {
 
                data: [myData[2]],
-               backgroundColor: '#316395'
+               backgroundColor: '#7F5456'
             }, {
 
                data: [myData[3]],
-               backgroundColor: '#262626'
+               backgroundColor: '#5E3B3C'
             }]
          },
          options: {
