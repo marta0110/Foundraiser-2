@@ -4130,32 +4130,42 @@ position: absolute;
 	.image_news{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		background-color: red;
 		width: 84vw;
 		margin: 0 auto;
-		
+		background-color: transparent;
 	}
+	
 	
 	.image_news .container-overlay:nth-child(2){
 		margin-top: 10vh;
-		
-	}
+	} 
 	
 	.image_news .container-overlay:nth-child(3){
 		margin-top: 20vh;
-	}
+	} 
+	
+	.image_news .container-overlay:nth-child(4){
+		margin-top: -20vh;
+	} 
+	
+		.image_news .container-overlay:nth-child(5){
+		margin-top: -10vh;
+	} 
+	
 	
 .image_news .container-overlay img{
 	display: block;
   width: 100%;
-  height: auto;
+  max-height: 300px;
 	}
 	
 	.container-overlay{
   position: relative;
   width: 100%;
-	height: 100%;
+	  max-height: 300px;
 	padding-bottom: 0vh;
+		z-index:10;
+			background-color: transparent;
 }
 	
 	
@@ -4222,7 +4232,7 @@ position: absolute;
 .text-overlay h5{
 	color: white;
 	font-family: "Noto Serif", "sans-serif";
-	font-size: 3vw;
+	font-size: 2vw;
 	margin-top: 60%;
 	text-align: left;
 	margin-left: 10%;
@@ -4236,7 +4246,7 @@ position: absolute;
 
 .text-overlay .readmore{
 	display: grid;
-	grid-template-columns: 20% 80%;
+	grid-template-columns: 10% 90%;
 	width: 80%;
 	margin: 0 auto;
 	padding-top: 7%;
@@ -4245,17 +4255,17 @@ position: absolute;
 }
 
 .text-overlay .readmore img{
-	width: 5vw;
+	width: 3vw;
 	height: auto;
 	margin-left: 0;
-	padding-top: 10%;
+	padding-top: 5%;
 	padding-right: 0;
 	margin-right: 0;
  
 }
 
 .text-overlay .readmore p{
-	font-size: 2.3vw;
+	font-size: 1.5vw;
 	width: 50%;
 	padding-left: 0;
 	margin-left: 0;
