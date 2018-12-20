@@ -160,7 +160,7 @@ body {
 	margin-bottom: 5vh;
 }
 
-.quote h1 {
+.quote h2 {
 	font-family: "Montserrat", "sans-serif";
 	color: black;
 	font-weight: 600;
@@ -242,7 +242,7 @@ body {
 	padding-left: 3vw;
 }
 
-.donation .donationSection .donation_text h1 {
+.donation .donationSection .donation_text h2 {
 	font-family: "Montserrat", "sans-serif";
 	color: white;
 	font-weight: 600;
@@ -2034,7 +2034,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-left: 5vw;
 		padding-right: 5vw;
 	}
-	.quote h1 {
+	.quote h2 {
 		font-size: 5vw;
 	}
 
@@ -2091,7 +2091,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-left: 3vw;
 	}
 
-	.donation .donationSection .donation_text h1 {
+	.donation .donationSection .donation_text h2 {
 		font-family: "Montserrat", "sans-serif";
 		color: white;
 		font-weight: 600;
@@ -3440,7 +3440,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		padding-left: 49vw;
 		padding-right: 8vw;
 	}
-	.quote h1 {
+	.quote h2 {
 		font-size: 3vw;
 	}
 
@@ -3497,7 +3497,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 
 	}
 
-	.donation .donationSection .donation_text h1 {
+	.donation .donationSection .donation_text h2 {
 		margin-left: -22%;
 		font-size: 4vw;
 		padding-bottom: 2vh;
