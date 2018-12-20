@@ -51,6 +51,20 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
             }]
          },
          options: {
+            layout: {
+               padding: {
+                   left: 150,
+                   right: 0,
+                   top: 150,
+                   bottom: 0
+               }
+           },
+           
+            labels: {
+      
+            defaultFontFamily: 'Raleway',
+            fontColor: 'black'
+            },
             responsive: false,
             legend: false,
             scales: {
