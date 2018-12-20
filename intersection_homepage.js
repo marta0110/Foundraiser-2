@@ -6,7 +6,7 @@ const section2 = document.querySelector("#collage");
 const anchor2 = document.querySelector(
   ".sidenav_scroll .observer .dot-obs:nth-child(2)"
 );
-const section3 = document.querySelector("#donation");
+const section3 = document.querySelector(".donation");
 const anchor3 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(3)");
 
 const section4 = document.querySelector(".events");
