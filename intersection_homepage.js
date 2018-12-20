@@ -2,17 +2,17 @@
 //declare the section/point that should be in view, and declare the element that should react when it is (anchor)
 const section1 = document.querySelector(".swan");
 const anchor1 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(1)");
-const section2 = document.querySelector("#collage");
+const section2 = document.querySelector(".donation");
 const anchor2 = document.querySelector(
   ".sidenav_scroll .observer .dot-obs:nth-child(2)"
 );
-const section3 = document.querySelector(".donation");
+const section3 = document.querySelector(".events");
 const anchor3 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(3)");
 
-const section4 = document.querySelector(".events");
+const section4 = document.querySelector(".section4_loggedin");
 const anchor4 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(4)");
 
-const section5 = document.querySelector(".section3_login");
+const section5 = document.querySelector(".volunteer_section");
 const anchor5 = document.querySelector(".sidenav_scroll .observer .dot-obs:nth-child(5)");
 
 //Observe daily tasks section
