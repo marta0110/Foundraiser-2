@@ -42,10 +42,10 @@ body {
 .frontpage .content-front button{
 		border: 5px solid #CE9596;
 	width: 40%;
-	font-family: "Raleway", "sans-serif";
+	font-family: "Montserrat", "sans-serif";
 	color: #CE9596;
 	font-size: 5vw;
-	font-weight: 100;
+	font-weight: 600;
 	margin-bottom: 3vh;
 	text-align: center;
 	margin-left: 10%;
@@ -82,6 +82,23 @@ body {
 .swan p{
 	margin-top: 0;
 	
+}
+
+.quote{
+	width:90vw;
+	padding-left: 5vw;
+		padding-right: 5vw;
+}
+.quote h1{
+		font-family: "Montserrat", "sans-serif";
+		color: black;
+		font-weight: 600;
+	text-align:right;
+}
+
+.quote .pink{
+	font-size: 9vw;
+	text-decoration: underline;
 }
 
 /* MOBILE VERSION LOGGED IN - DONATE*/
@@ -1693,6 +1710,21 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 	
 }
 	
+	/*	SECTION1 - quote*/
+.quote{
+	width:90vw;
+	padding-left: 5vw;
+		padding-right: 5vw;
+}
+.quote h1{
+	font-size: 5vw;
+}
+
+.quote .pink{
+	font-size: 7vw;
+
+}
+	
 	/* TABLET VERSION LOGGED IN - SECTION1 - CONTRIBIUTION + COMMON STYLING FOR SECTION 3*/
 
 	
@@ -2839,6 +2871,22 @@ position: absolute;
 	margin-top: 0;
 	
 }
+	
+	/*	SECTION1 - quote*/
+.quote{
+	width:50vw;
+	padding-left: 42vw;
+		padding-right: 8vw;
+}
+.quote h1{
+	font-size: 3vw;
+}
+
+.quote .pink{
+	font-size: 5vw;
+
+}
+	
 	
 	
 /* LINES FOR support image section 2 */
