@@ -26,7 +26,7 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
       }
 
 
-      const ctx = document.querySelector("#myChart");
+      const ctx = document.querySelector(".myChart");
       var chart = new Chart(ctx, {
          type: 'bar',
          data: {
@@ -55,7 +55,7 @@ fetch("https://5bfd717f827c3800139ae958.mockapi.io/donationdatabase")
                padding: {
                    left: 150,
                    right: 0,
-                   top: 150,
+                   top: 50,
                    bottom: 0
                }
            },
