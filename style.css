@@ -84,7 +84,7 @@ body {
 	width: 100vw;
 	height: auto;
 	position: absolute;
-	z-index: 10;
+	z-index: 5;
 	top: 50%;
 	left: 10vw;
 }
@@ -3821,6 +3821,9 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		margin-top: 3vh;
 	}
 
+	.sidenav_scroll .language .en{
+		padding-top: 20vh;
+	}
 	.container_donation_loggedin .slideshow-container .text .readmore {
 		display: grid;
 		grid-template-columns: 15% 1fr;
@@ -4774,6 +4777,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		font-size: 1.5vw;
 	}
 
+	.section5_loggedin .contact_section h5{
+		margin-left: -10vw;
+	}
+	
+	.section5_loggedin .some h5{
+			margin-left: -2vw;
+	}
 	.section5_loggedin .contact_section .adress img,
 	.section5_loggedin .contact_section .phone img,
 	.section5_loggedin .contact_section .mail img {
