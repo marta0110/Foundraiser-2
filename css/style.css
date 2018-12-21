@@ -585,6 +585,14 @@ body {
 	grid-gap: 5%;
 	
 }
+.volunteer_form_thankyou{
+	width: 100vw;
+	height:auto;
+	background-color: #262626;
+	padding: 5%;
+	text-align: center;
+	
+}
 
 .volunteer_form h3{
 	font-family: "Montserrat", "sans-serif";
@@ -594,6 +602,25 @@ body {
 	text-align: left;
 }
 
+.volunteer_form_thankyou h3{
+	font-family: "Montserrat", "sans-serif";
+	font-size: 4vw;
+	color: white;
+	width:100vw;
+	text-align: center;
+}
+.volunteer_form_thankyou img{
+	width: 60%;
+}
+
+.volunteer_form_thankyou p{
+	font-family: "Raleway", "sans-serif";
+	color:white;
+	font-size: 3vw;
+	z-index: 10;
+	width: 60%;
+	margin-left: 10%;
+}
 .volunteer_form label{
     background-color: #CE9596;
     border-radius: 20px;
@@ -3390,6 +3417,29 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		width: 35vw;
 		z-index: 10;
 	}
+	
+	.volunteer_form_thankyou{
+	width: 100vw;
+	height:auto;
+	background-color: #262626;
+	padding: 5%;
+	text-align: center;
+	
+}
+
+.volunteer_form_thankyou h3{
+	font-size: 4vw;
+	text-align: left;
+	
+}
+.volunteer_form_thankyou img{
+	width: 40%;
+}
+
+.volunteer_form_thankyou p{
+
+	font-size: 2.5vw;
+}
 
 
 
@@ -4685,13 +4735,30 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		z-index: 10;
 	}
 
-	.volunteer_form form{
+
+
+
+.volunteer_form_thankyou img{
+	width: 40%;
+}
+
+.volunteer_form_thankyou p{
+
+	font-size: 1.5vw;
+	padding-top: 5%;
+}
+
+
+	.volunteer_form form,
+	.volunteer_form_thankyou{
 		width: 60vw;
 		margin: 0 auto;
 		padding: 7%;
+		z-index: 10;
 	}
 
-.volunteer_form h3{
+.volunteer_form h3,
+.volunteer_form_thankyou h3{
 	font-size: 2vw;	
 	margin-top: 0;
 	padding-top: 0;
@@ -4701,6 +4768,7 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
     width: 50%;
     font-size: 1.5vw;
 	height: 20%;
+	z-index: 10;
 }
 	
 	.volunteer_form button{
@@ -4712,6 +4780,13 @@ div input:invalid:not(:placeholder-shown) ~ .correct::after {
 		.volunteer_form button:hover{
 		font-size: 2vw;
 		width: 30%;
+	}
+	
+	.volunteer_text3{
+		z-index: 10;
+	}
+	.join{
+		z-index: 10;
 	}
 	/* WEBSITE VERSION LOGGED IN - SECTION 4 - OVERLAYS */
 	.section4_loggedin {
