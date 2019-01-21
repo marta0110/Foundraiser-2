@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Let's save the Copenhagen lakes.Together with your help, we can clean the natural environment of many animals from plastic pollution. Help us by becoming a volunteer or donation">
 	<meta name="keywords" content="Copenhagen, copenhagen lakes, pollution, donation, volunteering,save animals, clean the water, clean city, clean Copenhagen, stop pollution, green activism, ecosystem, donate money ">
+	 <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="764923706626-uhiifoqqp1o4vc6krctcam56nmv6sdqm.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon.ico/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon.ico/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon.ico/apple-icon-72x72.png">
@@ -30,6 +33,7 @@
 </head>
 
 <body class="donation_system">
+
 
 	<!--FIRST SECTION - SIGN UP OR LOG IN-->
 	<div class="step_1">
@@ -85,9 +89,15 @@
 			<button id='loginbutton'> Login </button>
 			<h5 class="log_in_some"> or log in using</h5>
 			<div class="some">
-				<img src="images/fb_icon.png" alt="fb">
-				<img src="images/google.png" alt="google">
+			<fb:login-button class="fb" scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+			
+			<div class="google">
+			 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+			 </div>
+			
 			</div>
+			
 		</form>
 
 	</div>
@@ -231,6 +241,7 @@
 	<script src="js/Userlist.js"></script>
 	<script src="js/registration.js"></script>
 	<script src="js/volunteer_login.js"></script>
+	<script src="js/some.js"></script>
 
 </body>
 </html

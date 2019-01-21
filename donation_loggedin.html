@@ -270,13 +270,13 @@
 		</div>
 		
 		<div class="volunteer_form" style="display:none">
-		<form>
+		<form id="addNewVolunteer">
 		<h3> How would you like to help us? </h3>
-			<label><input type="radio" name="flyers" value="flyers">I would like to volunteer by giving flyers</label>
-			<label><input type="radio" name="flyers" value="flyers">I would like to volunteer by cleaning lakes</label>
-			<label><input type="radio" name="flyers" value="flyers">I would like to volunteer by helping in events organization</label>
+			<label><input type="radio" name="volunteer" value="flyers">I would like to volunteer by giving flyers</label>
+			<label><input type="radio" name="volunteer" value="cleaning lakes">I would like to volunteer by cleaning lakes</label>
+			<label><input type="radio" name="volunteer" value="helping in events">I would like to volunteer by helping in events organization</label>
 			
-				<button type="button" class="volunteer_loggedin"> Volunteer </button>
+				<button type="submit" class="volunteer_loggedin"> Volunteer </button>
 			
 		</form>
 		</div>
@@ -423,6 +423,15 @@
         </article>
     </template>
 	</div>
+	
+		<div style="display:none">
+		<main class="mainVolunteer"></main>
+		<template id="templateVolunteer">
+        <article id="volunteer">      
+           <p> Donation</p>
+        </article>
+    </template>
+	</div>
 
 	<!--JAVASCRIPT-->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -430,6 +439,7 @@
 	<script src="js/donation_loggedin.js"></script>
 	<script src="js/donation_login.js"></script>
 	<script src="js/donation.js"></script>
+	<script src="volunteer.js"></script>
 </body>
 
 </html>
